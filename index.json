@@ -1,9 +1,0 @@
-[
-  { "yil": 2025, "dosya": "data/2025.json", "etiket": "2025 Çıkmışları" },
-  { "yil": 2024, "dosya": "data/2024.json", "etiket": "2024 Çıkmışları" },
-  { "yil": 2023, "dosya": "data/2023.json", "etiket": "2023 Çıkmışları" },
-  { "yil": 2022, "dosya": "data/2022.json", "etiket": "2022 Çıkmışları" },
-  { "yil": 2021, "dosya": "data/2021.json", "etiket": "2021 Çıkmışları" },
-  { "yil": 2020, "dosya": "data/2020.json", "etiket": "2020 Çıkmışları" },
-  { "yil": 2019, "dosya": "data/2019.json", "etiket": "2019 Çıkmışları" }
-]
