@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D2K1 Nöroanatomi Çıkmış Soru Bankası</title>
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased flex flex-col">
@@ -19,91 +17,106 @@
           <i data-lucide="brain" class="w-6 h-6"></i>
         </div>
         <div>
-          <h1 class="font-bold text-lg text-white leading-tight">D2K1 Nöroanatomi Portalı</h1>
-          <p class="text-xs text-slate-400" id="headerSubtitle">Yıllar yükleniyor...</p>
+          <h1 class="font-bold text-lg text-white leading-tight">D2K1 Soru Havuzu</h1>
+          <p class="text-xs text-slate-400" id="headerSubtitle">Lütfen soru dosyalarını yükleyin (Birden fazla seçebilirsiniz).</p>
         </div>
       </div>
 
-      <!-- Sayaç ve İlerleme -->
-      <div class="flex items-center gap-4 bg-slate-900 px-4 py-2 rounded-xl border border-slate-800 text-sm">
-        <div class="flex items-center gap-2">
-          <span class="text-slate-400">Çözülen:</span>
-          <span id="statProgress" class="font-bold text-white">0 / 0</span>
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-4 bg-slate-900 px-4 py-2 rounded-xl border border-slate-800 text-sm hidden md:flex" id="statsPanel">
+          <div class="flex items-center gap-2">
+            <span class="text-slate-400">Çözülen:</span>
+            <span id="statProgress" class="font-bold text-white">0 / 0</span>
+          </div>
+          <div class="h-4 w-px bg-slate-700"></div>
+          <div class="flex items-center gap-2">
+            <span class="text-slate-400">Başarı:</span>
+            <span id="statAccuracy" class="font-bold text-emerald-400">%0</span>
+          </div>
         </div>
-        <div class="h-4 w-px bg-slate-700"></div>
-        <div class="flex items-center gap-2">
-          <span class="text-slate-400">Başarı:</span>
-          <span id="statAccuracy" class="font-bold text-emerald-400">%0</span>
-        </div>
+
+        <label class="px-3 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-semibold cursor-pointer border border-sky-500 flex items-center gap-1.5 transition">
+          <i data-lucide="files" class="w-4 h-4"></i> Dosyaları Yükle
+          <input type="file" id="filePicker" accept=".json" multiple class="hidden">
+        </label>
       </div>
     </div>
   </header>
 
   <main class="max-w-5xl mx-auto px-4 py-6 w-full flex-1 flex flex-col gap-6">
 
-    <!-- 1. YIL SEÇİM ÇUBUĞU (index.json'dan dinamik dolacak) -->
+    <!-- YIL SEÇİM ÇUBUĞU -->
     <section class="flex flex-col gap-2">
       <div class="flex items-center justify-between">
-        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Sınav Yılı Seçin:</span>
-        <span id="loadingIndicator" class="text-xs text-sky-400 hidden flex items-center gap-1">
-          <i data-lucide="loader-2" class="w-3.5 h-3.5 animate-spin"></i> Yükleniyor...
-        </span>
+        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Görüntüleme Modu (Yıllar):</span>
       </div>
-      <div class="flex items-center gap-2 overflow-x-auto pb-1" id="yearTabsContainer">
-        <!-- Yıl butonları JS ile basılacak -->
-      </div>
+      <div class="flex items-center gap-2 overflow-x-auto pb-1" id="yearTabsContainer"></div>
     </section>
 
-    <!-- 2. ARAMA VE FİLTRELEME PANELİ -->
+    <!-- FİLTRELER VE ARAMA -->
     <section class="bg-slate-800/60 p-4 rounded-2xl border border-slate-700/60 flex flex-col gap-3">
       <div class="flex flex-col md:flex-row gap-3 items-center justify-between">
-        <!-- Arama Kutusu -->
-        <div class="relative w-full md:w-80">
+        <div class="relative w-full md:w-64 lg:w-80">
           <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-slate-400"></i>
-          <input type="text" id="searchInput" placeholder="Traktus, nükleus veya lezyon ara..." 
+          <input type="text" id="searchInput" placeholder="Soru, traktus veya lezyon ara..." 
             class="w-full pl-9 pr-4 py-2 bg-slate-900/90 border border-slate-700 rounded-xl text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-sky-500">
         </div>
 
-        <!-- Durum Filtreleri -->
-        <div class="flex items-center gap-2 w-full md:w-auto">
-          <button onclick="setStatusFilter('all')" id="btnFilterAll" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500 text-white transition">Tümü</button>
-          <button onclick="setStatusFilter('starred')" id="btnFilterStarred" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 hover:bg-slate-700 border border-slate-700 transition flex items-center gap-1.5">
-            <i data-lucide="star" class="w-3.5 h-3.5 text-amber-400 fill-amber-400"></i> Favoriler
-          </button>
-          <button onclick="setStatusFilter('wrong')" id="btnFilterWrong" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 hover:bg-slate-700 border border-slate-700 transition flex items-center gap-1.5">
-            <i data-lucide="x-circle" class="w-3.5 h-3.5 text-rose-400"></i> Yanlışlarım
+        <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+          <select id="subjectFilter" onchange="setSubjectFilter(this.value)" class="bg-slate-900 border border-slate-700 text-slate-200 text-xs rounded-lg px-3 py-2 focus:outline-none focus:border-sky-500 cursor-pointer">
+            <option value="Tümü">Tüm Dersler</option>
+          </select>
+
+          <div class="flex bg-slate-900 rounded-lg border border-slate-700 overflow-hidden">
+            <button onclick="setStatusFilter('all')" id="btnFilterAll" class="px-3 py-1.5 text-xs font-medium bg-sky-500 text-white transition">Tümü</button>
+            <button onclick="setStatusFilter('wrong')" id="btnFilterWrong" class="px-3 py-1.5 text-xs font-medium text-slate-300 hover:bg-slate-700 transition border-l border-slate-700">Yanlışlar</button>
+            <button onclick="setStatusFilter('starred')" id="btnFilterStarred" class="px-3 py-1.5 text-xs font-medium text-slate-300 hover:bg-slate-700 transition border-l border-slate-700">Favoriler</button>
+          </div>
+
+          <button onclick="pickRandomQuestion()" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500 hover:bg-amber-400 text-amber-950 transition flex items-center gap-1.5 shadow-lg shadow-amber-500/20">
+            <i data-lucide="dices" class="w-4 h-4"></i> Bahtıma Ne Çıkarsa
           </button>
         </div>
       </div>
 
-      <!-- Alt Konu Hapları -->
-      <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-700/40" id="topicChips">
-        <!-- Dinamik Alt Konular JS ile basılacak -->
-      </div>
+      <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-700/40" id="topicChips"></div>
     </section>
 
-    <!-- 3. SORU LİSTESİ -->
+    <!-- RASTGELE MOD BİLDİRİMİ -->
+    <div id="randomModeBanner" class="hidden bg-amber-500/10 border border-amber-500/30 rounded-xl p-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 text-amber-300 text-sm font-semibold">
+        <i data-lucide="dices" class="w-5 h-5"></i>
+        Ne Çıkarsa Bahtıma Modu Aktif (Rastgele 1 Soru Gösteriliyor)
+      </div>
+      <button onclick="exitRandomMode()" class="px-3 py-1 bg-slate-800 hover:bg-slate-700 text-white text-xs rounded-lg transition border border-slate-600">
+        Tüm Sorulara Dön
+      </button>
+    </div>
+
+    <!-- SORU LİSTESİ -->
     <div id="questionsContainer" class="flex flex-col gap-6">
-      <!-- Sorular buraya akacak -->
+      <div class="p-8 text-center bg-slate-800/60 rounded-2xl border border-slate-700 flex flex-col items-center">
+        <i data-lucide="inbox" class="w-10 h-10 text-sky-400 mb-3"></i>
+        <h3 class="text-base font-bold text-white mb-1">Havuz Boş</h3>
+        <p class="text-xs text-slate-300 max-w-md mb-4 leading-relaxed">
+          Sağ üst köşedeki "Dosyaları Yükle" butonuna tıklayarak bilgisayarınızdaki tüm yılları (2019.json, 2024.json vb.) tek seferde seçip yükleyin.
+        </p>
+      </div>
     </div>
 
   </main>
 
-  <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500 bg-slate-950">
-    Dönem 2 Nöroanatomi Komite Çalışma Portalı • Cevaplar ve favoriler cihazınızda saklanır.
-  </footer>
-
   <script>
-    // GLOBAL DURUM (STATE)
-    let availableYears = [];
-    let currentYearObj = null;
-    let questions = [];
-
+    let globalQuestions = []; 
+    let displayedQuestions = []; 
+    
+    let currentYearKey = 'Tümü';
     let currentStatusFilter = 'all';
+    let currentSubjectFilter = 'Tümü';
     let currentTopicFilter = 'Tümü';
     let searchQuery = '';
+    let isRandomMode = false;
 
-    // LocalStorage Anahtarları (Tüm yılların çözümlerini ayrı tutar)
     let userAnswers = JSON.parse(localStorage.getItem('d2k1_answers') || '{}');
     let starredQuestions = JSON.parse(localStorage.getItem('d2k1_starred') || '[]');
 
@@ -113,156 +126,167 @@
       updateStats();
     }
 
-    // 1. İLK ADIM: data/index.json'u ÇEK VE MENÜYÜ KUR
-    async function initApp() {
-      const loader = document.getElementById('loadingIndicator');
-      loader.classList.remove('hidden');
+    document.getElementById('filePicker').addEventListener('change', async function(event) {
+      const files = event.target.files;
+      if (!files || files.length === 0) return;
 
-      try {
-        const res = await fetch('data/index.json');
-        if (!res.ok) throw new Error("data/index.json okunamadı.");
-        availableYears = await res.json();
+      globalQuestions = []; 
+      let loadedCount = 0;
 
-        if (availableYears.length > 0) {
-          renderYearTabs();
-          // Varsayılan olarak ilk yılı seç (örneğin en son yıl)
-          await loadYearData(availableYears[0]);
-        } else {
-          document.getElementById('questionsContainer').innerHTML = `
-            <div class="p-8 text-center text-slate-400 bg-slate-800/40 rounded-2xl border border-slate-700">
-              index.json içinde tanımlı yıl bulunamadı.
-            </div>`;
+      for (let file of files) {
+        try {
+          const text = await readFileAsync(file);
+          const parsed = JSON.parse(text);
+          globalQuestions = globalQuestions.concat(parsed);
+          loadedCount++;
+        } catch (err) {
+          console.error(`${file.name} okunamadı veya hatalı JSON.`);
         }
-      } catch (err) {
-        console.error(err);
-        document.getElementById('questionsContainer').innerHTML = `
-          <div class="p-8 text-center text-rose-400 bg-rose-950/20 rounded-2xl border border-rose-500/30">
-            <i data-lucide="alert-triangle" class="w-8 h-8 mx-auto mb-2"></i>
-            <p class="font-bold">Veriler Yüklenemedi!</p>
-            <p class="text-xs text-slate-400 mt-1">Tarayıcı güvenlik kuralları (CORS) gereği sayfayı çift tıklayarak açmak yerine bir yerel sunucu (VS Code Live Server) ile açtığınızdan ve 'data/index.json' dosyasının varlığından emin olun.</p>
-          </div>`;
-        lucide.createIcons();
-      } finally {
-        loader.classList.add('hidden');
       }
+
+      if (loadedCount > 0) {
+        setupPool();
+      }
+    });
+
+    function readFileAsync(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = e => resolve(e.target.result);
+        reader.onerror = e => reject(e);
+        reader.readAsText(file);
+      });
     }
 
-    // Yıl Sekmelerini Ekrana Bas
+    function setupPool() {
+      document.getElementById('statsPanel').classList.remove('hidden');
+      currentYearKey = 'Tümü'; 
+      isRandomMode = false;
+      renderYearTabs();
+      populateSubjectDropdown();
+      applyFilters();
+    }
+
     function renderYearTabs() {
+      const years = [...new Set(globalQuestions.map(q => String(q.yil)))].sort().reverse();
       const container = document.getElementById('yearTabsContainer');
-      container.innerHTML = availableYears.map(item => {
-        const isSelected = currentYearObj && currentYearObj.yil === item.yil;
-        return `
-          <button onclick="selectYear(${item.yil})" class="px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
-            isSelected 
-              ? 'bg-sky-500 text-white shadow-lg shadow-sky-500/20' 
-              : 'bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700'
+      let html = '';
+      
+      const isAllSelected = currentYearKey === 'Tümü';
+      html += `
+        <button onclick="selectYear('Tümü')" class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition flex items-center gap-1.5 ${
+          isAllSelected ? 'bg-sky-500 text-white shadow-lg' : 'bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700'
+        }">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i> Tüm Çıkmışlar (Karma)
+        </button>
+      `;
+
+      years.forEach(y => {
+        const isSelected = currentYearKey === y;
+        html += `
+          <button onclick="selectYear('${y}')" class="px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
+            isSelected ? 'bg-sky-500 text-white shadow-lg' : 'bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700'
           }">
-            <i data-lucide="calendar" class="w-3.5 h-3.5"></i> ${item.yil} Çıkmışları
+            <i data-lucide="calendar" class="w-3.5 h-3.5"></i> ${y}
           </button>
         `;
-      }).join('');
+      });
+
+      container.innerHTML = html;
       lucide.createIcons();
     }
 
-    async function selectYear(yil) {
-      const target = availableYears.find(y => y.yil === yil);
-      if (target && (!currentYearObj || currentYearObj.yil !== target.yil)) {
-        await loadYearData(target);
-      }
-    }
-
-    // 2. SEÇİLEN YILIN JSON DOSYASINI YÜKLE
-    async function loadYearData(yearObj) {
-      currentYearObj = yearObj;
+    function selectYear(year) {
+      currentYearKey = year;
+      isRandomMode = false; 
       renderYearTabs();
-
-      const loader = document.getElementById('loadingIndicator');
-      loader.classList.remove('hidden');
-
-      try {
-        const res = await fetch(yearObj.dosya);
-        if (!res.ok) throw new Error(`${yearObj.dosya} okunamadı.`);
-        questions = await res.json();
-
-        document.getElementById('headerSubtitle').innerText = `${yearObj.yil} Nöroanatomi Çıkmış Soruları (${questions.length} Soru)`;
-        
-        currentTopicFilter = 'Tümü';
-        renderTopicChips();
-        renderQuestions();
-        updateStats();
-      } catch (err) {
-        console.error(err);
-        document.getElementById('questionsContainer').innerHTML = `
-          <div class="p-6 text-center text-rose-400 bg-rose-950/20 rounded-2xl border border-rose-500/30">
-            ${yearObj.dosya} dosyası bulunamadı veya JSON sözdizimi hatalı.
-          </div>`;
-      } finally {
-        loader.classList.add('hidden');
-      }
+      applyFilters();
     }
 
-    // İstatistik Güncelleme
-    function updateStats() {
-      if (!questions || questions.length === 0) return;
-      const currentYearQIds = questions.map(q => q.id);
-      
-      let answeredCount = 0;
-      let correctCount = 0;
-
-      currentYearQIds.forEach(id => {
-        if (userAnswers[id]) {
-          answeredCount++;
-          const q = questions.find(item => item.id === id);
-          if (q && userAnswers[id] === q.dogruCevap) correctCount++;
-        }
+    function populateSubjectDropdown() {
+      const subjects = [...new Set(globalQuestions.map(q => q.ders || 'Diğer'))].sort();
+      const select = document.getElementById('subjectFilter');
+      let options = `<option value="Tümü">Tüm Dersler</option>`;
+      subjects.forEach(s => {
+        options += `<option value="${s}">${s}</option>`;
       });
-
-      const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
-      document.getElementById('statProgress').innerText = `${answeredCount} / ${questions.length}`;
-      document.getElementById('statAccuracy').innerText = `%${accuracy}`;
+      select.innerHTML = options;
+      select.value = currentSubjectFilter;
     }
 
-    // Şık İşaretleme
-    function selectOption(qId, key) {
-      if (userAnswers[qId]) return;
-      userAnswers[qId] = key;
-      saveState();
-      renderQuestions();
+    function setSubjectFilter(val) {
+      currentSubjectFilter = val;
+      currentTopicFilter = 'Tümü'; 
+      isRandomMode = false;
+      applyFilters();
     }
 
-    // Favorileme
-    function toggleStar(qId) {
-      if (starredQuestions.includes(qId)) {
-        starredQuestions = starredQuestions.filter(id => id !== qId);
-      } else {
-        starredQuestions.push(qId);
-      }
-      saveState();
-      renderQuestions();
-    }
-
-    // Filtreler
     function setStatusFilter(type) {
       currentStatusFilter = type;
-      ['btnFilterAll', 'btnFilterStarred', 'btnFilterWrong'].forEach(btn => {
-        document.getElementById(btn).className = "px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 hover:bg-slate-700 border border-slate-700 transition flex items-center gap-1.5";
+      isRandomMode = false;
+      const btns = ['btnFilterAll', 'btnFilterWrong', 'btnFilterStarred'];
+      btns.forEach(id => {
+        document.getElementById(id).className = "px-3 py-1.5 text-xs font-medium text-slate-300 hover:bg-slate-700 transition border-l border-slate-700";
       });
-      if (type === 'all') document.getElementById('btnFilterAll').className = "px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500 text-white transition";
-      if (type === 'starred') document.getElementById('btnFilterStarred').className = "px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500 text-white transition flex items-center gap-1.5";
-      if (type === 'wrong') document.getElementById('btnFilterWrong').className = "px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500 text-white transition flex items-center gap-1.5";
-      renderQuestions();
+      let activeId = type === 'all' ? 'btnFilterAll' : (type === 'wrong' ? 'btnFilterWrong' : 'btnFilterStarred');
+      document.getElementById(activeId).className = "px-3 py-1.5 text-xs font-bold bg-sky-500 text-white transition";
+      applyFilters();
     }
 
     function setTopic(topic) {
       currentTopicFilter = topic;
-      renderTopicChips();
-      renderQuestions();
+      isRandomMode = false;
+      applyFilters();
     }
 
-    function renderTopicChips() {
-      const topics = ['Tümü', ...new Set(questions.map(q => q.altKonu).filter(Boolean))];
+    function applyFilters() {
+      document.getElementById('randomModeBanner').classList.add('hidden');
+      displayedQuestions = globalQuestions.filter(q => {
+        if (currentYearKey !== 'Tümü' && String(q.yil) !== currentYearKey) return false;
+        const qDers = q.ders || 'Diğer';
+        if (currentSubjectFilter !== 'Tümü' && qDers !== currentSubjectFilter) return false;
+        if (currentTopicFilter !== 'Tümü' && q.altKonu !== currentTopicFilter) return false;
+        if (currentStatusFilter === 'starred' && !starredQuestions.includes(q.id)) return false;
+        if (currentStatusFilter === 'wrong' && (!userAnswers[q.id] || userAnswers[q.id] === q.dogruCevap)) return false;
+        if (searchQuery) {
+          const searchStr = searchQuery.toLowerCase();
+          const matchText = (q.soruMetni + ' ' + (q.altKonu || '') + ' ' + (q.ders || '')).toLowerCase();
+          if (!matchText.includes(searchStr)) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('headerSubtitle').innerText = `${currentYearKey === 'Tümü' ? 'Tüm Yıllar (Karma)' : currentYearKey} • Toplam ${displayedQuestions.length} Soru`;
+      renderTopicChips(displayedQuestions);
+      renderQuestionsList(displayedQuestions);
+      updateStats();
+    }
+
+    function pickRandomQuestion() {
+      let poolToPick = displayedQuestions.length > 0 ? displayedQuestions : globalQuestions;
+      if (poolToPick.length === 0) {
+        alert("Havuzda soru bulunmuyor!");
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * poolToPick.length);
+      const chosenQ = poolToPick[randomIndex];
+      isRandomMode = true;
+      document.getElementById('randomModeBanner').classList.remove('hidden');
+      renderQuestionsList([chosenQ]); 
+    }
+
+    function exitRandomMode() {
+      isRandomMode = false;
+      applyFilters(); 
+    }
+
+    function renderTopicChips(sourceQuestions) {
+      const topics = ['Tümü', ...new Set(sourceQuestions.map(q => q.altKonu).filter(Boolean))].sort();
       const container = document.getElementById('topicChips');
+      if(sourceQuestions.length === 0) {
+        container.innerHTML = '';
+        return;
+      }
       container.innerHTML = topics.map(t => {
         const isActive = t === currentTopicFilter;
         return `
@@ -277,33 +301,69 @@
       }).join('');
     }
 
-    // Soruları Render Et
-    function renderQuestions() {
-      const container = document.getElementById('questionsContainer');
+    function updateStats() {
+      if (globalQuestions.length === 0) return;
+      let answeredCount = 0;
+      let correctCount = 0;
+      const statList = isRandomMode ? globalQuestions : displayedQuestions; 
 
-      const filtered = questions.filter(q => {
-        if (currentStatusFilter === 'starred' && !starredQuestions.includes(q.id)) return false;
-        if (currentStatusFilter === 'wrong' && (!userAnswers[q.id] || userAnswers[q.id] === q.dogruCevap)) return false;
-        if (currentTopicFilter !== 'Tümü' && q.altKonu !== currentTopicFilter) return false;
-
-        if (searchQuery) {
-          const matchText = (q.soruMetni + ' ' + (q.altKonu || '') + ' ' + (q.cozum?.dogruCevapNedeni || '') + ' ' + (q.cozum?.klinikInci || '')).toLowerCase();
-          if (!matchText.includes(searchQuery.toLowerCase())) return false;
+      statList.forEach(q => {
+        if (userAnswers[q.id]) {
+          answeredCount++;
+          if (userAnswers[q.id] === q.dogruCevap) correctCount++;
         }
-        return true;
       });
 
-      if (filtered.length === 0) {
+      const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+      document.getElementById('statProgress').innerText = `${answeredCount} / ${statList.length}`;
+      document.getElementById('statAccuracy').innerText = `%${accuracy}`;
+    }
+
+    function selectOption(qId, key) {
+      if (userAnswers[qId]) return;
+      userAnswers[qId] = key;
+      saveState();
+      
+      if (isRandomMode) {
+        const q = globalQuestions.find(x => x.id === qId);
+        renderQuestionsList([q]);
+        updateStats();
+      } else {
+        renderQuestionsList(displayedQuestions);
+        updateStats();
+      }
+    }
+
+    function toggleStar(qId) {
+      if (starredQuestions.includes(qId)) {
+        starredQuestions = starredQuestions.filter(id => id !== qId);
+      } else {
+        starredQuestions.push(qId);
+      }
+      saveState();
+      
+      if (isRandomMode) {
+        const q = globalQuestions.find(x => x.id === qId);
+        renderQuestionsList([q]);
+      } else {
+        renderQuestionsList(displayedQuestions);
+      }
+    }
+
+    function renderQuestionsList(list) {
+      const container = document.getElementById('questionsContainer');
+
+      if (list.length === 0) {
         container.innerHTML = `
           <div class="text-center py-16 bg-slate-800/40 rounded-2xl border border-slate-700/60">
-            <i data-lucide="inbox" class="w-10 h-10 mx-auto text-slate-500 mb-2"></i>
-            <p class="text-slate-300 font-medium">Bu filtreye uygun soru bulunamadı.</p>
+            <i data-lucide="ghost" class="w-10 h-10 mx-auto text-slate-500 mb-2"></i>
+            <p class="text-slate-300 font-medium">Bu kriterlere uygun soru bulunamadı.</p>
           </div>`;
         lucide.createIcons();
         return;
       }
 
-      container.innerHTML = filtered.map(q => {
+      container.innerHTML = list.map(q => {
         const userAnswer = userAnswers[q.id];
         const isAnswered = !!userAnswer;
         const isStarred = starredQuestions.includes(q.id);
@@ -311,6 +371,7 @@
         let optionsHtml = Object.entries(q.secenekler).map(([key, text]) => {
           let btnClass = "w-full text-left p-3.5 rounded-xl border text-sm font-medium transition flex items-start gap-3 ";
           let badgeClass = "w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 ";
+          let explanationHtml = '';
 
           if (!isAnswered) {
             btnClass += "bg-slate-900/80 hover:bg-slate-700/60 border-slate-700/80 text-slate-200 cursor-pointer";
@@ -326,78 +387,93 @@
               btnClass += "bg-slate-900/40 border-slate-800 text-slate-500 opacity-60";
               badgeClass += "bg-slate-800 text-slate-600";
             }
+
+            if (q.cozum) {
+              if (key === q.dogruCevap) {
+                explanationHtml = `
+                  <div class="mt-1.5 ml-[52px] p-2.5 bg-emerald-950/30 rounded-lg border border-emerald-500/20 text-xs text-emerald-100/90 leading-relaxed shadow-inner">
+                    <span class="font-bold text-emerald-400">Doğru:</span> ${q.cozum.dogruCevapNedeni || 'Açıklama bulunmuyor.'}
+                  </div>`;
+              } else {
+                let celdiriciMetni = (q.cozum.celdiriciler && q.cozum.celdiriciler[key]) ? q.cozum.celdiriciler[key] : 'Bu şıkkın neden yanlış olduğuna dair özel bir açıklama bulunmuyor.';
+                explanationHtml = `
+                  <div class="mt-1.5 ml-[52px] p-2.5 bg-slate-900/80 rounded-lg border border-slate-700/60 text-xs text-slate-300 leading-relaxed">
+                    <span class="font-bold text-rose-400">Yanlış, Çünkü:</span> ${celdiriciMetni}
+                  </div>`;
+              }
+            }
           }
 
           return `
-            <button onclick="selectOption('${q.id}', '${key}')" ${isAnswered ? 'disabled' : ''} class="${btnClass}">
-              <span class="${badgeClass}">${key}</span>
-              <span class="flex-1 leading-relaxed">${text}</span>
-            </button>
+            <div class="flex flex-col mb-3">
+              <button onclick="selectOption('${q.id}', '${key}')" ${isAnswered ? 'disabled' : ''} class="${btnClass}">
+                <span class="${badgeClass}">${key}</span>
+                <span class="flex-1 leading-relaxed">${text}</span>
+              </button>
+              ${explanationHtml}
+            </div>
           `;
         }).join('');
 
         let solutionHtml = '';
-        if (isAnswered && q.cozum) {
-          let celdiricilerHtml = q.cozum.celdiriciler ? Object.entries(q.cozum.celdiriciler).map(([opt, desc]) => `
-            <li class="text-xs text-slate-300 leading-relaxed">
-              <span class="font-bold text-slate-400">${opt}:</span> ${desc}
-            </li>
-          `).join('') : '';
+        let anlatimMetni = (q.cozum && q.cozum.konuAnlatimi) ? q.cozum.konuAnlatimi : ((q.cozum && q.cozum.klinikInci) ? q.cozum.klinikInci : null);
 
+        if (isAnswered && anlatimMetni) {
           solutionHtml = `
-            <div class="mt-4 pt-4 border-t border-slate-700/60 flex flex-col gap-3">
-              <div class="p-3.5 bg-emerald-950/20 rounded-xl border border-emerald-500/30">
-                <div class="flex items-center gap-2 text-emerald-400 font-semibold text-xs mb-1">
-                  <i data-lucide="check-circle-2" class="w-4 h-4"></i> Doğru Cevap: ${q.dogruCevap}
+            <div class="mt-2 pt-4 border-t border-slate-700/60">
+              <div class="p-4 bg-sky-900/20 rounded-xl border border-sky-500/30 flex items-start gap-3">
+                <div class="p-1.5 bg-sky-500/20 rounded-lg shrink-0 mt-0.5">
+                  <i data-lucide="book-open" class="w-4 h-4 text-sky-400"></i>
                 </div>
-                <p class="text-xs text-emerald-100/90 leading-relaxed">${q.cozum.dogruCevapNedeni || ''}</p>
+                <div class="text-xs text-sky-100/90 leading-relaxed">
+                  <span class="font-bold text-sky-300 block mb-1">Mini Konu Anlatımı</span>
+                  ${anlatimMetni}
+                </div>
               </div>
-
-              ${celdiricilerHtml ? `
-              <div class="p-3.5 bg-slate-900/90 rounded-xl border border-slate-700/80">
-                <span class="text-xs font-semibold text-slate-300 flex items-center gap-1.5 mb-2">
-                  <i data-lucide="list-checks" class="w-3.5 h-3.5 text-sky-400"></i> Çeldiricilerin Analizi
-                </span>
-                <ul class="space-y-1.5 list-disc list-inside">
-                  ${celdiricilerHtml}
-                </ul>
-              </div>` : ''}
-
-              ${q.cozum.klinikInci ? `
-              <div class="p-3 bg-amber-500/10 rounded-xl border border-amber-500/30 flex items-start gap-2.5">
-                <i data-lucide="lightbulb" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-                <div class="text-xs text-amber-200/90 leading-relaxed">
-                  <span class="font-bold text-amber-300">Komite İncisi: </span>
-                  ${q.cozum.klinikInci}
-                </div>
-              </div>` : ''}
             </div>
           `;
         }
 
+        let nextRandomBtn = '';
+        if (isAnswered && isRandomMode) {
+            nextRandomBtn = `
+            <div class="mt-4 text-right">
+              <button onclick="pickRandomQuestion()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-lg transition shadow-lg">
+                Sıradaki Rastgele Soruya Geç <i data-lucide="arrow-right" class="w-3 h-3 inline"></i>
+              </button>
+            </div>
+            `;
+        }
+
         return `
-          <div class="bg-slate-800/60 p-5 rounded-2xl border border-slate-700/70 shadow-lg">
-            <div class="flex items-center justify-between gap-3 mb-3">
-              <div class="flex items-center gap-2">
+          <div class="bg-slate-800/60 p-5 rounded-2xl border border-slate-700/70 shadow-lg relative">
+            <div class="flex items-center justify-between gap-3 mb-5">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                  <i data-lucide="calendar" class="w-3 h-3 inline mr-0.5"></i> ${q.yil}
+                </span>
                 <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                  ${q.ders || 'Tıp'}
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-700 text-slate-300">
                   ${q.altKonu || 'Genel'}
                 </span>
-                <span class="text-xs text-slate-400 font-medium">${q.id}</span>
               </div>
               <button onclick="toggleStar('${q.id}')" class="p-1.5 text-slate-400 hover:text-amber-400 transition">
                 <i data-lucide="star" class="w-4 h-4 ${isStarred ? 'text-amber-400 fill-amber-400' : ''}"></i>
               </button>
             </div>
 
-            <p class="text-slate-100 text-sm md:text-base font-medium leading-relaxed mb-4 whitespace-pre-line">
+            <p class="text-slate-100 text-sm md:text-base font-medium leading-relaxed mb-6 whitespace-pre-line">
               ${q.soruMetni}
             </p>
 
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col">
               ${optionsHtml}
             </div>
 
             ${solutionHtml}
+            ${nextRandomBtn}
           </div>
         `;
       }).join('');
@@ -405,13 +481,7 @@
       lucide.createIcons();
     }
 
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-      searchQuery = e.target.value;
-      renderQuestions();
-    });
-
-    // Başlat
-    initApp();
+    lucide.createIcons();
   </script>
 </body>
 </html>
