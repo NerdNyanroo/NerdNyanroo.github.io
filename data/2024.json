@@ -1,0 +1,2546 @@
+[
+  {
+    "id": "2024_1",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Medulla spinalis'te bulunan \"Lamina I\" hangi duyular veya fonksiyonlarla ilişkilidir?",
+    "secenekler": {
+      "A": "Nucleus marginalis - Ağrı ve ısı duyusu",
+      "B": "Nucleus proprius - Proprioseptif duyular",
+      "C": "Substantia gelatinosa - Ağrı ve ısı duyusu modülasyonu",
+      "D": "Nucleus intermediomedialis - Visseral refleksler",
+      "E": "Clarke nükleusu - Bilinçsiz proprioseptif duyular"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Rexed lamina I, cornu posterius'un en ucundaki nucleus marginalis'e (nucleus posteromarginalis) karşılık gelir ve primer afferent ağrı ile ısı liflerinden girdi alarak tractus spinothalamicus lateralis'i oluşturur.",
+      "celdiriciler": {
+        "B": "Nucleus proprius lamina III ve IV'e karşılık gelir, dokunma ve basınç duyuları ile ilişkilidir.",
+        "C": "Substantia gelatinosa (Rolando) lamina II'ye karşılık gelir ve ağrı duyusunun presinaptik/postsinaptik modülasyonunda görev alır.",
+        "D": "Nucleus intermediomedialis lamina VII içerisinde yer alan otonomik/visseral ilişkili bir nükleustur.",
+        "E": "Clarke sütunu (nucleus dorsalis) lamina VII tabanında (C8-L2/L3) yer alır ve bilinçsiz propriosepsiyonu serebelluma taşır."
+      },
+      "konuAnlatimi": "Rexed laminaları cornu posterius'ta lamina I-VI arasında dizilir. Lamina I (nucleus marginalis) ağrı ve ısı liflerinin sonlandığı en yüzeyel tabakadır; Lamina II ise ağrı kapı kontrol mekanizmasının ana merkezi olan substantia gelatinosa'dır."
+    }
+  },
+  {
+    "id": "2024_2",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Fibrae corticonucleares'ten tek taraflı kortikonükleer lif alan kranial sinir çekirdekleri aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "N. oculomotorius ve n. trochlearis",
+      "B": "N. trigeminus ve n. abducens",
+      "C": "N. facialis ve n. hypoglossus",
+      "D": "N. glossopharyngeus ve n. vagus",
+      "E": "N. accessorius ve n. hypoglossus"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Kranial sinir motor çekirdeklerinin çoğu bilateral kortikonükleer girdi alırken; n. facialis'in yüzün alt yarısını innerve eden motor çekirdek bölümü ile n. hypoglossus'un m. genioglossus'u innerve eden kısmı sadece kontralateral (tek taraflı) korteks lifleri alır.",
+      "celdiriciler": {
+        "A": "Göz hareketlerini kontrol eden CN III ve CN IV çekirdekleri bilateral kortikonükleer girdi alır.",
+        "B": "CN V motor çekirdeği ve CN VI çekirdeği bilateral innervasyona sahiptir.",
+        "D": "CN IX ve CN X motor çekirdeği olan nucleus ambiguus bilateral kortikonükleer lifler ile uyarılır.",
+        "E": "CN XI'in spinal parçası büyük oranda ipsilateral/bilateral temsil edilir, seçenek C'deki klasik kombinasyon tam ve tektir."
+      },
+      "konuAnlatimi": "Kortikonükleer liflerde tek taraflı kontralateral girdi alan iki kritik alan vardır: N. facialis'in alt yüz yarısı (lezyonunda santral fasial paralizi) ve N. hypoglossus'un m. genioglossus lifleri (lezyonunda dil karşı tarafa sapar)."
+    }
+  },
+  {
+    "id": "2024_3",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıdaki bulgulardan hangisi üst motor nöron felci ile ilgilidir?",
+    "secenekler": {
+      "A": "Spastisite",
+      "B": "Kas atrofisi",
+      "C": "Hiporefleksi",
+      "D": "Flaksid felç",
+      "E": "Arefleksi"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Üst motor nöron (piramidal sistem) lezyonlarında spinal refleks arkı üzerindeki supraspinal inhibitör kontrol kaybolduğu için spastik kas tonusu artışı (spastisite), hiperrefleksi ve patolojik refleksler (Babinski) görülür.",
+      "celdiriciler": {
+        "B": "Ciddi denervasyon kas atrofisi alt motor nöron hasarının tipik bulgusudur; üst motor nöronda sadece hafif disuse atrofisi olur.",
+        "C": "Hiporefleksi periferik sinir veya ön boynuz (alt motor nöron) harabiyetinde izlenir.",
+        "D": "Flaksid (gevşek) paralizi alt motor nöron tutulumu belirtisidir.",
+        "E": "Arefleksi refleks arkının kesildiği alt motor nöron hasarlarında karşımıza çıkar."
+      },
+      "konuAnlatimi": "Üst motor nöron felcinde spastisite, hiperrefleksi, klonus ve Babinski pozitifliği görülürken; alt motor nöron felcinde flaksidite, kas atrofisi, fasikülasyonlar ve arefleksi/hiporefleksi saptanır."
+    }
+  },
+  {
+    "id": "2024_4",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Bir hastada tek taraflı tractus spinothalamicus lateralis lezyonu sonucu oluşan ağrı ve ısı duyusu kaybı bulguları aşağıdakilerden hangisinde doğru verilmiştir?",
+    "secenekler": {
+      "A": "Lezyonla aynı tarafta, 1-2 segment yukarıda",
+      "B": "Lezyonun karşı tarafında, 1-2 segment aşağıda",
+      "C": "Lezyonun karşı tarafında, aynı segmentte",
+      "D": "Lezyonla aynı tarafta, 1-2 segment aşağıda",
+      "E": "Lezyonun her iki tarafında, tüm vücutta"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Tractus spinothalamicus lateralis'i oluşturan ikinci sıra nöron lifleri commissura alba anterior'dan karşı tarafa geçerken oblik olarak 1-2 segment yukarı doğru çaprazlaşırlar; bu nedenle tek taraflı traktus lezyonunda vücudun karşı tarafında lezyon seviyesinin 1-2 segment altından başlayan ağrı-ısı kaybı ortaya çıkar.",
+      "celdiriciler": {
+        "A": "Spinotalamik traktus lifleri çapraz yaptığı için bulgu aynı tarafta değil, karşı tarafta ortaya çıkar.",
+        "C": "Lifler yatay değil, 1-2 segment oblik yükselerek çaprazlaştığından aynı segment seviyesinde başlamaz.",
+        "D": "Lezyonla aynı tarafta duyu kaybı arka kordon lezyonlarında (propriosepsiyon) görülür.",
+        "E": "Tek taraflı kord kesisinde duyu kaybı bilateral değil, tek taraflı kontralateraldir."
+      },
+      "konuAnlatimi": "Brown-Séquard hemiseksiyon sendromunda lezyon seviyesinin altında; ipsilateral spastik paralizi (kortikospinal) ve bilinçli propriosepsiyon kaybı (arka kordon), kontralateral 1-2 segment aşağıdan başlayan ağrı ve ısı duyusu kaybı (spinotalamik) gelişir."
+    }
+  },
+  {
+    "id": "2024_5",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Hangi tractus, yüz bölgesinden gelen ağrı ve ısı duyularını taşır?",
+    "secenekler": {
+      "A": "Tractus spinoreticularis",
+      "B": "Tractus spinothalamicus lateralis",
+      "C": "Tractus spinothalamicus anterior",
+      "D": "Tractus trigeminothalamicus",
+      "E": "Tractus spinomesencephalicus"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Yüz ve kafa bölgesinin ağrı-ısı duyusu n. trigeminus üzerinden nucleus tractus spinalis n. trigemini'ye gelir ve buradan başlayan lifler tractus trigeminothalamicus (lemniscus trigeminalis) adıyla talamusun VPM çekirdeğine gider.",
+      "celdiriciler": {
+        "A": "Tractus spinoreticularis vücuttan gelen ağrı duyusunun retiküler formasyon ve otonomik/duygusal merkezlere ulaştırılmasını sağlar.",
+        "B": "Tractus spinothalamicus lateralis gövde ve ekstremitelerin ağrı-ısı duyusunu taşır.",
+        "C": "Tractus spinothalamicus anterior gövde ve ekstremitelerden kaba dokunma ve basınç duyusunu taşır.",
+        "E": "Tractus spinomesencephalicus ağrı modülasyonu amacıyla periakuaduktal gri cevhere projekte olur."
+      },
+      "konuAnlatimi": "Vücudun ağrı-ısı duyusunu tractus spinothalamicus lateralis taşırken, baş ve yüzün ağrı-ısı duyusu tractus trigeminothalamicus anterior/posterior lifleri ile thalamus'un Nucleus ventralis posteromedialis (VPM) çekirdeğine iletilir."
+    }
+  },
+  {
+    "id": "2024_6",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Romberg belirtisinin nedeni nedir?",
+    "secenekler": {
+      "A": "Vestibüler sistem hasarı",
+      "B": "Cerebellum hasarı",
+      "C": "Spinotalamik yol hasarı",
+      "D": "Piramidal yol hasarı",
+      "E": "Proprioseptif duyu kaybı"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Romberg testi arka kordon (funiculus posterior) fonksiyonunu ve bilinçli propriosepsiyon duyusunu değerlendirir; gözler kapandığında görsel kompanzasyon devreden çıktığı için proprioseptif duyu kaybı olan hastada dengesizlik ve düşme gözlenir.",
+      "celdiriciler": {
+        "A": "Vestibüler lezyonlarda düşme tek taraflı olabilir ancak klasik proprioseptif Romberg belirtisinden farklıdır.",
+        "B": "Serebellar lezyonlarda hasta gözleri açıkken de dengesini sağlayamaz (serebellar ataksi), bu durum Romberg pozitifliği olarak kabul edilmez.",
+        "C": "Spinotalamik yol ağrı ve ısı duyusunu iletir, denge veya propriosepsiyon ile doğrudan ilişkisi yoktur.",
+        "D": "Piramidal yol istemli motor hareketleri kontrol eder, duyusal ataksiye yol açmaz."
+      },
+      "konuAnlatimi": "Romberg testi duyusal ataksiyi serebellar ataksinin ayırt edilmesinde kullanılır. Hasta gözleri açıkken dengede durabiliyor ancak gözlerini kapattığında salınım gösterip düşüyorsa arka kordon (fasciculus gracilis ve cuneatus) kaynaklı bilinçli propriosepsiyon kaybı (duyusal ataksi) mevcuttur."
+    }
+  },
+  {
+    "id": "2024_7",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Fasciculus cuneatus, aşağıdaki duyulardan hangisinin taşınmasında görev alır?",
+    "secenekler": {
+      "A": "İnguinal bölgede dokunma lokalizasyonu",
+      "B": "Umbilikal bölgede iki nokta duyarlılığı",
+      "C": "Ele alınan bir nesnenin şekil ve büyüklüğünün tanımlanabilmesi",
+      "D": "Sağ uyluk bölgesinde cilt üzerine çizilen şekillerin ayırt edilmesi",
+      "E": "Sol lumbal bölgede arka arkaya gelen iki uyaranın ayırt edilmesi"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Fasciculus cuneatus (Burdach), T6 seviyesinin yukarısından (üst ekstremite, boyun ve üst gövde) gelen bilinçli propriosepsiyon, vibrasyon ve stereognozi (ele alınan nesneyi tanıma) duyularını taşır.",
+      "celdiriciler": {
+        "A": "İnguinal bölge T6'nın altında (L1) kaldığı için bu duyu fasciculus gracilis ile taşınır.",
+        "B": "Umbilikal bölge T10 dermatomuna uyar ve T6 seviyesinin altında olduğu için fasciculus gracilis ile iletilir.",
+        "D": "Uyluk bölgesi alt ekstremiteye aittir ve T6 seviyesinin altında yer aldığından fasciculus gracilis sorumludur.",
+        "E": "Lumbal bölge T6 seviyesinin altında kaldığı için fasciculus gracilis tarafından taşınır."
+      },
+      "konuAnlatimi": "Medulla spinalis arka kordonunda T6 seviyesinin altından gelen duyular mediyalde yerleşen Fasciculus gracilis (Goll) ile iletilirken; T6 ve yukarısından (üst ekstremite) gelen duyular laterale yerleşen Fasciculus cuneatus (Burdach) ile taşınır."
+    }
+  },
+  {
+    "id": "2024_8",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Ekstraoküler kas ve bu kası innerve eden sinir eşleştirmelerinden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "M. obliquus superior - N. trochlearis",
+      "B": "M. rectus medialis - N. oculomotorius",
+      "C": "M. rectus lateralis - N. abducens",
+      "D": "M. obliquus inferior - N. trochlearis",
+      "E": "M. rectus inferior - N. oculomotorius"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "M. obliquus inferior kası N. trochlearis (CN IV) tarafından değil, N. oculomotorius (CN III) tarafından innerve edilir.",
+      "celdiriciler": {
+        "A": "M. obliquus superior kası N. trochlearis (CN IV) tarafından innerve edilir (SO4 formülü).",
+        "B": "M. rectus medialis N. oculomotorius (CN III) tarafından innerve edilir.",
+        "C": "M. rectus lateralis N. abducens (CN VI) tarafından innerve edilir (LR6 formülü).",
+        "E": "M. rectus inferior N. oculomotorius (CN III) tarafından innerve edilir."
+      },
+      "konuAnlatimi": "Ekstraoküler kasların innervasyon formülü 'SO4, LR6, kalanı 3' şeklindedir: M. obliquus superior CN IV (N. trochlearis), M. rectus lateralis CN VI (N. abducens) ile uyarılır; m. rectus medialis, m. rectus superior, m. rectus inferior ve m. obliquus inferior ise CN III (N. oculomotorius) tarafından innerve edilir."
+    }
+  },
+  {
+    "id": "2024_9",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Diencephalon'da yer almayan oluşumu işaretleyiniz.",
+    "secenekler": {
+      "A": "Gyrus cinguli",
+      "B": "Foramen interventriculare",
+      "C": "Tuber cinereum",
+      "D": "Commissura habenularis",
+      "E": "Tegmentum"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Gyrus cinguli, telencephalon'a ait bir kortikal yapı olup diencephalon'un parçası değildir.",
+      "celdiriciler": {
+        "B": "Foramen interventriculare (Monro), diencephalon ve telencephalon arasındaki 3. ventrikül bağlantı alanında yer alır.",
+        "C": "Tuber cinereum hipotalamusun tabanında yer alan bir diensefalon yapısıdır.",
+        "D": "Commissura habenularis epitalamus sınırları içinde yer alan bir diensefalon yapısıdır.",
+        "E": "Subtalamus ve komşu beyin sapı geçişlerinde yer alan tegmental lifler ve çekirdekler diensefalik/mezensefalik ilişkidedir."
+      },
+      "konuAnlatimi": "Diencephalon; thalamus, hypothalamus, epithalamus, subthalamus ve metathalamus bölümlerinden oluşur ve 3. ventrikülü çevreler. Gyrus cinguli, hippocampus ve gyrus parahippocampalis ise telensefalon kökenli limbik lob bileşenleridir."
+    }
+  },
+  {
+    "id": "2024_10",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Hangisi thalamus'ta yer alır?",
+    "secenekler": {
+      "A": "Substantia nigra",
+      "B": "Corpus mamillare",
+      "C": "Capsula interna",
+      "D": "Corpus geniculatum mediale",
+      "E": "Nucleus ruber"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Corpus geniculatum mediale (işitme yolu rölesi) ve laterale (görme yolu rölesi), talamusun arka alt kısmında yer alan metathalamus bileşenleridir.",
+      "celdiriciler": {
+        "A": "Substantia nigra mezensefalonun (orta beyin) pedunculus cerebri bölümünde bulunur.",
+        "B": "Corpus mamillare hipotalamusun tabanında yer alan bir limbik çekirdektir.",
+        "C": "Capsula interna beyaz cevher projeksiyon lif yoludur, talamusun kendisi değildir.",
+        "E": "Nucleus ruber mezensefalon tegmentumunda yer alır."
+      },
+      "konuAnlatimi": "Talamusun posteriorunda bulunan pulvinar'ın altında yer alan kabartılar metathalamus olarak adlandırılır. Corpus geniculatum laterale (CGL) görme yollarının, Corpus geniculatum mediale (CGM) ise işitme yollarının talamik röle merkezidir."
+    }
+  },
+  {
+    "id": "2024_11",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Medulla oblongata'da yer alan oluşumu işaretleyiniz.",
+    "secenekler": {
+      "A": "Brachium colliculus medius",
+      "B": "Substantia perforata posterior",
+      "C": "Velum medullare superius",
+      "D": "Corpus restiforme",
+      "E": "Recessus opticus"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Corpus restiforme, medulla oblongata'yı serebelluma bağlayan pedunculus cerebellaris inferior'un ana gövdesini oluşturan anatomik yapıdır.",
+      "celdiriciler": {
+        "A": "Brachium colliculi medius (inferior), mezensefalon ile corpus geniculatum mediale arasında yer alır.",
+        "B": "Substantia perforata posterior, mezensefalonun fossa interpeduncularis tabanında yer alır.",
+        "C": "Velum medullare superius, 4. ventrikül tavanında pons-mezensefalon düzeyinde uzanır.",
+        "E": "Recessus opticus, diensefalonda 3. ventrikülün ön duvarında chiasma opticum üzerinde bulunur."
+      },
+      "konuAnlatimi": "Pedunculus cerebellaris inferior iki ana kısımdan oluşur: Kalın lateral parça corpus restiforme (spinoserebellar ve olivoserebellar lifler) ve medial parça corpus juxtarestiforme (vestibuloserebellar lifler). Her ikisi de bulbus (medulla oblongata) düzeyinde serebelluma giriş yapar."
+    }
+  },
+  {
+    "id": "2024_12",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Neocerebellum'a ait olan oluşumu işaretleyiniz.",
+    "secenekler": {
+      "A": "Lobus posterior",
+      "B": "Lingula",
+      "C": "Pyramis",
+      "D": "Nucleus fastigii",
+      "E": "Uvula"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Neocerebellum (pontocerebellum), filogenetik olarak en genç serebellar bölümdür ve büyük ölçüde lobus posterior serebelli'nin hemisferik kısımlarını kapsar.",
+      "celdiriciler": {
+        "B": "Lingula cerebelli, lobus anterior'un parçası olup paleocerebellum'a aittir.",
+        "C": "Pyramis vermis, paleocerebellum (spinocerebellum) bölümüne aittir.",
+        "D": "Nucleus fastigii, en ilkel serebellar çekirdek olup archicerebellum (vestibulocerebellum) ile bağlantılıdır.",
+        "E": "Uvula vermis, spinocerebellum/paleocerebellum bölümünde yer alır."
+      },
+      "konuAnlatimi": "Serebellum filogenetik olarak üçe ayrılır: Archicerebellum (vestibulocerebellum, lobus flocculonodularis ve nuc. fastigii - denge), Paleocerebellum (spinocerebellum, vermis/paravermis ve nuc. globosus/emboliformis - kas tonusu) ve Neocerebellum (pontocerebellum, lobus posterior hemisferleri ve nuc. dentatus - ince motor koordinasyon)."
+    }
+  },
+  {
+    "id": "2024_13",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Nucleus tractus solitarius'un lifler aldığı oluşumu işaretleyiniz.",
+    "secenekler": {
+      "A": "Nervus opticus",
+      "B": "Nervus olfactorius",
+      "C": "Nervus maxillaris",
+      "D": "Nervus accessorius",
+      "E": "Nervus vagus"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Nucleus tractus solitarius (NTS), kranial sinirlerden (CN VII, IX, X) tat duyusu (SVA) ve torakoabdominal visseral afferent (GVA) duyuları alır; n. vagus bu çekirdeğin en geniş afferent kaynağıdır.",
+      "celdiriciler": {
+        "A": "Nervus opticus görme duyusunu corpus geniculatum laterale'ye taşır, NTS ile bağlantısı yoktur.",
+        "B": "Nervus olfactorius koku duyusunu doğrudan telensefalik koku merkezlerine iletir.",
+        "C": "Nervus maxillaris genel somatik duyuları nucleus sensorius principalis ve spinalis n. trigemini'ye taşır.",
+        "D": "Nervus accessorius somatomotor lif taşır ve duyusal çekirdeği yoktur."
+      },
+      "konuAnlatimi": "Nucleus tractus solitarii (NTS), beyin sapının ana visseral duyu merkezidir. Rostral bölümü tat duyusunu (CN VII chorda tympani, CN IX, CN X vallekula), kaudal bölümü ise kardiyovasküler, respiratuar ve gastrointestinal visseral afferentleri (CN IX sinus caroticus, CN X vagal afferentler) toplar."
+    }
+  },
+  {
+    "id": "2024_14",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Hangisi Medulla oblongata iç yapısında görülen oluşumlardandır?",
+    "secenekler": {
+      "A": "Nucleus ruber",
+      "B": "Nucleus cuneatus",
+      "C": "Sulcus cruciatus",
+      "D": "Ganglion ciliare",
+      "E": "Corpus pineale"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Nucleus cuneatus, medulla oblongata'nın arka yüzünde alt seviyede tuberculum cuneatum altında yer alır ve fasciculus cuneatus liflerinin sonlandığı 2. sıra nöron çekirdeğidir.",
+      "celdiriciler": {
+        "A": "Nucleus ruber, mezensefalon tegmentumunda yerleşiktir.",
+        "C": "Sulcus cruciatus serebral kortekste yer alan bir sulkustur.",
+        "D": "Ganglion ciliare, orbita içerisinde yer alan periferik bir parasempatik gangliyondur.",
+        "E": "Corpus pineale, diensefalonun epitalamus bölümünde bulunur."
+      },
+      "konuAnlatimi": "Medulla oblongata kesitlerinde alt seviyede görülen en karakteristik çekirdekler nucleus gracilis ve nucleus cuneatus'tur. Buradan başlayan ikinci nöron aksonları fibrae arcuatae internae adıyla çaprazlaşarak decussatio lemnisci medialis'i oluşturur ve lemniscus medialis olarak yükselir."
+    }
+  },
+  {
+    "id": "2024_15",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Baş bölgesinin ağrı-ısı duyusunu taşıyan çekirdeği işaretleyiniz.",
+    "secenekler": {
+      "A": "Nuc. tractus spinalis n. trigemini",
+      "B": "Nuc. mesencephalicus n. trigemini",
+      "C": "Nuc. motorius n. trigemini",
+      "D": "Nuc. sensorius principalis n. trigemini",
+      "E": "Nuc. lemniscus lateralis"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Yüz ve kafa bölgesinden gelen ağrı ve ısı duyusu lifleri bulbus boyunca medulla spinalis üst servikal segmentlerine kadar uzanan nucleus tractus spinalis n. trigemini'de sonlanır.",
+      "celdiriciler": {
+        "B": "Nuc. mesencephalicus n. trigemini, çiğneme kasları ve periodonsiyumdan gelen proprioseptif duyuları alır.",
+        "C": "Nuc. motorius n. trigemini, çiğneme kaslarını innerve eden motor çekirdektir.",
+        "D": "Nuc. sensorius principalis n. trigemini, yüz bölgesinin diskriminatif dokunma ve basınç duyusunu alır.",
+        "E": "Nuc. lemnisci lateralis, işitme yoluna ait bir beyin sapı ara çekirdeğidir."
+      },
+      "konuAnlatimi": "Trigeminal sinir duyusal çekirdekleri fonksiyonel olarak üçe ayrılır: Ağrı-ısı = Nucleus tractus spinalis n. trigemini (medulla spinalis lamina II ile devamlıdır); Diskriminatif dokunma = Nucleus principalis (pontinus); Bilinçsiz propriosepsiyon = Nucleus mesencephalicus (1. nöron gövdeleri santral sinir sisteminde yer alan tek duyusal çekirdek)."
+    }
+  },
+  {
+    "id": "2024_16",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Fasciculus longitudinalis medialis'in başlangıç liflerini işaretleyiniz.",
+    "secenekler": {
+      "A": "Nucleus motorius n. oculomotorius",
+      "B": "N. abducens",
+      "C": "Nucleus interstitialis",
+      "D": "Nuc. n. facialis",
+      "E": "Ganglion geniculi"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Fasciculus longitudinalis medialis (FLM), mezensefalon üst seviyesinde yer alan Nucleus interstitialis (Cajal çekirdeği) ile vestibüler çekirdeklerden başlar ve ekstraoküler kas çekirdekleri ile boyun motor nöronlarını koordine eder.",
+      "celdiriciler": {
+        "A": "Nucleus motorius n. oculomotorius FLM'nin hedef çekirdeklerinden biridir, yolun ana başlangıç liflerini oluşturmaz.",
+        "B": "N. abducens FLM lifleriyle n. oculomotorius'a bağlanarak konjuge yatay bakışı sağlar ancak yolun kaynağı değildir.",
+        "D": "Nuc. n. facialis mimik kasları innerve eder ve FLM'nin ana başlangıç kaynağı değildir.",
+        "E": "Ganglion geniculi n. facialis'e ait duyusal bir periferik gangliyondur."
+      },
+      "konuAnlatimi": "Fasciculus longitudinalis medialis (FLM), horizontal ve vertikal konjuge göz hareketleri ile baş-boyun hareketlerinin koordinasyonunu sağlar. Özellikle CN III, IV, VI ve vestibüler çekirdekler arasındaki senkronizasyonu yönetir; hasarında internükleer oftalmopleji (İNO) ortaya çıkar."
+    }
+  },
+  {
+    "id": "2024_17",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Bilinç ve dikkatin yönelmesi, uykudan uyanma gibi fonksiyonlarda rol alan yapıyı işaretleyiniz.",
+    "secenekler": {
+      "A": "Nucleus fastigii",
+      "B": "Nuc. gigantocellularis",
+      "C": "Nuc. dentatus",
+      "D": "Nuc. olivarius",
+      "E": "Nuc. ruber"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Nucleus gigantocellularis, formatio reticularis'in mediyal sütununda yer alır ve asendan retiküler aktive edici sistemin (ARAS) temel bir parçası olarak uyanıklık, bilinç ve kortikal uyarılmada rol oynar.",
+      "celdiriciler": {
+        "A": "Nucleus fastigii serebellumun archicerebellum/vestibulocerebellum bölümüne ait olup denge ile ilgilidir.",
+        "C": "Nucleus dentatus serebellumun neoserebellar çekirdeğidir ve motor hareketlerin planlanması ile ilişkilidir.",
+        "D": "Nucleus olivarius inferior, serebelluma tırmanıcı lifler gönderen motor öğrenme yapısıdır.",
+        "E": "Nucleus ruber rubrospinal yolun köken aldığı fleksör tonus kontrol merkezidir."
+      },
+      "konuAnlatimi": "Formatio reticularis; uyanıklık, bilinç durumu ve dikkat regülasyonunda temel merkezdir. Medial zondaki nükleus gigantocellularis ve asendan retiküler aktive edici sistem (ARAS) lifleri, serebral korteksi aktive ederek uyanıklık durumunu devam ettirir."
+    }
+  },
+  {
+    "id": "2024_18",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Parasempatik lif içermeyen kafa çiftini işaretleyiniz.",
+    "secenekler": {
+      "A": "N. vestibulocochlearis",
+      "B": "N. facialis",
+      "C": "N. oculomotorius",
+      "D": "N. glossopharyngeus",
+      "E": "N. vagus"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "N. vestibulocochlearis (CN VIII) saf özel somatik afferent (işitme ve denge) bir kranial sinirdir; herhangi bir parasempatik/otonomik lif taşımaz.",
+      "celdiriciler": {
+        "B": "N. facialis (CN VII) nucleus salivatorius superior'dan çıkan parasempatik lifleri ganglion pterygopalatinum ve submandibulare'ye taşır.",
+        "C": "N. oculomotorius (CN III) nucleus Edinger-Westphal'den kaynaklanan parasempatik lifleri ganglion ciliare'ye iletir.",
+        "D": "N. glossopharyngeus (CN IX) nucleus salivatorius inferior kaynaklı parasempatik lifleri ganglion oticum'a taşır.",
+        "E": "N. vagus (CN X) nucleus dorsalis nervi vagi'den başlayan geniş torakoabdominal parasempatik lifleri içerir."
+      },
+      "konuAnlatimi": "Kranial parasempatik çıkış (kraniyal otonom sistem) sadece 4 kranial sinir tarafından taşınır: CN III (n. oculomotorius), CN VII (n. facialis), CN IX (n. glossopharyngeus) ve CN X (n. vagus) (akılda tutma formülü: 1973)."
+    }
+  },
+  {
+    "id": "2024_19",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Limbik loba ait olmayan yapıyı işaretleyiniz.",
+    "secenekler": {
+      "A": "Gyrus parahippocampalis",
+      "B": "Lobus parietalis superior",
+      "C": "Gyrus dentatus",
+      "D": "Hippocampus",
+      "E": "Isthmus gyri cinguli"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Lobus parietalis superior (somatosensoriyel assosiasyon alanı), parietal lobun dorsal konveksitesinde yer alır ve Broca'nın tanımladığı lobus limbicus yapıları arasında bulunmaz.",
+      "celdiriciler": {
+        "A": "Gyrus parahippocampalis limbik lobun inferior kenarını oluşturan temel bileşenlerdendir.",
+        "C": "Gyrus dentatus hipokampal formasyonun parçası olup limbik sisteme dahildir.",
+        "D": "Hippocampus limbik sistem ve hafıza devrelerinin ana merkezidir.",
+        "E": "Isthmus gyri cinguli, gyrus cinguli ile gyrus parahippocampalis'i birbirine bağlayan limbik lob yapısıdır."
+      },
+      "konuAnlatimi": "Lobus limbicus; gyrus cinguli, isthmus gyri cinguli, gyrus parahippocampalis, uncus ve formatio hippocampalis'in (hippocampus, gyrus dentatus, subiculum) oluşturduğu halkasal kortikal yapıdır. Emosyon, motivasyon ve uzun süreli bellek oluşumunda anahtar rol oynar."
+    }
+  },
+  {
+    "id": "2024_20",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Konuşmanın duyu sahasını işaretleyiniz.",
+    "secenekler": {
+      "A": "Gyrus temporalis inferior (Brodman 7., 8. Sahalar)",
+      "B": "Gyrus temporalis superior arka kısımları (Brodman 22., 39., ve 40. Sahalar)",
+      "C": "Gyrus frontalis inferior (Brodman 44-45. sahalar)",
+      "D": "Lobus centralis üst kısmı (Brodman 42. saha)",
+      "E": "Gyrus postcentralis (Brodman 3., 1., 2.)"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Duyusal konuşma alanı (Wernicke alanı), baskın hemisferde gyrus temporalis superior'un arka kısmı (Brodmann 22) ile komşu parietal lob alanlarını (gyrus angularis - 39 ve gyrus supramarginalis - 40) kapsar.",
+      "celdiriciler": {
+        "A": "Gyrus temporalis inferior ileri görsel işleme ve nesne tanıma ile ilişkilidir, konuşma duyu alanı değildir.",
+        "C": "Gyrus frontalis inferior (pars opercularis ve triangularis, Brodmann 44-45) motor konuşma alanı olan Broca alanıdır.",
+        "D": "Brodmann 42 sekonder işitme korteksidir.",
+        "E": "Gyrus postcentralis (Brodmann 3, 1, 2) primer somatosensöriyel kortekstir."
+      },
+      "konuAnlatimi": "Lisan işlevinde duyusal konuşma alanı Wernicke (Brodmann 22), motor konuşma alanı ise Broca (Brodmann 44, 45) alanıdır. Bu iki alan birbirine fasciculus arcuatus ile bağlanır; bu yolağın hasarında iletim tipi afazi gelişir."
+    }
+  },
+  {
+    "id": "2024_21",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Sinus cavernosus ile ilgili aşağıda verilen ifadelerden hangisi veya hangileri doğrudur?\nI. Foramen lacerum, iç yüzden önemli komşuluklarından birini oluşturur.\nII. V. facialis enfeksiyonları sinus cavernosus'a yayılabilir.\nIII. A. carotis externa, sinus cavernosus'ta bulunan ve derinde yerleşen oluşumlardandır.\nIV. N. trigeminus'un ilk 2 dalı (CN V) sinus cavernosus'ta bulunur.",
+    "secenekler": {
+      "A": "I, II ve III",
+      "B": "I, III",
+      "C": "II, III",
+      "D": "I, II ve IV",
+      "E": "III ve IV"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Sinus cavernosus tabanında foramen lacerum ile komşudur; v. facialis ile v. ophthalmica superior ve pleksus pterygoideus bağlantıları yüz enfeksiyonlarının (tehlikeli üçgen) sinüse yayılmasına yol açar; lateral duvarında CN III, IV ve CN V'in ilk iki dalı (V1 ve V2) bulunur (öncüller I, II ve IV doğrudur).",
+      "celdiriciler": {
+        "A": "III. öncül yanlıştır; sinüsün içinden geçen arter a. carotis externa değil, a. carotis interna'dır.",
+        "B": "II ve IV. öncüller doğru olmasına rağmen bu seçenekte yer almamaktadır; ayrıca III. öncül yanlıştır.",
+        "C": "III. öncül yanlıştır (a. carotis interna geçer), I ve IV. öncüller ise doğrudur.",
+        "E": "III. öncül hatalıdır, sinus cavernosus içerisinden a. carotis interna ve n. abducens geçer."
+      },
+      "konuAnlatimi": "Sinus cavernosus'un içinden a. carotis interna ve n. abducens (CN VI) geçer. Lateral duvarında ise yukarıdan aşağıya doğru n. oculomotorius (CN III), n. trochlearis (CN IV), n. ophthalmicus (V1) ve n. maxillaris (V2) uzanır. V. angularis ve v. ophthalmica superior aracılığıyla yüzün tehlikeli üçgeninden enfeksiyon alabilir."
+    }
+  },
+  {
+    "id": "2024_22",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Organ, bez ve damarlardan ağrı, basınç, gerilme açlık, susuzluk, bulantı ve kan basıncı gibi duyuları taşıyan lif grubu aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Genel visseral afferent (GVA)",
+      "B": "Özel somatik afferent (SSA)",
+      "C": "Genel somatik afferent (GSA)",
+      "D": "Özel visseral efferent (SVE)",
+      "E": "Özel visseral afferent (SVA)"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "İç organlar, bezler ve kan damarlarından kaynaklanan gerilme, iskemi, kimyasal değişimler ve otonomik duyuları merkezi sinir sistemine taşıyan lifler genel visseral afferent (GVA) liflerdir.",
+      "celdiriciler": {
+        "B": "Özel somatik afferent (SSA) lifler görme ve işitme/denge duyularını taşır.",
+        "C": "Genel somatik afferent (GSA) lifler deri, kas, eklem ve bağ dokudan dokunma, ağrı, ısı ve propriosepsiyon duyularını taşır.",
+        "D": "Özel visseral efferent (SVE) lifler faringeal (brankiyal) arklardan gelişen çizgili kasları innerve eden motor liflerdir.",
+        "E": "Özel visseral afferent (SVA) lifler koku ve tat duyularını taşır."
+      },
+      "konuAnlatimi": "Fonksiyonel kranial sinir liflerinden GVA (Genel Visseral Afferent), iç organlar ile kardiyovasküler sistemden (kemoreseptör ve baroreseptörler) duyuları merkeze iletir ve n. vagus ile n. glossopharyngeus içinde yoğun olarak bulunup nucleus tractus solitarii'de sonlanır."
+    }
+  },
+  {
+    "id": "2024_23",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıda verilen yapılardan hangisi Duramater cranialis tarafından oluşturulan bir septum değildir?",
+    "secenekler": {
+      "A": "Falx cerebri",
+      "B": "Diaphragma sellae",
+      "C": "Tentorium cerebri",
+      "D": "Falx cerebelli",
+      "E": "Tentorium cerebelli"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Dura mater cranialis'in meningeal tabakasının katlanmasıyla oluşan yapılar arasında 'Tentorium cerebri' adında bir anatomik septum yoktur; serebellar hemisferleri oksipital loblardan ayıran yapı Tentorium cerebelli'dir.",
+      "celdiriciler": {
+        "A": "Falx cerebri iki serebral hemisfer arasına dikey olarak giren majör dural septumdur.",
+        "B": "Diaphragma sellae sella turcica'nın üzerini örten ve infundibulumun geçtiği dural bölmedir.",
+        "D": "Falx cerebelli serebellar hemisferler arasında yer alan dikey dural septumdur.",
+        "E": "Tentorium cerebelli serebrumun oksipital lobu ile serebellumu ayıran yatay dural yapıdır."
+      },
+      "konuAnlatimi": "Kranial dura mater'in 4 ana uzantısı (septumu) bulunur: Falx cerebri (serebral hemisferler arası), Tentorium cerebelli (oksipital lob ile serebellum arası), Falx cerebelli (serebellar hemisferler arası) ve Diaphragma sellae (hipofiz bezi üzeri)."
+    }
+  },
+  {
+    "id": "2024_24",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Villi arachnoidales aşağıdaki venöz sinüslerden hangisine dökülür?",
+    "secenekler": {
+      "A": "Sinus occipitalis",
+      "B": "Sinus sigmoideus",
+      "C": "Sinus sagittalis superior",
+      "D": "Sinus transversus",
+      "E": "Sinus marginalis"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Beyin-omurilik sıvısını (BOS) emerek venöz dolaşıma geri kazandıran villi arachnoidales (granulationes arachnoideae - Pacchioni cisimcikleri) ağırlıklı olarak sinus sagittalis superior ve çevresindeki lakünalarda yer alır.",
+      "celdiriciler": {
+        "A": "Sinus occipitalis falx cerebelli'nin tabanında uzanır ve majör BOS emilim bölgesi değildir.",
+        "B": "Sinus sigmoideus transvers sinüsün devamı olup juguler foramene yönelir.",
+        "D": "Sinus transversus tentorium cerebelli'nin periferik yapışma yerinde seyreder.",
+        "E": "Sinus marginalis foramen magnum çevresini saran venöz halkadır."
+      },
+      "konuAnlatimi": "BOS, pleksus koroiduslardan salgılandıktan sonra ventriküler sistemden geçerek foramen Luschka ve Magendie ile subaraknoid aralığa ulaşır. Buradan en yoğun olarak Sinus sagittalis superior lümenine açılan araknoid villuslar ve granülasyonlar vasıtasıyla venöz kana reabsorbe edilir."
+    }
+  },
+  {
+    "id": "2024_25",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıdakilerden hangisi gyrus frontalis inferior'da yer alır?",
+    "secenekler": {
+      "A": "Pars triangularis",
+      "B": "Precuneus",
+      "C": "Cuneus",
+      "D": "Uncus",
+      "E": "Insulae"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Gyrus frontalis inferior; ramus anterior ve ramus ascendens sulci lateralis tarafından pars orbitalis, pars triangularis ve pars opercularis olmak üzere üç alt bölüme ayrılır.",
+      "celdiriciler": {
+        "B": "Precuneus parietal lobun medial yüzünde yer alır.",
+        "C": "Cuneus oksipital lobun medial yüzünde, sulcus calcarinus ile sulcus parietooccipitalis arasında yer alır.",
+        "D": "Uncus temporal lobun medialinde, gyrus parahippocampalis'in ön ucunda bulunur.",
+        "E": "Insula sulcus lateralis'in derininde gömülü ayrı bir serebral lob yapısıdır."
+      },
+      "konuAnlatimi": "Gyrus frontalis inferior'un pars triangularis (Brodmann 45) ve pars opercularis (Brodmann 44) bölümleri, dominant hemisferde motor konuşma merkezi olan Broca alanını oluşturur."
+    }
+  },
+  {
+    "id": "2024_26",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıda yer alan yapılardan hangisi Cerebellum'un moleküler tabakasında (Stratum moleculare) yer almaz?",
+    "secenekler": {
+      "A": "Stellar ve sepet hücreleri",
+      "B": "Purkinje hücrelerinin dendritleri (sagital yönde)",
+      "C": "Granüler hücrelerin horizontal aksonları (folia boyunca)",
+      "D": "Tırmanıcı liflerin uçları (olivoserebellar lifler)",
+      "E": "Golgi hücreleri"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Golgi hücreleri (tip II), stratum moleculare'de değil, stratum granulosum (granüler tabaka) içerisinde yer alır ve granüler hücrelerle birlikte serebellar glomerulus yapısına katılır.",
+      "celdiriciler": {
+        "A": "Yıldız (stellar) ve sepet (basket) hücreleri moleküler tabakanın karakteristik ara nöronlarıdır.",
+        "B": "Purkinje hücre gövdeleri kendi tabakasında olsa da zengin dendritik ağaçları moleküler tabakaya uzanır.",
+        "C": "Granüler hücrelerin aksonları moleküler tabakaya çıkarak T şeklinde dallanır ve paralel lifleri (horizontal aksonlar) oluşturur.",
+        "D": "Oliva inferior kaynaklı tırmanıcı (climbing) lifler moleküler tabakada Purkinje dendritlerine sarılarak sonlanır."
+      },
+      "konuAnlatimi": "Cortex cerebelli dıştan içe üç tabakadan oluşur: Stratum moleculare (yıldız ve sepet hücreleri, paralel lifler, Purkinje dendritleri), Stratum purkinjense (Purkinje hücre gövdeleri) ve Stratum granulosum (granül hücreleri, Golgi hücreleri ve yosunsu liflerin oluşturduğu serebellar glomerulus)."
+    }
+  },
+  {
+    "id": "2024_27",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıdaki yollardan hangisi Cerebellum'un efferent yollarından biri değildir?",
+    "secenekler": {
+      "A": "Tr. Cerebellorubralis",
+      "B": "Tr. Cerebellothalamicus",
+      "C": "Tr. Cuneocerebellaris",
+      "D": "Tr. Cerebelloreticularis",
+      "E": "Tr. Cerebellovestibularis"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Tractus cuneocerebellaris, bulbus'taki nucleus cuneatus accessorius'tan başlayıp pedunculus cerebellaris inferior yoluyla serebelluma giren afferent (giriş) bir yoldur.",
+      "celdiriciler": {
+        "A": "Tr. cerebellorubralis, nucleus dentatus/interpositus'tan nucleus ruber'e giden efferent bir yoldur.",
+        "B": "Tr. cerebellothalamicus, serebellum derin çekirdeklerinden talamusa (VL/VA) giden temel efferent projeksiyondur.",
+        "D": "Tr. cerebelloreticularis, serebellar çekirdeklerden retiküler formasyona inen efferent liflerdir.",
+        "E": "Tr. cerebellovestibularis, nuc. fastigii ve Purkinje aksonlarının vestibüler çekirdeklere ulaştığı efferent yoldur."
+      },
+      "konuAnlatimi": "Serebellumun tüm efferent projeksiyonları (vestibüler çekirdeklere giden bazı doğrudan Purkinje lifleri hariç) derin serebellar çekirdeklerden (fastigii, globosus, emboliformis, dentatus) çıkar ve pedunculus cerebellaris superior ve inferior üzerinden beyin sapı ve talamusa yönelir. Cuneocerebellar ve spinocerebellar yollar ise saf afferent yollardır."
+    }
+  },
+  {
+    "id": "2024_28",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıdaki Thalamus çekirdeklerinden hangisi korteksin motor aktiviteleri üzerinde etkilidir?",
+    "secenekler": {
+      "A": "Nuc. ventralis posterolateralis (NVPL)",
+      "B": "Nuc. ventralis posteromedialis (NVPM)",
+      "C": "Nucleus dorsalis anterior (lateralis)",
+      "D": "Nucleus ventralis anterior",
+      "E": "Nucleus mediodorsalis"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Nucleus ventralis anterior (VA) ve Nucleus ventralis lateralis (VL), bazal ganglionlar ve serebellumdan gelen motor döngü liflerini alarak primer motor ve premotor kortekse aktaran temel motor röle çekirdekleridir.",
+      "celdiriciler": {
+        "A": "NVPL vücuttan gelen lemniscus medialis ve spinotalamik duyuların (dokunma, ağrı, ısı, propriosepsiyon) röle merkezidir.",
+        "B": "NVPM baş ve yüz bölgesinin trigeminal duyuları ile tat duyusunun röle çekirdeğidir.",
+        "C": "Nucleus anterior/lateralis dorsalis limbik devrelerin (Papez halkası) ve assosiasyon alanlarının bir parçasıdır.",
+        "E": "Nucleus mediodorsalis prefrontal korteks ile karşılıklı bağlantılı olup emosyon, kişilik ve bilişsel işlevlerle ilişkilidir."
+      },
+      "konuAnlatimi": "Talamusun motor çekirdekleri Nucleus ventralis anterior (VA) ve Nucleus ventralis lateralis (VL)'tir. VA esas olarak globus pallidus ve substantia nigra'dan, VL ise serebellumdan (nuc. dentatus) girdi alarak motor ve premotor kortekse projekte olur."
+    }
+  },
+  {
+    "id": "2024_29",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıdaki yollardan hangisi Hypothalamus'un efferent bağlantılarından biri değildir?",
+    "secenekler": {
+      "A": "Fasciculus mamillothalamicus",
+      "B": "Fasciculus mamillotegmentalis",
+      "C": "Fasciculus longitudinalis posterior",
+      "D": "Tractus hypothalamohypophysialis",
+      "E": "Retikulohipotalamik lifler"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Retikulohipotalamik lifler, beyin sapı retiküler formasyonundan hipotalamusa duyu ve uyarılma bilgisi getiren afferent (giriş) liflerdir; hipotalamusun efferent yolu değildir.",
+      "celdiriciler": {
+        "A": "Fasciculus mamillothalamicus (Vicq d'Azyr), corpus mamillare'den talamusun ön çekirdeğine giden majör efferent limbik yoldur.",
+        "B": "Fasciculus mamillotegmentalis, corpus mamillare'den mezensefalon tegmentumuna inen efferent yoldur.",
+        "C": "Fasciculus longitudinalis posterior (Schütz demeti), hipotalamustan otonomik beyin sapı çekirdeklerine inen efferent bir yoldur.",
+        "D": "Tractus hypothalamohypophysialis, supraoptik ve paraventriküler çekirdeklerden nörohipofize uzanan efferent akson demetidir."
+      },
+      "konuAnlatimi": "Corpus mamillare'den çıkan ana efferent demet Fasciculus mamillaris princeps'tir; bu demet Fasciculus mamillothalamicus (Papez devresi) ve Fasciculus mamillotegmentalis olarak ikiye ayrılır. Fasciculus longitudinalis dorsalis (posterior) ise hipotalamusun otonomik sistem üzerindeki en önemli inen yoludur."
+    }
+  },
+  {
+    "id": "2024_30",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Orta kulakta yer alan ve lezyonunda \"Hypoacusis\" meydana gelen sinir ve innerve ettiği kas hangi seçenekte doğru verilmiştir?",
+    "secenekler": {
+      "A": "N. facialis - M. tensor tympani",
+      "B": "N. pterygoideus medialis - M. pectoralis majör",
+      "C": "N. pterygoideus medialis - M. stapedius",
+      "D": "N. facialis - M. stapedius",
+      "E": "N. pterygoideus medialis - M. tensor tympani"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "M. tensor tympani membrana tympani'yi gererek ses iletimini düzenler ve N. mandibularis'in (V3) dalı olan N. pterygoideus medialis (n. tensoris tympani) tarafından innerve edilir; fonksiyon kaybında kulak zarının akustik empedans uyumu bozularak ses duyarlılığında azalma/hipoakuzi gelişir.",
+      "celdiriciler": {
+        "A": "M. tensor tympani n. facialis tarafından değil, n. trigeminus (V3) tarafından innerve edilir.",
+        "B": "M. pectoralis major toraks kası olup orta kulakla ilişkisizdir.",
+        "C": "M. stapedius n. pterygoideus medialis ile değil, n. facialis'in n. stapedius dalı ile uyarılır.",
+        "D": "N. facialis lezyonunda m. stapedius felci sonucu hipoakuzi değil, seslerin aşırı şiddetli algılandığı 'hiperakuzi' görülür."
+      },
+      "konuAnlatimi": "Orta kulak kaslarından M. tensor tympani (kemikçikleri çekerek zarı gerer) N. trigeminus (CN V3) tarafından, M. stapedius (stapes tabanını fenestra vestibuli'den uzaklaştırarak iç kulağı yüksek sesten korur) N. facialis (CN VII) tarafından innerve edilir. Stapedius felcinde hiperakuzi görülür."
+    }
+  },
+  {
+    "id": "2024_31",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıdaki yapılardan hangisi iç kulaktaki Cochlea'nın yapısında bulunmaz?",
+    "secenekler": {
+      "A": "Scala tympani",
+      "B": "Membrana basilaris",
+      "C": "Scala vestibuli",
+      "D": "Sacculus",
+      "E": "Membrana tectoria"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Sacculus, iç kulakta cochlea'nın içinde değil, vestibulum osseum içerisinde yer alan ve doğrusal (lineer/vertikal) ivmelenmeyi algılayan otolitik bir denge organıdır.",
+      "celdiriciler": {
+        "A": "Scala tympani, lamina spiralis ossea ve membrana basilaris'in altında uzanan ve perilenf içeren kohlear kanaldır.",
+        "B": "Membrana basilaris, scala tympani ile scala media'yı ayıran ve üzerinde Corti organını taşıyan kohlear yapıdır.",
+        "C": "Scala vestibuli, fenestra vestibuli'den başlayan ve perilenf içeren üst kohlear kompartımandır.",
+        "E": "Membrana tectoria, Corti organındaki tüy hücrelerinin silyalarının gömülü olduğu kohlea içi jelatinöz örtücü zardır."
+      },
+      "konuAnlatimi": "İç kulak; işitmeden sorumlu cochlea ile dengeden sorumlu vestibulum (utriculus, sacculus) ve canales semicirculares bölümlerinden oluşur. Cochlea kesitinde scala vestibuli, scala tympani ve ductus cochlearis (scala media) bulunur; Corti organı scala media içinde membrana basilaris üzerinde oturur."
+    }
+  },
+  {
+    "id": "2024_32",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Sol n. opticus'un tam kesisinde aşağıdaki görme yolu lezyonlarından hangisi görülür?",
+    "secenekler": {
+      "A": "Bitemporal heteronim hemianopsi",
+      "B": "Sol nazal hemianopsi",
+      "C": "Sol gözde tam körlük",
+      "D": "Sağ homonim hemianopsi",
+      "E": "Sağ homonim üst kadrantanopsi"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Chiasma opticum öncesinde yer alan n. opticus, ilgili gözün hem temporal hem de nazal retinalarından gelen tüm görme liflerini taşıdığından tam kesisinde o gözde tam monoküler körlük (anopsi) meydana gelir.",
+      "celdiriciler": {
+        "A": "Bitemporal heteronim hemianopsi, chiasma opticum'un tam ortadan (örneğin hipofiz adenomu ile) basıya uğraması sonucu nazal liflerin tutulumuyla gelişir.",
+        "B": "Sol nazal hemianopsi, sol chiasma opticum'un lateral kenarının (çapraz yapmayan ipsilateral temporal liflerin) basısında izlenir.",
+        "D": "Sağ homonim hemianopsi, sol tractus opticus veya sol radiatio optica'nın tam kesilerinde ortaya çıkar.",
+        "E": "Sağ homonim üst kadrantanopsi, sol temporal lobdaki Meyer halkası liflerinin hasarında görülür."
+      },
+      "konuAnlatimi": "Görme yollarında kiyazma öncesi tek taraflı n. opticus lezyonları ipsilateral tam monoküler körlük oluşturur. Kiyazma lezyonları bitemporal heteronim hemianopsi, kiyazma sonrası lezyonlar (tractus opticus, radiatio optica, primer görme korteksi) ise kontralateral homonim görme alanı defektleri üretir."
+    }
+  },
+  {
+    "id": "2024_33",
+    "yil": 2024,
+    "ders": "Anatomi",
+    "soruMetni": "Aşağıdaki arterlerden hangisi Willis poligonu'nun (Circulus arteriosus cerebri) yapısına katılmaz?",
+    "secenekler": {
+      "A": "A. communicans anterior",
+      "B": "A. cerebri anterior",
+      "C": "A. inferior anterior cerebelli",
+      "D": "A. communicans posterior",
+      "E": "A. cerebri posterior"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "A. inferior anterior cerebelli (AICA), a. basilaris'in beyin sapı seviyesinde serebelluma verdiği bir daldır ve Willis poligonunun halkasına doğrudan katılmaz.",
+      "celdiriciler": {
+        "A": "A. communicans anterior, sağ ve sol a. cerebri anterior'ları birleştirerek poligonun ön sınırını oluşturur.",
+        "B": "A. cerebri anterior (sağ ve sol), a. carotis interna'nın terminal dalı olarak poligonun anterolateral çatısını kurar.",
+        "D": "A. communicans posterior, karotid sistem ile vertebrobaziler sistemi birbirine bağlayan poligonun lateral köprüsüdür.",
+        "E": "A. cerebri posterior (sağ ve sol), a. basilaris'in uç dalları olup poligonun arka sınırını oluşturur."
+      },
+      "konuAnlatimi": "Willis poligonu (Circulus arteriosus cerebri); a. cerebri anterior (sağ-sol), a. communicans anterior, a. carotis interna (sağ-sol), a. communicans posterior (sağ-sol) ve a. cerebri posterior (sağ-sol) arterlerinden meydana gelir. Serebellar arterler (SCA, AICA, PICA) bu poligona dahil değildir."
+    }
+  },
+  {
+    "id": "2024_34",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Aşağıdaki ifadelerden hangisi/hangileri iç kulaktaki skala media için doğrudur?\nI. Kemik koklea içinde yerleşen membranöz bir kanaldır\nII. Ekstraselüler sıvıya benzeyen perilenf ile doludur\nIII. Lateral duvarında vasküler epitel ve bağ dokusundan oluşan stria vaskularis bulunur\nIV. Başın açısal ve doğrusal hareketlerine tepki veren nöroepitelyal alanlar içerirler\nV. Tavanını vestibüler membran, tabanını ise bazilar membran oluşturur",
+    "secenekler": {
+      "A": "Yalnız II",
+      "B": "II ve IV",
+      "C": "II, III ve IV",
+      "D": "Yalnız IV",
+      "E": "I, III ve V"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Skala media (ductus cochlearis); kemik kohlea içinde yer alan membranöz labirent parçasıdır (I), lateral duvarında endolenf salgılayan çok tabakalı vaskülarize epitel stria vascularis yer alır (III) ve tavanını Reissner (vestibüler) membranı, tabanını ise baziler membran sınırlandırır (V).",
+      "celdiriciler": {
+        "A": "II. öncül yanlıştır; skala media perilenf değil, intraselüler sıvıya benzeyen potasyumdan zengin endolenf içerir.",
+        "B": "II ve IV. öncüller yanlıştır; açısal hareketleri semisirküler kanallardaki kristalar, doğrusal hareketleri ise makulalar algılar (skala media işitme organı olan Corti'yi barındırır).",
+        "C": "II ve IV. öncüller hatalı biyolojik bilgiler içerir.",
+        "D": "IV. öncül vestibüler sisteme aittir, skala media işitsel nöroepitel (organum spirale) taşır."
+      },
+      "konuAnlatimi": "Ductus cochlearis (scala media) endolenf ile doludur ve iç kulaktaki tek vasküler epitel olan stria vascularis tarafından yüksek K+ iyonu sağlanır. Tabanındaki membrana basilaris üzerinde ses dalgalarını algılayan Corti organı bulunur."
+    }
+  },
+  {
+    "id": "2024_35",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Kulak gelişimi ile ilgili olarak hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Dış kulak yolu 1. faringeal yarıktan köken alır",
+      "B": "Timpanik kavite 1. faringeal kese endoderminden gelişir",
+      "C": "Koklear duktus otik vesikülün sakküler parçasından köken alır",
+      "D": "Otik vesikül hücreleri statoakustik ganglionun oluşumuna da katılır",
+      "E": "Kulak kemikçiklerinin hepsi 2. faringeal arkus kıkırdağından gelişir"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Kulak kemikçiklerinin hepsi 2. arkustan gelişmez; malleus ve incus 1. faringeal arkus kıkırdağından (Meckel kıkırdağı), stapes ise 2. faringeal arkus kıkırdağından (Reichert kıkırdağı) köken alır.",
+      "celdiriciler": {
+        "A": "Dış kulak yolu (meatus acusticus externus) 1. faringeal oluğun (yarığın) ektoderminden gelişir.",
+        "B": "Cavitas tympani ve tuba auditiva, 1. faringeal kesenin endoderminden (tubotimpanik girinti) farklılaşır.",
+        "C": "Ductus cochlearis, otik vezikülün ventral/sakküler kısmından tubular bir çıkıntı şeklinde gelişir.",
+        "D": "Otik vezikül epiteli ve nöral krest hücreleri birlikte statoakustik (CN VIII) gangliyonu oluştururlar."
+      },
+      "konuAnlatimi": "Orta kulak kemikçiklerinin embriyolojik kökeni: Malleus (çekiç) ve Incus (örs) 1. faringeal arkustan (Meckel kıkırdağı); Stapes (üzengi) ise 2. faringeal arkustan (Reichert kıkırdağı) gelişir. Stapes tabanı ise otik kapsülden derive olur."
+    }
+  },
+  {
+    "id": "2024_36",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Hangisi korneanın özelliklerinden birisi değildir?",
+    "secenekler": {
+      "A": "Fibröz dış tabakanın vasküler olmayan ön bölümüdür",
+      "B": "Ön yüzeyi epitel, arka yüzeyi ise endotel ile döşelidir",
+      "C": "Bol miktarda pigmentli ve miyoepitelyal hücreler içerir",
+      "D": "Stroma korneanın en kalın tabakasını oluşturur",
+      "E": "Epiteli yüzey ektoderminden stroması mezenşimden köken alır"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Kornea tamamen şeffaf ve avasküler bir dokudur; ışık geçirgenliğini engellememesi için pigmentli veya miyoepitelyal hücreler içermez (pigmentli ve miyoepitelyal hücreler iris ve siliyer cisimde bulunur).",
+      "celdiriciler": {
+        "A": "Kornea, tunica fibrosa bulbi'nin anterior 1/6'lık avasküler ve saydam kısmıdır.",
+        "B": "Ön yüzeyi çok katlı yassı non-keratinize epitel, arka yüzeyi ise tek katlı yassı endotel ile örtülüdür.",
+        "D": "Substantia propria (stroma), kornea kalınlığının yaklaşık %90'ını oluşturan en kalın tabakadır.",
+        "E": "Kornea epiteli yüzey ektoderminden, stroması ve endoteli ise nöral krest kökenli mezenşimden türer."
+      },
+      "konuAnlatimi": "Kornea dıştan içe 5 tabakadan oluşur: Ön epitel, Bowman zarı, Stroma (substantia propria - en kalın tabaka), Descemet zarı ve Arka endotel. Avasküler yapısı ve düzenli Tip I kollajen lamelleri saydamlığının ana nedenidir."
+    }
+  },
+  {
+    "id": "2024_37",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Aşağıdakilerden hangisi medulla spinalis'in histolojik özelliklerinden değildir?",
+    "secenekler": {
+      "A": "Enine kesitte, medulla spinalisin merkezinde, sinir hücrelerinden oluşmuş kelebek veya H şeklinde gri cevher bulunur.",
+      "B": "Medulla spinalis durası hem iç ve hem de dış yüzeyde tek tabaka halinde yassı epitelyal hücreler tarafından örtülüdür.",
+      "C": "Gri cevher anteriyor boynuzunda bulunan sinir hücreleri oldukça küçük olup, arka kökten giren afferent sinir lifleri ile sinaps yaparlar.",
+      "D": "Torakolumbar bölgede her iki yanda gri cevherden oluşan lateral boynuzlar yer alır.",
+      "E": "Beyaz cevher perikaryon ve dendritlerden yoksun olup, nörogliya ve kan damarları ile miyelinli ve miyelinsiz lifleri içerir."
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Cornu anterius'ta yer alan alfa ve gama motor nöronlar sinir sisteminin en büyük multipolar hücreleri arasındadır; bu hücreler arka kökten giren duyusal liflerin ilk sinaps yaptığı küçük duyusal nöronlar değildir.",
+      "celdiriciler": {
+        "A": "Medulla spinalis kesitinde merkezde canalis centralis'i çevreleyen kelebek biçiminde gri cevher, periferde ise beyaz cevher uzanır.",
+        "B": "Dura mater spinalis'in iç ve dış yüzleri menenjial mezenşimal orijinli tek katlı yassı hücrelerle kaplıdır.",
+        "D": "T1-L2 segmentlerinde sempatik pregangliyonik nöron gövdelerinin oluşturduğu cornu laterale bulunur.",
+        "E": "Beyaz cevher nöron gövdeleri (perikaryon) barındırmaz; miyelinli ve miyelinsiz aksonlar, astrositler, oligodendrositler ve mikroglia içerir."
+      },
+      "konuAnlatimi": "Medulla spinalis gri cevherinde cornu posterius duyusal ara nöronları, cornu anterius ise çizgili kaslara giden büyük multipolar alfa motor nöronları (somatomotor) içerir. Beyaz cevherde nöron gövdesi bulunmaz; inen ve çıkan traktus liflerinden oluşur."
+    }
+  },
+  {
+    "id": "2024_38",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Beyin (Serebrum) histolojisi ile ilgili yanlış olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Canlı halde dışta gri cevher içte beyaz cevher olmak üzere iki kısma sahiptir.",
+      "B": "Sinir hücrelerini, sinir liflerini, nörogliya ve kan damarlarını içeren beyin korteksinde yer alan hücreler 6 tabaka halinde düzenlenmiştir.",
+      "C": "Beyin korteksinin en büyük çaplı nöronları olan Betz'in dev piramidal hücreleri iç piramidal tabakada yer alır.",
+      "D": "Kortekste yer alan ters piramidal hücreler olan Martinotti hücrelerinin aksonları moleküler tabakaya uzanır.",
+      "E": "Bir hemisfere ait korteks bölgelerini karşıt diğer hemisferin korteks bölgelerine bağlayan liflere projeksiyon lifleri adı verilir."
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "İki karşıt hemisferin benzer kortikal alanlarını birbirine bağlayan liflere kommisural lifler (corpus callosum gibi) denir; projeksiyon lifleri ise serebral korteksi daha alt seviyedeki beyin sapı veya medulla spinalis merkezlerine bağlar.",
+      "celdiriciler": {
+        "A": "Serebrumda nöron gövdelerinin yer aldığı gri cevher dışta (korteks), miyelinli liflerin bulunduğu beyaz cevher içtedir.",
+        "B": "Neokorteks (izokorteks) tipik olarak 6 tabakalı laminasyon gösterir.",
+        "C": "Lamina pyramidalis interna (Tabaka V), tractus corticospinalis'i oluşturan dev Betz piramidal hücrelerini barındırır.",
+        "D": "Martinotti hücreleri ters piramidal morfolojide olup aksonlarını en dış tabakaya (stratum moleculare) doğru dikey gönderir."
+      },
+      "konuAnlatimi": "Beyin beyaz cevher lifleri üçe ayrılır: Assosiasyon lifleri (aynı hemisfer içi alanları bağlar), Kommisural lifler (karşı iki hemisferi birbirine bağlar, örn. Corpus callosum) ve Projeksiyon lifleri (korteks ile alt merkezleri birleştirir, örn. Capsula interna)."
+    }
+  },
+  {
+    "id": "2024_39",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Merkezi sinir sisteminin gelişiminde beyin veziküllerinden farklanan yapılar eşleştirilmiştir. Yanlış olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Telensefalon - Beyin hemisferleri",
+      "B": "Diensefalon - Epifiz, Talamus ve Hipotalamus",
+      "C": "Mezensefalon - Krus serebri, Superior ve Inferior kollikuluslar",
+      "D": "Miyelensefalon - Medulla oblongata",
+      "E": "Metensefalon - Medulla spinalis"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Metensefalon pons ve serebellumu oluşturur; medulla spinalis ise sekonder beyin veziküllerinden değil, nöral tüpün 4. somit kaudalinde kalan silindirik spinal bölümünden gelişir.",
+      "celdiriciler": {
+        "A": "Prosencephalon'dan türeyen telencephalon, serebral hemisferleri ve bazal ganglionları oluşturur.",
+        "B": "Diencephalon'dan talamus, hipotalamus, epifiz (pineal bez) ve optik veziküller gelişir.",
+        "C": "Mezensefalon crura cerebri, tegmentum ve tectum'u (colliculus superior ve inferior) oluşturur.",
+        "D": "Rhombencephalon'un kaudal parçası olan miyelensefalon medulla oblongata'ya (bulbus) dönüşür."
+      },
+      "konuAnlatimi": "Primer beyin vezikülleri 5 sekonder veziküle bölünür: Prosencephalon -> Telencephalon (serebral hemisferler) ve Diencephalon (talamus, hipotalamus); Mesencephalon -> Mesencephalon (orta beyin); Rhombencephalon -> Metencephalon (pons ve serebellum) ve Myelencephalon (bulbus). Kaudal nöral tüp ise medulla spinalis'i oluşturur."
+    }
+  },
+  {
+    "id": "2024_40",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Oogenez süreci ile ilgili olarak verilen seçeneklerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Oogonyumlar 2. haftada epiblastta oluşan ve 4. haftada yolk kesesine, 5. haftada da gonadlara göç eden primordiyal germ hücrelerinden köken alırlar.",
+      "B": "Oogonyumların olgun oositlere dönüşme süreci olan oogenez dişide pubertede başlar.",
+      "C": "Yeni doğan bir kız bebekte, primordiyal folliküller içerisindeki primer oositler OMI (oosit maturasyon inhibitörü) tarafından 1. mayoz bölünmenin diploten evresinde durdurulur.",
+      "D": "Birinci mayoz bölünme ovulasyondan hemen önce tamamlanır ve ovulasyonla atılan sekonder oosit 2. mayoz bölünmenin metafaz evresindedir.",
+      "E": "Oosit 2. mayoz bölünmesini ancak fertilizasyonla birlikte tamamlar ve oogenez süreci sonucunda tek bir olgun oosit oluşur."
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Dişide oogenez süreci pubertede değil, intrauterin (fetal) hayatın erken döneminde başlar; tüm oogonyumlar doğumdan önce mitoz bölünmelerini tamamlayıp primer oosit haline gelirler.",
+      "celdiriciler": {
+        "A": "Primordiyal germ hücreleri 2. haftada epiblasttan köken alıp vitellus kesesi duvarına ve ardından genital kabartılara göç eder.",
+        "C": "Primer oositler folikül epitelinden salgılanan OMI etkisiyle mayoz I profazının diploten (diktiyoten) evresinde puberteye kadar bekler.",
+        "D": "Her ay LH pikiyle mayoz I tamamlanır ve oluşan sekonder oosit mayoz II metafazında ovüle edilir.",
+        "E": "Mayoz II bölünmesi sadece sperm penetrasyonu (fertilizasyon) gerçekleştiğinde tamamlanır."
+      },
+      "konuAnlatimi": "Erkekte spermatogenez pubertede başlarken, kadında oogenez intrauterin hayatta başlar. Doğumda kız bebekte sadece mayoz I profazının diploten evresinde duraklamış primer oositler bulunur; mayoz II ise ancak döllenme anında tamamlanır."
+    }
+  },
+  {
+    "id": "2024_41",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Fertilizasyonla ilgili olarak aşağıdaki seçeneklerden yanlış olan hangisidir?",
+    "secenekler": {
+      "A": "Sperm dişi üreme kanallarına girmeden önce oositi fertilize edecek yeteneğe sahip değildir.",
+      "B": "Spermin oosit etrafındaki korona radiata hücrelerini aşması için kapasitasyon reaksiyonu geçirmiş olması gerekmektedir.",
+      "C": "Tuba uterinalarda gerçekleşen, spermin akrozomal kep bölgesinden seminal plazma proteinlerinin uzaklaştırıldığı ve spermin hiperaktivite kazandığı sürece akrozom reaksiyonu denir.",
+      "D": "Akrozomal enzimlerin salınmasıyla sperm zona pellucidayı delerek oositin plazma membranına temas eder.",
+      "E": "Sperm başının oosite temasıyla, oositin kortikal granüllerinden lizozomal enzimler salınması zona yüzeyindeki reseptörleri inaktive eder ve polispermi önlenir."
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Tuba uterina'da glikoprotein kılıfın ve seminal proteinlerin uzaklaştırılarak spermin hiperaktif hareketlilik kazandığı fizyolojik olgunlaşma sürecine 'akrozom reaksiyonu' değil, 'kapasitasyon' adı verilir.",
+      "celdiriciler": {
+        "A": "Ejaküle edilen sperm dişi genital yollarında kapasitasyon sürecini tamamlamadan oositi dölleme yeteneğine sahip değildir.",
+        "B": "Kapasitasyon geçirmemiş spermler corona radiata hücrelerini ve hücreler arası hyalüronik asit matriksini penetre edemez.",
+        "D": "Zona pellucida'daki ZP3 reseptörüne bağlanan sperm akrozom reaksiyonu geçirerek akrozin gibi litik enzimler salgılar ve zonayı deler.",
+        "E": "Sperm füzyonu sonrası gerçekleşen kortikal granül ekzositozu (zona reaksiyonu) ZP reseptörlerini inaktive ederek polispermiyi engeller."
+      },
+      "konuAnlatimi": "Kapasitasyon, dişi genital yolunda yaklaşık 7 saat süren, akrozomal kep üzerinden glikoproteinlerin temizlendiği ve motilitenin arttığı süreçtir. Akrozom reaksiyonu ise kapasite olmuş spermin zona pellucida'ya (ZP3) bağlanmasıyla tetiklenen litik enzim salınım olayıdır."
+    }
+  },
+  {
+    "id": "2024_42",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "İmplantasyon ile ilgili olarak aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Trofoblastların ve endometriyumun beraber gerçekleştirdiği bir süreçtir.",
+      "B": "İmplantasyondan önce oositin etrafındaki zona pellusida kaybolur.",
+      "C": "Uterus gövdesinin ön veya arka duvarı boyunca implante olan embriyo blastokist evresindedir.",
+      "D": "İmplantasyon sırasında uterus endometriyumu menstruel siklusun proliferatif evresindedir ve eş zamanlı olarak ovaryumda foliküller gelişmektedir.",
+      "E": "İmplantasyon, fertilizasyonu takiben 2. haftanın sonunda tamamlanır."
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "İmplantasyon sırasında endometriyum proliferatif değil, corpus luteum kaynaklı progesteron etkisi altındaki 'sekresyon (luteal)' evresindedir.",
+      "celdiriciler": {
+        "A": "İmplantasyon trofoblast hücreleri ile endometrial epitel arasındaki karşılıklı adezyon ve invazyon molekülleriyle gerçekleşir.",
+        "B": "Blastokistin endometriuma tutunabilmesi için zona pellucida'dan çıkması (hatching - çatlama) şarttır.",
+        "C": "İmplantasyon fertilizasyonun 6. gününde blastokist aşamasında başlar ve en sık fundus/korpus ön veya arka duvarına yerleşir.",
+        "E": "Gömülme süreci fertilizasyon sonrası 6. günde başlar ve yaklaşık 11-12. günlerde (2. haftanın sonuna doğru) tamamlanır."
+      },
+      "konuAnlatimi": "Blastokist fertilizasyonun yaklaşık 6. gününde zona pellucida'dan sıyrılarak (hatching) sekretuar fazdaki endometriyumun kompakt tabakasına tutunur. Trofoblastlar sitotrofoblast ve sinsityotrofoblast olarak ikiye ayrılarak dokuyu infiltre eder."
+    }
+  },
+  {
+    "id": "2024_43",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Gelişimin 2. haftasında aşağıdaki olaylardan hangisi gerçekleşmez?",
+    "secenekler": {
+      "A": "İç hücre kitlesi epiblast ve hipoblast tabakalarına farklanır.",
+      "B": "Trofoblastlar, içte sitotrofoblast ve dışta sinsityotrofoblast tabakalarına ayrılır.",
+      "C": "Amniyon boşluğu ve yolk kesesi oluşur.",
+      "D": "Koryonik villusların gelişimi tamamlanır.",
+      "E": "Bu haftanın sonunda implantasyon tamamlanır."
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "2. haftada sadece primer koryon villusları belirir; sekonder ve tersiyer koryonik villusların gelişimi ve tamamlanması 3. hafta ve sonrasında meydana gelir.",
+      "celdiriciler": {
+        "A": "Embriyoblast 2. haftada epiblast ve hipoblasttan oluşan iki tabakalı (bilaminar) embriyo diskine dönüşür.",
+        "B": "Trofoblast tabakası içte hücresel sitotrofoblast, dışta çok çekirdekli sinsityotrofoblast olarak ayrışır.",
+        "C": "Epiblast içinde amniyon boşluğu, hipoblast komşuluğunda ise primer/sekonder vitellus kesesi belirir.",
+        "E": "Endometrium epitelinin tamamen kapanmasıyla implantasyon süreci 2. haftanın sonunda (yaklaşık 12. günde) tamamlanır."
+      },
+      "konuAnlatimi": "Gelişimin 2. haftası 'ikiler haftası' olarak bilinir: Trofoblast ikiye ayrılır (sitotrofoblast ve sinsityotrofoblast), Embriyoblast ikiye ayrılır (epiblast ve hipoblast), iki boşluk oluşur (amniyon ve yolk kesesi) ve iki mezoderm tabakası belirir (somatik ve splanknik ekstraembriyonik mezoderm)."
+    }
+  },
+  {
+    "id": "2024_44",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Gelişimin 3. haftasında hangi olay gerçekleşmez?",
+    "secenekler": {
+      "A": "Epiblastın dorsal ve kaudal kısmında primitif çizgi oluşur",
+      "B": "Koryon ve amniyon kaviteleri oluşur.",
+      "C": "Epiblasttan ektoderm, endoderm ve mezoderm germ yaprakları farklanır",
+      "D": "Trofoblastın ileri farklanmasıyla sekonder ve tersiyer viluslar gelişir",
+      "E": "Notokord oluşur"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Koryon ve amniyon boşlukları 3. haftada değil, gelişimin 2. haftasında (bilaminar germ diski döneminde) oluşur.",
+      "celdiriciler": {
+        "A": "Primitif çizgi 3. haftanın başında epiblastın kaudal yüzeyinde beliren temel aks belirleyicisidir.",
+        "C": "Gastrulasyon süreci 3. haftada gerçekleşir ve epiblast hücrelerinin göçüyle üç germ yaprağı şekillenir.",
+        "D": "Ekstraembriyonik mezoderm ve fetal kapillerlerin villus içine girmesiyle sekonder ve tersiyer villuslar 3. haftada oluşur.",
+        "E": "Primitif düğümden göç eden hücrelerin oluşturduğu aksiyel iskelet indükleyicisi notokord 3. haftada meydana gelir."
+      },
+      "konuAnlatimi": "Gelişimin 3. haftası 'üçler haftası'dır: Tridermal germ diski oluşur (ektoderm, mezoderm, endoderm), primitif çizgi ve notokord gelişir ve koryonik villuslar tersiyer aşamaya ilerleyerek embriyonik kardiyovasküler sistem ile temas kurar."
+    }
+  },
+  {
+    "id": "2024_45",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Hangisi somitlerden gelişmektedir?",
+    "secenekler": {
+      "A": "Omurganın kıkırdak ve kemik yapıları",
+      "B": "Merkezi ve periferik sinir sistemi",
+      "C": "Kulak, göz, burun duyu epiteli",
+      "D": "Gastrointestinal sistem epiteli",
+      "E": "Epidermis"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Somitlerin sklerotom bölümü aksiyel iskeleti, yani vertebraları (omurga kemik ve kıkırdaklarını) ve kostaları oluşturur.",
+      "celdiriciler": {
+        "B": "Merkezi ve periferik sinir sistemi nöroektodermden (nöral tüp ve nöral krest) köken alır.",
+        "C": "Kulak, göz ve burun duyu epitel yapıları yüzeyel ektodermal plakodlardan gelişir.",
+        "D": "Gastrointestinal sistemin lümen epiteli endoderm germ yaprağından derive olur.",
+        "E": "Epidermis yüzey ektoderminden farklılaşır."
+      },
+      "konuAnlatimi": "Paraksiyel mezoderm kraniyokaudal yönde segmentlere ayrılarak somitleri oluşturur. Her somit üç alt birime ayrışır: Sklerotom (vertebra ve kostalar), Miyotom (çizgili kaslar) ve Dermatom (sırt dermisi)."
+    }
+  },
+  {
+    "id": "2024_46",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Dokular ve köken aldıkları germ yaprağı ile ilgili olarak aşağıda verilen seçeneklerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Sindirim sistemi epiteli - Endoderm",
+      "B": "Kranial sinir gangliyonları - Nöral Krest",
+      "C": "Somitler - İntermediyer mezoderm",
+      "D": "Kan hücreleri ve kan damarları - Lateral plak mezodermi",
+      "E": "Merkezi ve periferik sinir sistemi - Ektoderm"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Somitler intermediyer mezodermden değil, paraksiyel mezodermden gelişir; intermediyer mezodermden ise ürogenital sistem (böbrekler ve gonadlar) türer.",
+      "celdiriciler": {
+        "A": "Gastrointestinal kanalın epiteli ve ilişkili bez parankimleri endodermden kaynaklanır.",
+        "B": "Kranial ve spinal duyusal gangliyonlar nöral krest hücrelerinden farklılaşır.",
+        "D": "Kardiyovasküler sistem, kan hücreleri ve endotel lateral plak splanknik mezoderminden derive olur.",
+        "E": "Merkezi sinir sistemi nöral tüpten, periferik sinir sistemi ise nöral krestten (her ikisi de ektoderm) köken alır."
+      },
+      "konuAnlatimi": "Mezoderm intraembriyonik olarak üç bölüme ayrılır: Paraksiyel mezoderm (somitler; sklerotom, miyotom, dermatom), İntermediyer mezoderm (ürogenital sistem) ve Lateral plak mezodermi (somatik ve splanknik yapraklar; vücut duvarı, kardiyovasküler sistem, seröz zarlar)."
+    }
+  },
+  {
+    "id": "2024_47",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Primitif çizginin oluşmasıyla başlayan, epiblasttan ektoderm, endoderm ve mezoderm germ yapraklarının farklandığı sürece ne ad verilir?",
+    "secenekler": {
+      "A": "Gastrulasyon",
+      "B": "Somitogenez",
+      "C": "Nörulasyon",
+      "D": "Yarıklanma",
+      "E": "İndüksiyon"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Gastrulasyon, 3. haftada primitif çizginin belirmesiyle başlayan ve iki tabakalı embriyo diskinin üç germ yapraklı (trilaminar) embriyoya dönüştüğü morfogenetik süreçtir.",
+      "celdiriciler": {
+        "B": "Somitogenez, paraksiyel mezodermin somit bloklarına bölünme sürecidir.",
+        "C": "Nörulasyon, ektodermin nöral tüp ve nöral kresti oluşturma sürecidir.",
+        "D": "Yarıklanma (segmentasyon), zigotun morula ve blastokiste bölünme evresidir.",
+        "E": "İndüksiyon, bir dokunun diğer dokunun gelişimini sinyallerle yönlendirmesi mekanizmasıdır."
+      },
+      "konuAnlatimi": "Gastrulasyon gelişimin 3. haftasındaki en belirgin olaydır. Epiblast hücrelerinin primitif çizgi içine invajinasyonuyla hipoblastın yerini endoderm alır, araya intraembriyonik mezoderm yerleşir ve geride kalan epiblast ektodermi oluşturur."
+    }
+  },
+  {
+    "id": "2024_48",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Embriyoda nörulasyon süreci ile ilgili yanlış olan hangisidir?",
+    "secenekler": {
+      "A": "Gelişimin 2. haftasında gerçekleşen bir olaydır.",
+      "B": "Notokordun, üzerindeki ektodermi uyarması sonucu nöral plak şekillenir.",
+      "C": "Nöral plağın lateral kenarlarının yükselmesiyle oluşan nöral katlantıların kaynaşması servikal bölgede 5. somit hizasında başlar.",
+      "D": "Anteriyor ve posteriyor nöroporların sırasıyla 25 ve 27. günlerde kapanmasıyla nörulasyon tamamlanmış olur.",
+      "E": "Nöral katlantılar kaynaşırken nöroektodermin lateral sınırından alttaki mezoderme göç eden hücreler nöral krest adını alır."
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Nörulasyon süreci gelişimin 2. haftasında değil, notokord indüksiyonunu takiben 3. ve 4. haftalarda gerçekleşen bir olaydır.",
+      "celdiriciler": {
+        "B": "Notokord ve paraksiyel mezodermin salgıladığı morfogenler üzerindeki yüzey ektodermini indükleyerek nöral plağı oluşturur.",
+        "C": "Nöral tüpün kapanması ilk olarak 4-5. somitler (servikal bölge) düzeyinde başlar ve kraniyal/kaudal yönlere ilerler.",
+        "D": "Nöroporus anterior yaklaşık 25. günde, nöroporus posterior ise yaklaşık 27-28. günde kapanır.",
+        "E": "Nöral katlantıların tepesinden ayrışarak mezenşime göç eden multipotent hücre grubu nöral krest olarak adlandırılır."
+      },
+      "konuAnlatimi": "Nörulasyon, nöral plağın katlanarak nöral tüpü oluşturmasıdır. Kapanma 5. somit hizasından başlar; ön nöropor 25. günde, arka nöropor 27-28. günde kapanır. Kapanma kusurları anensefali ve spina bifida gibi nöral tüp defektlerine yol açar."
+    }
+  },
+  {
+    "id": "2024_49",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Plasenta ile ilgili olarak aşağıda verilen seçeneklerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Fötal kısmını koryon frondozum oluşturur.",
+      "B": "Maternal kısmını desidua bazalis oluşturur.",
+      "C": "Plasental bariyer (engel) 4. aydan sonra, fötal damarların endoteli ve sinsityumdan oluşur.",
+      "D": "İntervillöz boşluklardaki anne kanı ile villusların merkezinde bulunan damarlar içerisindeki kan karışmaktadır.",
+      "E": "Maternal plasentada yer alan desidual septumlar plasental kotiledonları oluşturur."
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "İnsan plasentası hemokoryal tiptedir; anne kanı ile fetal kan plasenta bariyeri sayesinde doğrudan birbirine karışmaz, madde alışverişi difüzyon ve aktif transport ile bariyer üzerinden yapılır.",
+      "celdiriciler": {
+        "A": "Fetal plasenta desidua bazalis'e bakan bölgedeki dallanmış villuslardan (chorion frondosum) meydana gelir.",
+        "B": "Maternal plasenta embriyonun implante olduğu endometrial stroma olan decidua basalis'tir.",
+        "C": "Gelişimin 4. ayından sonra sitotrofoblast ve bağ dokusu incelerek bariyer esas olarak fetal endotel ve sinsityotrofoblasttan oluşur.",
+        "E": "Desidua bazalis'ten intervillöz boşluğa uzanan desidual septumlar plasentayı 15-20 adet kotiledona ayırır."
+      },
+      "konuAnlatimi": "Plasenta bariyeri erken dönemde 4 katmandan oluşur: Sinsityotrofoblast, Sitotrofoblast (Langhans), Villus mezodermi ve Fetal kapiller endoteli. İlerleyen aylarda sitotrofoblast ve villöz stroma incelir, ancak fetal ve maternal kan asla direkt karışmaz."
+    }
+  },
+  {
+    "id": "2024_50",
+    "yil": 2024,
+    "ders": "Histoloji",
+    "soruMetni": "Embriyoda oluşan sefalokaudal (baş-kuyruk) ve lateral (yan) kıvrılma süreci ile ilgili olarak yanlış olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Embriyo 3. haftadan sonra kıvrılmaya başlar",
+      "B": "Beyin vesiküllerinin gelişimiyle sefalokaudal kıvrılma başlar",
+      "C": "Lateral kıvrılmalar sonucu ön ve yan vücut duvarları oluşur",
+      "D": "Allantois kısmen embriyo içine alınır",
+      "E": "Yolk kesesinin tamamı embriyo içine alınır"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Yolk kesesinin tamamı embriyo içine alınmaz; sadece dorsal kısmı embriyo içine çekilerek primitif bağırsak tüpünü (ön, orta, son bağırsak) oluşturur, geri kalan büyük kısmı ise duktus vitellinus aracılığıyla dışarıda kalır ve körelir.",
+      "celdiriciler": {
+        "A": "Embriyonik kıvrılma 4. haftanın başında belirginleşir (3. haftanın sonundan sonra başlar).",
+        "B": "Nöral tüpün ve özellikle beyin veziküllerinin hızlı boyutsal artışı kraniyokaudal kıvrılmayı tetikler.",
+        "C": "Somatoplevral lateral mezodermin ventral yönde kapanması ön ve lateral vücut duvarını şekillendirir.",
+        "D": "Allantoisin proksimal parçası embriyo içine katılarak kloaka ve ileride urakusu oluşturur."
+      },
+      "konuAnlatimi": "4. haftadaki sefalokaudal ve transvers (lateral) kıvrılmalar düz embriyonik diski silindirik bir C şekline sokar. Bu kıvrılma ile yolk kesesinin endodermal çatısı içeri alınarak ilkel sindirim kanalı oluşurken, ektoderm dış yüzeyi sarar."
+    }
+  },
+  {
+    "id": "2024_51",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Aşağıda merkezi sinir sistemine ait sinapslar bulunmaktadır. Buna göre doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "(b) sinapsında presinaptik nörondaki uyarı her zaman fasilite edilir",
+      "B": "(a) sinapsında postsinaptik nöronda her zaman depolarizan kayıt elde edilir",
+      "C": "(c) sinapsı her zaman inhibe edicidir",
+      "D": "(b) sinapsı aksoaksonal sinapsa örnektir",
+      "E": "Merkezi sinir sisteminde en fazla (a) şeklindeki sinapslar görülür"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Merkezi sinir sisteminde morfolojik olarak en yaygın görülen sinaps tipi aksodendritik sinapslardır (şekil a).",
+      "celdiriciler": {
+        "A": "(b) şeklindeki aksosomatik sinapslar salınan nörotransmittere göre eksitatör veya inhibitör olabilir, her zaman fasilite edici değildir.",
+        "B": "(a) aksodendritik sinapslarda nörotransmitter tipine bağlı olarak hiperpolarizasyon (IPSP) da oluşabilir.",
+        "C": "(c) aksoaksonal sinapslar presinaptik fasilitasyona da neden olabilir, her zaman inhibe edici olmak zorunda değildir.",
+        "D": "(b) sinapsı aksonun soma (hücre gövdesi) ile yaptığı aksosomatik sinapstır, aksoaksonal olan (c) sinapsıdır."
+      },
+      "konuAnlatimi": "Merkezi sinir sisteminde sinapslar temas ettikleri nöronal bölgeye göre aksodendritik, aksosomatik ve aksoaksonal olarak sınıflandırılır. Serebral ve serebellar korteksteki geniş dendritik ağaçlar nedeniyle en sık rastlanan sinaps türü aksodendritik sinapslardır."
+    }
+  },
+  {
+    "id": "2024_52",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Motor nöronda oluşan aksiyon potansiyelinin depolarizasyon aşamasından sorumlu voltaja duyarlı Na+ kanalları ile ilgili verilen bilgilerden yanlış olanı işaretleyiniz.\nI. İstirahatte inaktivasyon kapıları kapalıdır\nII. İstirahatte aktivasyon kapıları kapalıdır\nIII. Depolarizasyon sırasında aktivasyon kapısı açıktır\nIV. Depolarizasyon sırasında inaktivasyon kapısı açıktır",
+    "secenekler": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "II ve III",
+      "D": "III ve IV",
+      "E": "II, III ve IV"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "İstirahat membran potansiyelinde (-70 mV) voltaja duyarlı sodyum kanalının dış aktivasyon (m) kapısı kapalı, iç inaktivasyon (h) kapısı ise açıktır; bu nedenle I. öncül yanlıştır.",
+      "celdiriciler": {
+        "B": "II. öncül doğrudur; istirahatte sodyum iyonunun içeri akışını engelleyen aktivasyon kapısı kapalıdır.",
+        "C": "III. öncül doğrudur; eşik değere ulaşıldığında aktivasyon kapısı hızla açılır.",
+        "D": "IV. öncül doğrudur; depolarizasyonun başlangıcında her iki kapı da açık kalarak sodyum girişine izin verir.",
+        "E": "II, III ve IV. öncüller doğru fizyolojik durumları ifade eder."
+      },
+      "konuAnlatimi": "Voltaj kapılı hızlı Na+ kanallarının iki kapısı vardır: Aktivasyon (m) ve İnaktivasyon (h). İstirahatte m kapalı, h açıktır. Depolarizasyonda m kapısı açılır, h kapısı hâlâ açık olduğu için hücreye hızlı Na+ girişi olur. Tepe noktasında h kapısı kapanarak inaktivasyon periyodu başlar."
+    }
+  },
+  {
+    "id": "2024_53",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Presinaptik inhibisyon (Pİ) ve fasilitasyon (PF) ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Pİ, sinaptik iletinin daha hızlı olmasını sağlar",
+      "B": "Pİ, postsinaptik nöronda uyarılabilirliği artırır",
+      "C": "PF, presinaptik nöron akson sonlanmasında kalsiyum artışı ile gerçekleşir",
+      "D": "PF'da, presinaptik nöronda GABAerjik reseptör aktivitesi artar",
+      "E": "Pİ ve PF presinaptik nöronda nörotransmitter salınımını etkilemez"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Presinaptik fasilitasyonda (PF), presinaptik terminalde voltaj duyarlı kalsiyum kanallarının açık kalma süresi uzar; intraselüler Ca2+ birikimi vezikül ekzositozunu artırarak salınan iletici miktarını çoğaltır.",
+      "celdiriciler": {
+        "A": "Presinaptik inhibisyon iletiyi hızlandırmaz, terminalden salınan nörotransmitter miktarını azaltır.",
+        "B": "Pİ postsinaptik uyarılabilirliği artırmaz, aksine postsinaptik potansiyel amplitudesini düşürür.",
+        "D": "Presinaptik nöronda GABAerjik reseptör aktivitesi artışı fasilitasyona değil, klor akımıyla presinaptik inhibisyona yol açar.",
+        "E": "Pİ ve PF mekanizmalarının doğrudan temel hedefi presinaptik nörotransmitter salınım miktarını modüle etmektir."
+      },
+      "konuAnlatimi": "Presinaptik modülasyon aksoaksonal sinapslar aracılığıyla gerçekleşir. Presinaptik inhibisyonda GABA salınımıyla voltaj kapılı Ca2+ girişi azaltılarak nörotransmitter salınımı baskılanır; presinaptik fasilitasyonda ise aksiyon potansiyeli süresi uzatılarak kalsiyum girişi ve transmitter salınımı artırılır."
+    }
+  },
+  {
+    "id": "2024_54",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Merkezi sinir sisteminde sentezi ve salınımı diğer kimyasal ileticilerden farklı olan aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Asetilkolin",
+      "B": "GABA",
+      "C": "Glutamat",
+      "D": "P maddesi",
+      "E": "Dopamin"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "P maddesi (Substance P) nöropeptit yapıda bir ileticidir; diğer klasik küçük moleküllü nörotransmitterler presinaptik terminalde lokal sentezlenip küçük veziküllerde depolanırken, nöropeptitler soma düzeyindeki granüllü endoplazmik retikulum ve Golgi'de sentezlenip aksonal transport ile taşınır.",
+      "celdiriciler": {
+        "A": "Asetilkolin sitozolde kolin asetiltransferaz ile lokal sentezlenen klasik küçük moleküllü bir transmitterdir.",
+        "B": "GABA terminalde glutamattan glutamat dekarboksilaz enzimi ile sentezlenen amino asit türevi küçük moleküldür.",
+        "C": "Glutamat presinaptik uçta Krebs döngüsü ara ürünlerinden sentezlenen küçük moleküllü bir vericidir.",
+        "E": "Dopamin tirozin hidroksilaz yoluyla sinir ucunda sentezlenen bir katekolamindir."
+      },
+      "konuAnlatimi": "Nörotransmitterler küçük moleküllü ileticiler (Ach, aminler, amino asitler) ve nöropeptitler (Substance P, nöropeptit Y, endorfinler) olarak ayrılır. Nöropeptitler somada ribozomlarda sentezlenir, büyük yoğun korlu veziküllerde paketlenir, aksonal transportla uca taşınır ve geri alınım (reuptake) mekanizmaları bulunmaz."
+    }
+  },
+  {
+    "id": "2024_56",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Merkezi sinir sisteminde gaz yapıda olan ve veziküllerde depolanmadan sentezlendiği anda hücre dışına difüze olan nörotransmitter aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Glisin",
+      "B": "NO",
+      "C": "P maddesi",
+      "D": "Asetilkolin",
+      "E": "ATP"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Nitrik oksit (NO), veziküllerde depolanamayan, L-arjininden nitrik oksit sentaz (NOS) enzimiyle sentezlendiği anda hücre zarından lipid çift katmanı serbestçe aşarak komşu hücrelere retrograd difüze olan gaz yapılı ileticidir.",
+      "celdiriciler": {
+        "A": "Glisin amino asit yapısında olup sinaptik veziküllerde depolanır.",
+        "C": "P maddesi polipeptit yapılıdır ve granüllü veziküllerde tutulur.",
+        "D": "Asetilkolin veziküllerde depolanır ve ekzositozla salınır.",
+        "E": "ATP pürinerjik veziküllerde depolanan klasik bir ko-transmitterdir."
+      },
+      "konuAnlatimi": "Gaz nöromediatörler (NO ve CO) veziküllerde depolanmazlar, ekzositozla salınmazlar ve membran reseptörlerine bağlanmazlar. İhtiyaç halinde Ca-kalmodulin aracılı sentezlenirler, doğrudan hücre zarlarından difüze olarak hedef hücredeki çözünür guanilat siklazı (sGC) aktive ederler."
+    }
+  },
+  {
+    "id": "2024_57",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Merkezi sinir sistemi, trombositler, gastrointestinal sistem, düz kas gibi çeşitli doku-organlarda bulunan, antidepresan, LSD ve ekstazi gibi ilaçların hedefi olan nörotransmitter aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Glisin",
+      "B": "Histamin",
+      "C": "Asetilkolin",
+      "D": "Serotonin",
+      "E": "GABA"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Serotonin (5-HT); GIS enterokromaffin hücrelerinde, trombositlerde ve merkezi sinir sisteminde (özellikle rafe çekirdeklerinde) yoğun bulunur; SSRI antidepresanların, LSD'nin (5-HT2A agonisti) ve MDMA'nın birincil farmakolojik hedefidir.",
+      "celdiriciler": {
+        "A": "Glisin medulla spinalis ve beyin sapındaki temel inhibitör ileticidir, antidepresanların ve halusinojenlerin ana hedefi değildir.",
+        "B": "Histamin tüberomamiller çekirdekten köken alır ve alerjik reaksiyonlar ile uyanıklıkta rol oynar.",
+        "C": "Asetilkolin nöromusküler kavşak ve otonom sistem ileticisidir; LSD'nin hedefi değildir.",
+        "E": "GABA beyindeki temel inhibitör nörotransmitter olup sedatif-hipnotiklerin (benzodiazepinler, barbitüratlar) hedefidir."
+      },
+      "konuAnlatimi": "Triptofandan sentezlenen serotonin (5-hidroksitriptamin), vücuttaki toplam miktarının yaklaşık %90'ını gastrointestinal sistemde enterokromaffin hücrelerde barındırır. Santral sinir sisteminde ise duygudurum, uyku-uyanıklık siklusu, iştah ve ağrı modülasyonunda temel rol oynar."
+    }
+  },
+  {
+    "id": "2024_58",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Duyusal reseptörlerin adapte olma hızları en hızlıdan yavaşa şeklinde sıralandığında aşağıdakilerden hangisi doğru olur?",
+    "secenekler": {
+      "A": "Pacini - kas iğciği - kıl dibi reseptörleri",
+      "B": "Meissner - nosiseptörler - kıl dibi reseptörleri",
+      "C": "Nosiseptörler - golgi tendon - pacini",
+      "D": "Pacini - kıl dibi reseptörleri - nosiseptör",
+      "E": "Meissner - golgi tendon - kıl dibi reseptörleri"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Pacini cisimcikleri saniyenin kesirlerinde uyum sağlayan en hızlı adapte olan (fazik) mekanoreseptördür; kıl dibi reseptörleri hızlı adapte olur; ağrı reseptörleri olan nosiseptörler ise doku hasarı devam ettikçe uyarılmaya devam eden tonik (neredeyse hiç adapte olmayan/en yavaş) reseptörlerdir.",
+      "celdiriciler": {
+        "A": "Kas iğciği tonik (yavaş adapte olan) bir proprioseptördür, kıl dibinden daha hızlı adapte olamaz.",
+        "B": "Nosiseptörler en yavaş adapte olan gruptadır, kıl dibi reseptöründen önce yer alamaz.",
+        "C": "Sıralama yavaştan hızlıya doğru ters başlatılmıştır.",
+        "E": "Golgi tendon organı yavaş adapte olan bir reseptördür, hızlı adapte olan kıl dibi reseptöründen önce gelemez."
+      },
+      "konuAnlatimi": "Duyusal reseptörler adaptasyon hızlarına göre ikiye ayrılır: Hızlı adapte olan (fazik) reseptörler (Pacini cisimciği, Meissner cisimciği, kıl dibi reseptörleri) ve Yavaş/hiç adapte olmayan (tonik) reseptörler (Merkel diskleri, Ruffini sonlanmaları, nosiseptörler, kas iğciği ve kemoreseptörler)."
+    }
+  },
+  {
+    "id": "2024_59",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Nörojenik inflamasyon için verilen bilgilerden doğru olanı işaretleyiniz.\nI. Doku hasarlanması sonucu görülür\nII. Akson sonlanmasından P maddesi salınır\nIII. Histamin ağrı duyusunun azalmasına neden olur\nIV. CGRP vazodilatasyona neden olur",
+    "secenekler": {
+      "A": "I ve III",
+      "B": "II ve III",
+      "C": "I, II ve III",
+      "D": "II, III ve IV",
+      "E": "I, II ve IV"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Doku hasarı akson refleksiyle primer afferent nosiseptörlerden P maddesi ve CGRP (kalsitonin geni ile ilişkili peptit) salınımına yol açar; CGRP kuvvetli vazodilatasyon yapar (I, II ve IV doğrudur).",
+      "celdiriciler": {
+        "A": "III. öncül yanlıştır; mast hücrelerinden salınan histamin nosiseptörleri uyararak ağrı ve kaşıntıyı artırır.",
+        "B": "III. öncül yanlış olup histamin analjezik değil algojenik bir mediyatördür.",
+        "C": "III. öncülün yer aldığı seçenekler hatalıdır.",
+        "D": "III. öncül hatalı olduğu için seçenek elenir."
+      },
+      "konuAnlatimi": "Nörojenik inflamasyon, nosiseptif C liflerinin antidromik uyarılması sonucu sinir uçlarından periferik dokuya P maddesi ve CGRP salınmasıyla karakterizedir. P maddesi plazma ekstravazasyonuna ve mast hücrelerinden histamin salınımına, CGRP ise belirgin vazodilatasyona ve hiperaljeziye yol açar."
+    }
+  },
+  {
+    "id": "2024_60",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Ağrı duyusunun merkezi sinir sistemine iletimi ile ilgili yanlış ifadeyi işaretleyiniz.",
+    "secenekler": {
+      "A": "Ağrı lifleri arka kökten girdikten sonra bilgiyi ikinci sıra nörona aktarır",
+      "B": "Yavaş ağrı liflerinin çok az kısmı talamusa gider",
+      "C": "Yavaş ağrı iletiminde nörotransmitter glutamattır",
+      "D": "Hızlı ağrı yavaş ağrıya göre daha iyi lokalize edilir",
+      "E": "Yavaş ağrı C tipi lifler ile iletilir"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Hızlı-keskin ağrı iletiminde (A delta lifleri) temel hızlı etkili nörotransmitter glutamat iken, yavaş-kronik ağrıda (C tipi lifler) sinaptik uçtan salınan ana nöropeptit iletici P maddesidir.",
+      "celdiriciler": {
+        "A": "Primer duyusal ağrı lifleri medulla spinalis arka boynuzundaki 2. sıra nöronlarla sinaps yapar.",
+        "B": "Paleospinotalamik yol (yavaş ağrı) liflerinin büyük kısmı retiküler formasyon ve periakuaduktal gri cevherde sonlanır, talamusa sadece küçük bir kısmı ulaşır.",
+        "D": "A delta miyelinli lifleri ile taşınan neospinotalamik hızlı ağrı, somatotopik düzenleme sayesinde son derece hassas lokalize edilir.",
+        "E": "Yavaş, yanıcı ve künt ağrı miyelinsiz ince C lifleri tarafından iletilir."
+      },
+      "konuAnlatimi": "Ağrı duyusu ikiye ayrılır: Hızlı ağrı (A delta lifleri, nörotransmitter: glutamat, neospinotalamik traktus, talamus VPL çekirdeği) ve Yavaş ağrı (C lifleri, nörotransmitter: P maddesi, paleospinotalamik traktus, beyin sapı retiküler formasyon ve periakuaduktal gri cevher)."
+    }
+  },
+  {
+    "id": "2024_61",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Geri çekme refleksi ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.\nI. Reseptörü kas iğciğidir\nII. Uyaranın uygulandığı ekstremitede fleksiyon görülür\nIII. Uyaranın uygulandığı ekstremitede ekstansörler inhibe olur\nIV. Kontralateral ekstremite fleksörleri uyarılır",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "I ve IV",
+      "E": "III ve IV"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Geri çekme (fleksör) refleksinde nosiseptif uyarının geldiği ekstremitede fleksör kaslar kasılır (II) ve resiprokal inhibisyon ile aynı taraf ekstansör kasları gevşer/inhibe olur (III).",
+      "celdiriciler": {
+        "A": "I. öncül yanlıştır; refleksin reseptörü kas iğciği değil, derideki nosiseptörlerdir (ağrı reseptörleri).",
+        "B": "I. öncül fleksör refleks için hatalıdır (kas iğciği gerilme/miotatik refleks reseptörüdür).",
+        "D": "IV. öncül yanlıştır; çapraz ekstansör reflekste kontralateral ekstremitenin fleksörleri değil, vücut ağırlığını taşımak için ekstansörleri uyarılır.",
+        "E": "IV. öncülün yer aldığı seçenekler hatalı fizyolojik bilgi içerir."
+      },
+      "konuAnlatimi": "Geri çekme (fleksör çekme) refleksi polisinaptik bir koruma refleksidir. Ağrılı uyaran dermiste bulunan nosiseptörler tarafından algılanır; ipsilateral fleksörler kasılıp ekstansörler inhibe edilirken, çapraz ekstansör refleks arkı ile kontralateral tarafta ekstansör kaslar kasılarak gövde dengesi korunur."
+    }
+  },
+  {
+    "id": "2024_62",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Yapılacak olan hareketten milisaniyeler önce aktivite kaydedilen, vücut kaslarının bilateral temsili bulunan, kompleks, ardışık bilateral hareketlerin planlanmasından sorumlu merkezi sinir sistemi alanı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Premotor alan",
+      "B": "Suplemanter alan",
+      "C": "Primer motor korteks",
+      "D": "Somatoduyusal alan",
+      "E": "Limbik korteks"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Suplemanter motor alan (SMA), her iki vücut yarısının bilateral temsiline sahiptir, hareketin başlamasından önce aktifleşir ve karmaşık iki taraflı motor sekansların zihinsel provası ve planlanmasında birincil rol oynar.",
+      "celdiriciler": {
+        "A": "Premotor alan görsel veya duyusal ipuçlarına dayalı eksternal hareketlerin hazırlanmasında ve proksimal kas koordinasyonunda daha etkindir.",
+        "C": "Primer motor korteks (M1, Brodmann 4) hareketin bizzat icrasından ve tekil kas gruplarının ince kontrolünden sorumludur.",
+        "D": "Somatoduyusal alan (Brodmann 3, 1, 2) periferden gelen somatosensoriyel duyuların işlenmesini sağlar.",
+        "E": "Limbik korteks hareketin planlanmasından ziyade duygu, motivasyon ve bellek süreçleri ile ilgilidir."
+      },
+      "konuAnlatimi": "Suplemanter motor alan (SMA), frontal lobun medial yüzeyinde yer alır. Özellikle iki elin koordinasyonunu gerektiren karmaşık motor görevlerin planlanmasında, motor sekansların hafızadan geri çağrılmasında ve istemli hareketlerin zihinsel simülasyonunda temel göreve sahiptir."
+    }
+  },
+  {
+    "id": "2024_63",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Kortikospinal (KS) yollar ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Lateral KS yol, proksimal ekstansör kasları innerve eden alfa motor nöronlarda sinaps yapar",
+      "B": "Lateral KS yol servikal bölgede, en fazla alfa motor nöronlar ile sinaps yapan ara nöronları innerve eder",
+      "C": "Somatoduyusal korteksten inen yollar, dorsal kökte duyusal lifler ile inhibitör sinapslar yapar",
+      "D": "Rubrospinal yol, distal fleksör kasların alfa motor nöronlarını inhibe eder",
+      "E": "Ventral KS, distal fleksör kasların alfa motor nöronlarını innerve eder"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Somatoduyusal korteksten kaynaklanan inen lifler, arka boynuzdaki (dorsal kök girişindeki) duyusal ara nöronlar üzerinde presinaptik/postsinaptik inhibisyon oluşturarak kortekse ulaşan duyusal geri bildirimin filtrelenmesini (duyusal kapılama) sağlar.",
+      "celdiriciler": {
+        "A": "Lateral kortikospinal yol proksimal ekstansörleri değil, distal fleksör kasları kontrol eden motor nöronlarla ilişkilidir.",
+        "B": "Lateral KS yol primatlarda ve insanlarda el ve parmak becerisi için özellikle distal kaslara giden alfa motor nöronlarla doğrudan monosinaptik bağlantılar kurar.",
+        "D": "Rubrospinal yol fleksör kasların alfa motor nöronlarını inhibe etmez, bilakis fleksör tonusu eksite eder.",
+        "E": "Ventral (anterior) KS yol distal fleksörleri değil, aksiyel ve gövde/postür proksimal kaslarını kontrol eder."
+      },
+      "konuAnlatimi": "Kortikospinal sistemin lifleri sadece primer motor korteksten değil, yaklaşık %30 oranında somatosensoriyel korteksten de köken alır. Bu duyusal kökenli inen lifler medulla spinalis arka boynuzuna sonlanarak ağrı ve diğer somatosensoriyel girdilerin santral filtrasyonunu (afferent inhibisyon) düzenler."
+    }
+  },
+  {
+    "id": "2024_64",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Beyin sapından inen yollar ile ilgili eşleştirmelerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Tektospinal yolak - distal fleksör kasları inhibe eder",
+      "B": "Pontin retikülospinal yolak - ekstansör kasları eksite eder (uyarır)",
+      "C": "Medüller retiküler yolak - distal fleksörleri eksite eder",
+      "D": "Lateral vestibulospinal yolak - ekstansör kasları inhibe eder",
+      "E": "Mediyal vestibulospinal yolak - alt ekstremite fleksörlerini eksite eder"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Pontin retikülospinal yolak antigravite (ekstansör) kaslarını eksite ederek vücudun dik duruşunu ve postürünü destekler.",
+      "celdiriciler": {
+        "A": "Tektospinal yolak colliculus superior'dan başlar ve görme/işitme uyaranlarına karşı baş ve boyun refleks hareketlerini yönetir.",
+        "C": "Medüller retikülospinal yolak ekstansör kasları inhibe eden temel antagonist yolaktır.",
+        "D": "Lateral vestibulospinal yolak yerçekimine karşı koyan ipsilateral ekstansör kasları kuvvetle eksite eder.",
+        "E": "Mediyal vestibulospinal yolak servikal seviyede sonlanarak baş-boyun pozisyonunun dengesini koordine eder."
+      },
+      "konuAnlatimi": "Beyin sapı motor yollarından pontin retikülospinal yol ve lateral vestibulospinal yol, antigravite (postüral ekstansör) kasları eksite eder. Medüller retikülospinal yol ise pontin sistemin aksine ekstansör motor nöronları inhibe ederek dengeleyici bir antagonizma sağlar."
+    }
+  },
+  {
+    "id": "2024_65",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Serebellum ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Lateral serebellumda topografik harita bulunur",
+      "B": "Vermis aksiyal kasların kontrolünde mediyal motor sistem ile birlikte çalışır",
+      "C": "Ara bölge ventromediyal sistem ile birlikte çalışır",
+      "D": "Dorsal spinoserebellar yol ile alfa motor nöronları uyarır",
+      "E": "Ventral spinoserebellar yol ile vestibüler aygıttan ileti alır"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Vermis, gövde ve boyun gibi aksiyel kasların koordinasyonunu sağlamak için ventromedial inen motor sistemler (retikülospinal ve vestibulospinal yollar) ile iş birliği yapar.",
+      "celdiriciler": {
+        "A": "Serebellar kortekste somatotopik temsil vermis ve intermediyer zonda bulunur; serebellar hemisferlerin lateral zolarında belirgin topografik harita yoktur.",
+        "C": "Serebellar ara (intermediyer) bölge ventromediyal değil, lateral motor sistemle (kortikospinal ve rubrospinal yollar) birlikte çalışarak distal ekstremiteleri kontrol eder.",
+        "D": "Tractus spinocerebellaris posterior (dorsal) serebelluma kas iğciği ve Golgi tendon organından bilgi getiren afferent bir yoldur, motor nöron uyarmaz.",
+        "E": "Ventral spinoserebellar yol motor emir kopyalarını (efferent copy) omurilik ara nöronlarından serebelluma taşır; vestibüler aygıttan bilgi alan yol vestibuloserebellardır."
+      },
+      "konuAnlatimi": "Serebellum fonksiyonel olarak 3 longitudinal zona ayrılır: 1. Vermis (aksiyal kaslar ve postür kontrolü), 2. İntermediyer (paravermal) zon (distal ekstremite hareketlerinin düzeltilmesi), 3. Lateral zon (motor planlama, zamanlama ve motor öğrenme)."
+    }
+  },
+  {
+    "id": "2024_66",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Bazal gangliyonlar ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.\nI. Direkt yol talamustan kortekse giden uyarıları artırır\nII. İndirekt yol aktivitesi dopaminerjik aktivite ile inhibe olur\nIII. Direkt yol aktivitesi D1 reseptörleri ile azaltılır\nIV. Striatumdaki kolinerjik aktivitenin net etkisi baskılama yönündedir",
+    "secenekler": {
+      "A": "I ve III",
+      "B": "I, II, III",
+      "C": "I, II, IV",
+      "D": "II, III, IV",
+      "E": "I, III, IV"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Direkt yol talamik dezinhibisyon yaparak kortikal uyarılmayı artırır (I), substantia nigra'dan salınan dopamin D2 reseptörleri üzerinden indirekt yolu inhibe eder (II) ve asetilkolin direkt yolun aksine hareketi frenleyici/indirekt yolu destekleyici net baskılayıcı etki oluşturur (IV).",
+      "celdiriciler": {
+        "A": "III. öncül yanlıştır; striatumdaki D1 reseptörlerinin aktivasyonu direkt yolu uyarır/artırır.",
+        "B": "III. öncül yanlış olduğu için seçenek elenir.",
+        "D": "I. öncül doğru bir temel bilgidir ancak seçenekte yer almamaktadır.",
+        "E": "III. öncülü içeren tüm kombinasyonlar biyolojik olarak hatalıdır."
+      },
+      "konuAnlatimi": "Bazal ganglionlarda doğrudan yol (striatum -> GPi/SNr) talamus üzerindeki inhibitör tonusu kaldırarak hareketi başlatır ve D1 reseptörleri tarafından fasilite edilir. Dolaylı yol (striatum -> GPe -> STN -> GPi/SNr) ise talamusu inhibe ederek hareketi baskılar ve D2 reseptörleri tarafından inhibe edilir. Dopamin her iki yol üzerinden hareketi artırıcı yönde çalışır."
+    }
+  },
+  {
+    "id": "2024_67",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Otonom sinir sistemi ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Parasempatik pregangliyonik lifler miyelinsiz C tipi liflerdir",
+      "B": "Parasempatik pregangliyonik nörondan adrenalin salınır",
+      "C": "Sempatik pregangliyonik lifler B tip miyelinli liflerdir",
+      "D": "Sempatik pregangliyonik nörondan nöradrenalin salınır",
+      "E": "Parasempatik postgangliyonik nöronlardan dopamin salınır"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Tüm otonom sinir sisteminde (hem sempatik hem parasempatik) pregangliyonik lifler ince miyelinli B tipi liflerdir.",
+      "celdiriciler": {
+        "A": "Parasempatik pregangliyonik lifler miyelinsiz C lifleri değil, miyelinli B lifleridir; postgangliyonik otonom lifler miyelinsiz C lifleridir.",
+        "B": "Parasempatik pregangliyonik nörondan adrenalin değil, asetilkolin salınır.",
+        "D": "Sempatik pregangliyonik nörondan nöroadrenalin değil, asetilkolin salınır.",
+        "E": "Parasempatik postgangliyonik nöronlardan dopamin değil, hedef organdaki muskarinik reseptörleri uyaran asetilkolin salınır."
+      },
+      "konuAnlatimi": "Otonom sinir sisteminin temel kuralı olarak tüm pregangliyonik nöronlar (sempatik ve parasempatik) asetilkolin salgılar ve ince miyelinli B tipi lif yapısındadır. Postgangliyonik liflerin tamamı miyelinsiz C tipi lif olup parasempatiklerde asetilkolin, sempatiklerde ise (ter bezleri hariç) noradrenalin salınır."
+    }
+  },
+  {
+    "id": "2024_68",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Miksiyon ile ilgili doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Miksiyonda refleks olarak sempatik aktivite inhibe olur",
+      "B": "Mesane sadece alfa motor lifler ile innerve olur",
+      "C": "İstemli miksiyonda pudendal sinir uyarıları Barrington nükleusundan kaynaklanır",
+      "D": "Miksiyon sadece refleks olarak gerçekleşir",
+      "E": "Mesane detrusor kası beta1 reseptörlerinin uyarılması ile kasılır"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Miksiyon refleksi tetiklendiğinde parasempatik aktivite artarak detrusor kasını kasar; eş zamanlı olarak sempatik aktivite resiprokal biçimde inhibe edilerek mesane boynu ve internal sfinkter gevşetilir.",
+      "celdiriciler": {
+        "B": "Mesane sadece motor liflerle değil; parasempatik (pelvik sinir), sempatik (hipogastrik sinir) ve somatik (pudendal sinir) olmak üzere üçlü bir otonomik ve somatik innervasyona sahiptir.",
+        "C": "Barrington nükleusu (pontin miksiyon merkezi) pelvik parasempatikleri aktive eder; istemli pudendal sfinkter kontrolü serebral korteksten kaynaklanır.",
+        "D": "Miksiyon sadece bir spinal refleks değildir; frontal korteks ve pons tarafından istemli ve üst düzey kontrol altında tutulur.",
+        "E": "Detrusor kasının sempatik etkisiyle gevşemesi beta3 reseptörleri aracılığıyla gerçekleşir; kasılmayı ise parasempatik M3 reseptörleri sağlar."
+      },
+      "konuAnlatimi": "Miksiyon siklusunda depolama fazını sempatik sistem (beta3 ile detrusor gevşemesi, alfa1 ile iç sfinkter kasılması) ve pudendal sinir (dış sfinkter kasılması) yönetir. Boşaltma fazında ise pontin miksiyon merkezinin kontrolünde parasempatik sistem (M3 reseptörleri) detrusoru kasarken, sempatik tonus ve somatomotor sfinkter tonusu inhibe edilir."
+    }
+  },
+  {
+    "id": "2024_69",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Odorant moleküle uzun süre maruziyet sonucu gerçekleşen koku duyusuna uyum ile ilgili aşağıdakilerden hangisi doğrudur?\nI. Merkezi sinir sistemi uyumu olmaz\nII. Kalsiyum kalmodulin kompleksi siklik nükleotid kapılı kanal aktivitesini engeller\nIII. Olfaktör reseptör hücrede fosfodiesteraz aktivitesi artar\nIV. Na/Ca antiport aktivitesi azalır",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve IV",
+      "D": "III ve IV",
+      "E": "II ve III"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Koku adaptasyonunda hücre içine giren Ca2+ iyonları kalmodulin ile birleşerek CNG (siklik nükleotid kapılı) kanallarının cAMP duyarlılığını azaltır (II) ve fosfodiesterazı (PDE) aktive ederek serbest cAMP düzeyini hızla yıkar (III).",
+      "celdiriciler": {
+        "A": "I. öncül yanlıştır; koku duyusunda periferik adaptasyonun yanında bulbus olfactorius'taki granül hücrelerinin inhibisyonu ile santral adaptasyon da çok güçlüdür.",
+        "B": "I. öncülün yanlış olması nedeniyle seçenek elenir.",
+        "C": "IV. öncül yanlıştır; hücre içi kalsiyumu temizleyip hücreyi toparlamak için Na+/Ca2+ antiport aktivitesi azalmaz, artar.",
+        "D": "IV. öncül hatalı fizyolojik bilgi içerir."
+      },
+      "konuAnlatimi": "Olfaktör reseptörlerde koku maddesi Golf proteini üzerinden adenilat siklazı uyarır ve cAMP artışıyla CNG kanallarından Ca2+ ve Na+ girişi olur. İntraselüler artan Ca2+, Ca2+-kalmodulin bağımlı protein kinaz (CaMKII) ve fosfodiesterazı aktive ederek hem kanalları desensitize eder hem de cAMP'yi yıkarak güçlü bir hücresel adaptasyon oluşturur."
+    }
+  },
+  {
+    "id": "2024_70",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Acı, tatlı ve umami duyusunda rol oynayan hücresel mekanizmalar ile ilgili doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Tat hücreleri uyarıldığında ENaC kanalları aktive olur",
+      "B": "İyonotropik reseptörler uyarılır",
+      "C": "Hücre içi IP3 ve Ca2+ artar",
+      "D": "Nörotransmitter olarak serotonin salınır",
+      "E": "Uyarı ile reseptör hücrede hiperpolarizasyon görülür"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Acı (T2R), tatlı (T1R2+T1R3) ve umami (T1R1+T1R3) tat modaliteleri Gustducin adlı G-protein eşlenik reseptörler üzerinden PLC-beta2 yolunu aktive eder; oluşan IP3 endoplazmik retikulumdan Ca2+ salınımına ve hücre içi serbest kalsiyum artışına yol açar.",
+      "celdiriciler": {
+        "A": "ENaC kanalları tuzlu tat duyusunun doğrudan Na+ giriş mekanizmasıdır.",
+        "B": "Acı, tatlı ve umami iyonotropik değil, metabotropik (GPCR) reseptörler ile algılanır (ekşi ve tuzlu iyon kanallarıyla çalışır).",
+        "D": "Tip II tat hücrelerinden (tatlı, acı, umami) sinaptik nörotransmitter olarak serotonin değil, CALHM1/3 kanalları aracılığıyla ATP salınır.",
+        "E": "Tat uyarımı hücrede hiperpolarizasyon değil, TRPM5 kanallarının açılması ile depolarizasyon meydana getirir."
+      },
+      "konuAnlatimi": "Tat modalitelerinin transdüksiyon mekanizması: Tuzlu (ENaC kanalları) ve Ekşi (OTOP1 proton kanalları) doğrudan iyonotropik etki gösterir. Tatlı, Acı ve Umami ise GPCR (Gustducin) -> Fosfolipaz C-beta2 -> IP3 artışı -> İntraselüler Ca2+ deşarjı -> TRPM5 kanal aktivasyonu -> Depolarizasyon ve ATP salınımı mekanizmasıyla iletilir."
+    }
+  },
+  {
+    "id": "2024_71",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "İç kulakta stria vaskülaris apikal membranından K+ sekrete eden kanal aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "SLC12A2",
+      "B": "ATP1A1",
+      "C": "ATP1B2",
+      "D": "KCNQ1/KCNE1",
+      "E": "KCNQ4"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Stria vascularis'in marjinal hücrelerinin apikal membranında yer alan ve endolenfe yüksek konsantrasyonda potasyum iyonu sekrete eden voltaj kapılı potasyum kanal kompleksi KCNQ1/KCNE1 (Kv7.1)'dir.",
+      "celdiriciler": {
+        "A": "SLC12A2 (NKCC1), marjinal hücrelerin bazolateral membranında Na+/K+/2Cl- ko-transportunu sağlayan taşıyıcıdır.",
+        "B": "ATP1A1, bazolateral membrandaki Na+/K+-ATPaz'ın alfa1 alt birimidir.",
+        "C": "ATP1B2, Na+/K+-ATPaz pompasının beta alt birimidir.",
+        "E": "KCNQ4, dış tüy hücrelerinin bazolateral membranında yer alan ve sensörinöral işitme kaybı genetiğinde rol oynayan potasyum kanalıdır."
+      },
+      "konuAnlatimi": "Endolenfin yüksek potasyum konsantrasyonu ve +80 mV'luk endokoklear potansiyeli stria vascularis tarafından üretilir. Marjinal hücreler bazolateralden NKCC1 ve Na+/K+-ATPaz ile aldıkları potasyumu apikaldeki KCNQ1/KCNE1 kanalları aracılığıyla scala media'ya pompalarlar. Bu gendeki mutasyonlar Jervell ve Lange-Nielsen sendromuna yol açar."
+    }
+  },
+  {
+    "id": "2024_72",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Vestibüler sistem ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Utrikülus, yatar pozisyonda dengenin sağlanmasında görev alır",
+      "B": "Yarım daire kanalları başın açısal hızlanmasını algılar",
+      "C": "Sakkülüs, başın sağa sola çevrilme hareketini iletir",
+      "D": "Utrikülüs, vertikal yönde yukarı aşağı hareketi iletir",
+      "E": "Yarım daire kanalları yatay eksende vücudun hızlanmasını algılar"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Ampulla içindeki krista ampullaris yapıları sayesinde yarım daire kanalları (canales semicirculares), başın üç boyutlu düzlemdeki açısal (rotasyonel) hızlanmasını algılar.",
+      "celdiriciler": {
+        "A": "Utrikülus makulası yatay (horizontal) yerleşimlidir; baş dik pozisyondayken doğrusal ivmelenmeyi algılar, yatar pozisyonda değil.",
+        "C": "Sakkülüs dikey doğrusal ivmelenmeyi algılar; başın sağa-sola çevrilmesini horizontal semisirküler kanal saptar.",
+        "D": "Vertikal (yukarı-aşağı) doğrusal ivmelenmeyi utrikülüs değil, sakkülüs algılar.",
+        "E": "Yatay eksendeki doğrusal ivmelenmeyi yarım daire kanalları değil, utrikülus makulası algılar."
+      },
+      "konuAnlatimi": "Vestibüler aparatta açısal (rotasyonel) ivmelenmeyi üç düzlemde yerleşen semisirküler kanalların krista ampullarisleri algılar. Doğrusal (lineer) ivmelenme ve yerçekimini ise otolitik organlar algılar: Utriculus makulası horizontal düzlemdeki ivmelenmeyi, Sacculus makulası ise vertikal (asansör gibi) düzlemdeki ivmelenmeyi saptar."
+    }
+  },
+  {
+    "id": "2024_73",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Görme işlevi ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.\nI. Fotoreseptör ışık uyarımı ile depolarize olur\nII. Fotoreseptör hücreden salınan nörotransmitter glisindir\nIII. Horizontal hücre inhibitör nörotransmitter bulundurur\nIV. Bipolar hücre iyonotropik reseptöre sahipse ışıkta uyarılması azalır",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "II ve IV",
+      "E": "III ve IV"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Horizontal hücreler lateral inhibisyon için GABA (inhibitör nörotransmitter) salgılar (III); iyonotropik AMPA/kainat reseptörü taşıyan 'off-center' bipolar hücreler ise karanlıkta depolarize olup ışıkta fotoreseptörden glutamat salınımı kesildiği için uyarılmaları azalır (IV).",
+      "celdiriciler": {
+        "A": "I. öncül yanlıştır (fotoreseptörler ışıkta hiperpolarize olur) ve II. öncül yanlıştır (fotoreseptörün nörotransmitteri glutamattır).",
+        "B": "I. öncül yanlış biyolojik bilgi içerir.",
+        "C": "II. öncül yanlış olduğu için seçenek elenir.",
+        "D": "II. öncülün glisin olduğunu iddia etmesi yanlıştır, glutamat salınır."
+      },
+      "konuAnlatimi": "Karanlıkta fotoreseptör hücrelerde cGMP düzeyi yüksektir ve Na+/Ca2+ kanalları açık kalarak hücreyi depolarize tutar (karanlık akımı) ve sürekli glutamat salınır. Işık geldiğinde rodopsin uyarılır, transdusin üzerinden fosfodiesteraz aktive olur, cGMP parçalanır, katyon kanalları kapanır ve hücre hiperpolarize olarak glutamat salınımını durdurur."
+    }
+  },
+  {
+    "id": "2024_74",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Yakındaki cismi görme ile ilgili göze ait verilen bilgilerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "M. ciliaris, parasempatikler ile uyarılırsa lensin ön-arka çapı artar",
+      "B": "M. ciliaris'in hem parasempatik hem de sempatik innervasyonu vardır",
+      "C": "İrisin sirküler kasları yakını görmek için kasılır",
+      "D": "İrisin dilatatör kasları yakını görmek için kasılır",
+      "E": "Miyoplarda yakını görme bozulmuştur"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Akomodasyon sırasında parasempatik uyarı (n. oculomotorius) ile m. ciliaris kasılır; bu durum zonula ciliaris (Zinn bağları) liflerini gevşetir, lens kendi elastikiyetiyle küreselleşir ve lensin ön-arka çapı (kırıcılığı) artar.",
+      "celdiriciler": {
+        "B": "M. ciliaris esas ve fonksiyonel olarak sadece parasempatik innervasyon (Edinger-Westphal) kontrolündedir, belirgin fonksiyonel çift otonom innervasyonu yoktur.",
+        "C": "İrisin sirküler kaslarının (m. sphincter pupillae) kasılması miyozis sağlar ancak yakını netleştirmenin temel lens mekanizması m. ciliaris kasılmasıdır.",
+        "D": "İris dilatatör kası sempatik etkiyle midriyazis yapar; yakına bakışta ise tam tersine sferik aberasyonu azaltmak için miyozis gerçekleşir.",
+        "E": "Miyopide gözün ön-arka ekseni uzundur ve görüntü retinanın önüne düşer; miyop hastalar uzağı net göremezler, yakın görmeleri genellikle korunmuştur."
+      },
+      "konuAnlatimi": "Akomodasyon refleksi (yakın üçlüsü): 1. Konverjans (her iki göz m. rectus medialis kasılmasıyla içe döner), 2. Miyozis (m. sphincter pupillae kasılmasıyla pupilla daralır, aberasyon önlenir), 3. Lens akomodasyonu (m. ciliaris kasılır -> zonula lifleri gevşer -> lens küreselleşir ve kırıcılığı artar)."
+    }
+  },
+  {
+    "id": "2024_75",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Uyku sırasında bazı hormonların salınımı artar. Buna göre aşağıdakilerden hangisi uyku sırasında artar?",
+    "secenekler": {
+      "A": "Adrenalin, melatonin",
+      "B": "Büyüme hormonu, insülin",
+      "C": "Büyüme hormonu, melatonin",
+      "D": "Adrenalin, kortizol",
+      "E": "Melatonin, insülin"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Uykuya dalış ve özellikle yavaş dalga uykusu (NREM evre 3) sırasında hipofiz ön lobundan büyüme hormonu (GH) salınımı belirgin pik yapar; epifiz bezinden salgılanan melatonin ise karanlık periyotta ve uyku boyunca yüksek düzeydedir.",
+      "celdiriciler": {
+        "A": "Adrenalin sempatik bir stres hormonudur ve uyku sırasında plazma konsantrasyonu düşer.",
+        "B": "İnsülin salınımı besin alımına bağımlıdır ve gece açlık periyodunda artış göstermez.",
+        "D": "Kortizol uyku başlangıcında en düşük seviyelerdedir, sabah uyanmaya yakın saatlerde pik yapar; adrenalin ise uykuda baskılanır.",
+        "E": "İnsülin gece uykusu boyunca fizyolojik olarak artış eğiliminde değildir."
+      },
+      "konuAnlatimi": "Uyku-uyanıklık döngüsünde sirkadiyen ritim gösteren hormonlar: Büyüme hormonu (GH), NREM evre 3'ün başlangıcında en yüksek pikini yapar. Melatonin karanlık uyarısıyla epifizden salgılanır ve uyku başlatıcı rol oynar. Kortizol ise gece yarısı minimum düzeydeyken sabah uyanıştan hemen önce yükselir (kortizol uyanma yanıtı)."
+    }
+  },
+  {
+    "id": "2024_76",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Uyku sırasında nörotransmitter sistemlerinde gerçekleşen değişiklikler ile ilgili doğru olanı işaretleyiniz.\nI. NREM'de ventrolateral preoptik alan GABAerjik nöronları aktiftir\nII. NREM'de lokus seruleus noradrenerjik nöronları inaktiftir\nIII. REM'de bazal ön beyin kolinerjik nöronları aktiftir\nIV. REM'de dorsal rafe nükleusu serotonerjik nöronları inaktiftir",
+    "secenekler": {
+      "A": "I ve III",
+      "B": "II ve III",
+      "C": "III ve IV",
+      "D": "I, II ve IV",
+      "E": "II, III ve IV"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "NREM uykusunu başlatan VLPO nöronları GABA ve galanin salgılayarak aktiftir (I); locus coeruleus noradrenerjik deşarjı NREM'de baskılanır/inaktiftir (II); dorsal rafe serotonerjik nöronları ise REM uykusunda tamamen sessizleşir (REM-off nöronlar) (IV).",
+      "celdiriciler": {
+        "A": "III. öncül yanlıştır; REM uykusunda aktive olan kolinerjik nöronlar bazal ön beyinden ziyade pons kaynaklı tegmental çekirdeklerdir (PPT/LDT).",
+        "B": "III. öncül nedeniyle bu seçenek elenir.",
+        "C": "III. öncülü içeren kombinasyonlar hatalıdır.",
+        "E": "III. öncül hatalı olup I. öncül temel NREM uyarım mekanizmasıdır."
+      },
+      "konuAnlatimi": "Uyku regülasyonunda hipotalamustaki ventrolateral preoptik çekirdek (VLPO), GABA salgılayarak monoaminerjik uyanıklık sistemlerini (locus coeruleus, rafe nükleusları) baskılar. REM uykusunda ise pedunculopontin (PPT) ve laterodorsal tegmental (LDT) kolinerjik nöronlar (REM-on) aktifken, noradrenerjik ve serotonerjik nöronlar (REM-off) tamamen sessizdir."
+    }
+  },
+  {
+    "id": "2024_77",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Hipotalamus çekirdekleri ile ilgili verilen bilgilerden yanlış olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Lateral nükleus - acıkma, susama",
+      "B": "Ventromediyal nükleus - doyma",
+      "C": "Arkuat çekirdek - acıkma, doyma",
+      "D": "Supraoptik çekirdek - vazopressin salınımı",
+      "E": "Mamiller cisim - vücut sıcaklığının düzenlenmesi"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Corpus mamillare (mamiller cisim) vücut sıcaklığının düzenlenmesinde değil; limbik sistem, Papez halkası ve episodik bellek süreçlerinde görev alır; vücut sıcaklığı ön (sıcak) ve arka (soğuk) hipotalamus tarafından düzenlenir.",
+      "celdiriciler": {
+        "A": "Nucleus lateralis hipotalami temel açlık ve susama merkezidir; uyarılması hiperfajiye, lezyonu afajiye yol açar.",
+        "B": "Nucleus ventromedialis temel doyma merkezidir; uyarılması tokluk hissi verir, lezyonu obeziteye neden olur.",
+        "C": "Nucleus arcuatus (infundibularis), NPY/AgRP (açlık) ve POMC/CART (tokluk) nöronları ile enerji dengesini yönetir.",
+        "D": "Nucleus supraopticus esas olarak vazopressin (ADH), az miktarda oksitosin sentezleyen nörosekretuar merkezdir."
+      },
+      "konuAnlatimi": "Hipotalamus çekirdeklerinin temel görevleri: Termoregülasyonda anterior hipotalamus sıcaklığa karşı (terleme/vazodilatasyon), posterior hipotalamus soğuğa karşı (titreme/vazokonstriksiyon) çalışır. Beslenmede lateral çekirdek açlık merkezi, ventromedial çekirdek doyma merkezidir. Corpus mamillare ise hafıza devresine (Papez) katılır."
+    }
+  },
+  {
+    "id": "2024_78",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Aşağıda uzun süreli potansiyalizasyona (LTP) ait presinaptik hücreden postsinaptik hücreye bilgi iletimi verilmiştir. Buna göre (a), (b) ve (c) aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    "secenekler": {
+      "A": "GABA, Ca2+, K+",
+      "B": "Glutamat, Mg2+, Ca2+",
+      "C": "Glutamat, Mg2+, K+",
+      "D": "GABA, Mg2+, K+",
+      "E": "GABA, K+, Cl-"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Uzun süreli potansiyalizasyonda presinaptik uçtan salınan nörotransmitter glutamattır (a); istirahat membran potansiyelinde NMDA reseptör kanalını tıkayan ve depolarizasyonla uzaklaşan iyon magnezyumdur (b); NMDA kanalı açıldığında postsinaptik hücreye girerek LTP kaskadını başlatan iyon ise kalsiyumdur (c).",
+      "celdiriciler": {
+        "A": "LTP hipokampustaki temel eksitatör glutamaterjik mekanizmadır; GABA inhibitör olup NMDA blokajı magnezyum ile sağlanır.",
+        "C": "(c) iyonu K+ değil, postsinaptik protein kinazları ve CaMKII'yi aktive eden Ca2+ iyonudur.",
+        "D": "GABA birincil eksitatör LTP transmiteri değildir.",
+        "E": "İnhibitör iyon kanalı iletisi şemadaki NMDA/AMPA aracılı LTP sürecini açıklamaz."
+      },
+      "konuAnlatimi": "Hipokampustaki Schaffer kollateral-CA1 sinapslarında LTP oluşumu: Presinaptik glutamat salınımı önce AMPA reseptörlerini depolarize eder. Membran potansiyeli pozitifleşince NMDA reseptör gözeneklerindeki Mg2+ blokajı kalkar. Açılan NMDA kanallarından giren Ca2+, CaMKII ve protein kinaz C'yi uyararak zara yeni AMPA reseptörleri ekletir ve sinapsı güçlendirir."
+    }
+  },
+  {
+    "id": "2024_79",
+    "yil": 2024,
+    "ders": "Fizyoloji",
+    "soruMetni": "Yüksek sesle kitap okuma sürecinde beyinde bilginin işlendiği alanların doğru sıralaması aşağıdakilerden hangisinde verilmiştir?\nI. Angüler girus\nII. Primer görme korteksi\nIII. Broca alanı\nIV. Wernicke alanı",
+    "secenekler": {
+      "A": "II, I, IV, III",
+      "B": "II, I, III, IV",
+      "C": "II, IV, I, III",
+      "D": "I, II, IV, III",
+      "E": "I, II, III, IV"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Yazılı metin okunurken bilgi önce primer görme korteksine (II) ulaşır, ardından görsel kodun işitil/fonolojik forma çevrildiği gyrus angularis'e (I) aktarılır, buradan anlamlandırma için Wernicke alanına (IV) ve son olarak konuşma motor planlaması için fasciculus arcuatus yoluyla Broca alanına (III) iletilir.",
+      "celdiriciler": {
+        "B": "Broca alanı motor konuşma icrasını yönettiği için Wernicke alanındaki duyusal anlamlandırmadan önce gelemez.",
+        "C": "Görsel girdiler Wernicke alanına ulaşmadan önce angular girus tarafından multimodal dil koduna dönüştürülür.",
+        "D": "Görsel bilginin algılanması gyrus angularis ile değil, primer görme korteksi (Brodmann 17) ile başlar.",
+        "E": "Primer görme korteksi 2. sırada yer alamaz, sıralamanın mutlak başlangıcıdır."
+      },
+      "konuAnlatimi": "Wernicke-Geschwind modeline göre okunan bir metnin yüksek sesle seslendirilmesi akışı: Retina -> CGL -> Primer Görme Korteksi (Brodmann 17) -> Gyrus Angularis (Brodmann 39) -> Wernicke Alanı (Brodmann 22) -> Fasciculus Arcuatus -> Broca Alanı (Brodmann 44/45) -> Primer Motor Korteks."
+    }
+  },
+  {
+    "id": "2024_80",
+    "yil": 2024,
+    "ders": "Biyokimya",
+    "soruMetni": "Asetilkolin'in işlevlerinden biri aşağıdaki seçeneklerden hangisinde doğru olarak verilmiştir?",
+    "secenekler": {
+      "A": "Hafıza",
+      "B": "Başlıca inhibitör nörotransmitter",
+      "C": "Ruh hali",
+      "D": "Beynin ağrı yollarında ve duygu merkezlerinde etkili olan kimyasallar",
+      "E": "Motivasyon"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Asetilkolin, santral sinir sisteminde (özellikle Meynert'in bazal çekirdeği ve hipokampal projeksiyonlarda) dikkat, öğrenme ve yeni bellek kaydı mekanizmalarında kritik rol oynar.",
+      "celdiriciler": {
+        "B": "Merkezi sinir sisteminin başlıca inhibitör nörotransmitteri GABA'dır.",
+        "C": "Ruh hali (duygudurum) dengelenmesinde birincil rol oynayan amin nörotransmitter serotonindir.",
+        "D": "Ağrı kapılaması ve duygu merkezlerinde analjezik etki gösteren endojen moleküller opioid peptitlerdir (endorfin, enkefalin).",
+        "E": "Ödül, pekiştirme ve motivasyon süreçlerinin ana nörokimyasal temeli dopaminerjik yollardır."
+      },
+      "konuAnlatimi": "Nucleus basalis de Meynert'ten kaynaklanan kolinerjik liflerin dejenerasyonu Alzheimer hastalığının temel nöropatolojik bulgusudur. Kolinerjik eksiklik belirgin bellek kaybı ve bilişsel yıkımla ilişkilidir."
+    }
+  },
+  {
+    "id": "2024_81",
+    "yil": 2024,
+    "ders": "Biyokimya",
+    "soruMetni": ".......... için birincil enerji substratı olmaya devam ederken, belirli koşullar altında alternatif substratlar kullanılabilir. Örneğin, gelişim döneminde ve yetişkinlerde açlık sırasında .......... üretilir ve kan konsantrasyonları alternatif bir enerji substratı sağlamak için yeterince yüksek olabilir.\nYukarıdaki metinde noktalı yerlere gelecek kelimeler hangi seçenekte doğru verilmiştir?",
+    "secenekler": {
+      "A": "Galaktoz - karaciğer - amino asitler",
+      "B": "Glukoz - beyin - keton cisimleri",
+      "C": "Glukoz - karaciğer - amonyak",
+      "D": "Laktoz - beyin - keton cisimleri",
+      "E": "Glukoz - beyin - bar cisimciği"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Glukoz beyin dokusunun fizyolojik birincil yakıtıdır; uzamış açlık, ketozis veya erken gelişim evrelerinde karaciğerde sentezlenen keton cisimleri (asetoasetat ve beta-hidroksibütirat) kan-beyin bariyerini aşarak beynin alternatif enerji kaynağı haline gelir.",
+      "celdiriciler": {
+        "A": "Galaktoz beyin dokusunun birincil yakıtı değildir, karaciğerde glukoza dönüştürülerek metabolize edilir.",
+        "C": "Amonyak alternatif bir yakıt kaynağı olmayıp beyin dokusu için son derece toksik bir metabolit ürünüdür.",
+        "D": "Laktoz sindirilmeden kanda dolaşmayan bir disakkarittir, beynin enerji substratı olamaz.",
+        "E": "Barr cisimciği inaktive X kromozomudur, enerji metabolizması ile ilişkisizdir."
+      },
+      "konuAnlatimi": "Beyin normal beslenme durumunda günde yaklaşık 120 g glukoz tüketir ve serbest yağ asitlerini enerji için doğrudan kullanamaz. Uzamış açlıkta (açlığın 3. gününden itibaren) karaciğerde yağ asidi beta-oksidasyonundan üretilen keton cisimleri, beynin enerji ihtiyacının %50-70'ini karşılar."
+    }
+  },
+  {
+    "id": "2024_82",
+    "yil": 2024,
+    "ders": "Biyokimya",
+    "soruMetni": "Aşağıdaki seçeneklerden hangisi Dopaminin işlevlerinden biridir?",
+    "secenekler": {
+      "A": "Başlıca uyarıcı nörotransmitter",
+      "B": "Uyarılma",
+      "C": "Uyumak",
+      "D": "Motor davranış",
+      "E": "Öğrenme"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Dopamin, substantia nigra pars compacta'dan striatuma uzanan nigrostriatal yolak aracılığıyla istemli motor davranışların başlatılması, akıcılığı ve kontrolünde kritik rol oynar.",
+      "celdiriciler": {
+        "A": "Merkezi sinir sisteminin başlıca uyarıcı nörotransmitteri glutamattır.",
+        "B": "Uyarılma ve dikkat süreçlerinin ana monoaminerjik ileticisi noradrenalindir.",
+        "C": "Uyku başlatıcı ve sürdürücü ana sistemler GABA ve melatonindir.",
+        "E": "Öğrenme ve bellek mekanizmalarında birincil rol oynayan kolinerjik ve glutamaterjik sistemlerdir."
+      },
+      "konuAnlatimi": "Dopamin santral sinir sisteminde 4 ana yolak üzerinden etki gösterir: Motor kontrolü sağlayan Nigrostriatal yol, ödül ve bağımlılıkla ilişkili Mezolimbik yol, bilişsel işlevleri yöneten Mezokortikal yol ve prolaktin salgısını inhibe eden Tuberoinfundibuler yol."
+    }
+  },
+  {
+    "id": "2024_83",
+    "yil": 2024,
+    "ders": "Biyokimya",
+    "soruMetni": "Aşağıdaki seçeneklerden hangisi GABA'nın işlevlerinden biridir?",
+    "secenekler": {
+      "A": "Beynin ağrı yollarında ve duygu merkezlerinde etkili olan kimyasallar",
+      "B": "Agresif davranış",
+      "C": "Uyanıklık",
+      "D": "Başlıca uyarıcı nörotransmitter",
+      "E": "Başlıca inhibitör nörotransmitter"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "GABA (gama-aminobütirik asit), beyin dokusunda en yaygın bulunan ve postsinaptik nöronda klor iyonu girişiyle hiperpolarizasyon oluşturan başlıca inhibitör nörotransmitterdir.",
+      "celdiriciler": {
+        "A": "Ağrı kapılama sistemlerinde etkili peptitler endojen opioidler ve P maddesidir.",
+        "B": "Agresif davranışlar serotonin düşüklüğü ve dopaminerjik düzensizliklerle ilişkilidir.",
+        "C": "Uyanıklık retiküler aktive edici sistemin kolinerjik, noradrenerjik ve histaminerjik girdileri ile sürdürülür.",
+        "D": "Merkezi sinir sisteminde başlıca uyarıcı iletici glutamattır."
+      },
+      "konuAnlatimi": "GABA, glutamat dekarboksilaz (GAD) enzimi ve vitamin B6 (piridoksal fosfat) koenzimi varlığında glutamattan sentezlenir. GABA-A reseptörü iyonotropik olup Cl- iletkenliğini artırırken, GABA-B reseptörü metabotropik olup Gi kenetlidir."
+    }
+  },
+  {
+    "id": "2024_84",
+    "yil": 2024,
+    "ders": "Mikrobiyoloji",
+    "soruMetni": "Streptokokların tanısı ile ilgili yanlış hangisidir?",
+    "secenekler": {
+      "A": "Streptokoklar katalaz negatiftir",
+      "B": "A, B, C, D, F ve G gruba spesifik antiserumların kullanıldığı presipitasyon testi ile tanı konabilir.",
+      "C": "A grubunun PYR (L-Pyrrolidonyl Arylamidase) testi pozitiftir.",
+      "D": "Grup A streptokoklar Bacitracin'e dirençlidir.",
+      "E": "Grup B streptokoklar CAMP / Hippurat Hidrolizi pozitiftir."
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Grup A streptokoklar (Streptococcus pyogenes) basitrasine dirençli değil, tanısal olarak yüksek düzeyde duyarlıdır (sensitiftir).",
+      "celdiriciler": {
+        "A": "Tüm Streptococcus cinsi üyeleri stafilokoklardan farklı olarak katalaz negatiftir.",
+        "B": "Streptokoklar Lancefield sınıflamasına göre C-karbonhidrat antijenine özgü antiserumlarla gruplandırılır.",
+        "C": "S. pyogenes (GAS) hızlı PYR testi pozitifliği gösteren majör streptokoktur.",
+        "E": "S. agalactiae (GBS) tanısında CAMP pozitifliği ve hippurat hidrolizi temel ayıraçtır."
+      },
+      "konuAnlatimi": "Streptococcus pyogenes (Grup A beta-hemolitik streptokok), düşük konsantrasyonlu basitrasin diskine (0.04 U) duyarlıdır ve PYR pozitiftir. Grup B streptokoklar (S. agalactiae) ise basitrasine dirençli, CAMP ve hippurat testi pozitiftir."
+    }
+  },
+  {
+    "id": "2024_85",
+    "yil": 2024,
+    "ders": "Mikrobiyoloji",
+    "soruMetni": "Streptokoklar ile ilgili yanlış hangisidir?",
+    "secenekler": {
+      "A": "M proteini adezyondan sorumlu süper antijendir ve antifagositiktir.",
+      "B": "Streptokokkal pirojenik ekzotoksin (Spe) streptokokkal toksik şok sendromundan sorumludur.",
+      "C": "Streptolizin O (SLO) hemolizin olup antikor cevabı oluşturur.",
+      "D": "Streptokinaz plazminojeni plazmine dönüştürerek fibrinolitik etki gösterir.",
+      "E": "F proteini kompleman C3b'nin bağlanmasını bloke ederek fagositozdan korur."
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "F proteini kompleman C3b'yi bloke etmez; konak hücre fibronektinine bağlanarak epitel yüzeylerine adezyonu sağlayan temel fibronektin-bağlayıcı proteindir (C3b parçalanması ve fagositoz direnci M proteini ve faktör H bağlanması ile sağlanır).",
+      "celdiriciler": {
+        "A": "M proteini GAS'ın en önemli antifagositoz faktörüdür ve immün yanıtta süperantijenik/virülan özellikler taşır.",
+        "B": "SpeA ve SpeC süperantijen toksinleri kızıl döküntüsünden ve toksik şok sendromundan sorumludur.",
+        "C": "Streptolizin O oksijene duyarlı bir hemolizindir ve anti-streptolizin O (ASO) antikor cevabı oluşturur.",
+        "D": "Streptokinaz fibrinolitik enzim olup fibrin pıhtılarını eriterek bakterinin dokuda yayılmasını kolaylaştırır."
+      },
+      "konuAnlatimi": "S. pyogenes'in başlıca virülans faktörleri: M proteini (en önemli antifagositik yüzey antijeni), Hyaluronik asit kapsül (antifagositik), F proteini (fibronektine tutunarak adezyon sağlar), Streptokinaz (fibrinolizis) ve Pirojenik ekzotoksinler (Spe A, B, C; süperantijen)."
+    }
+  },
+  {
+    "id": "2024_86",
+    "yil": 2024,
+    "ders": "Mikrobiyoloji",
+    "soruMetni": "Staphylococcus aureus ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Koagülaz negatif stafilokoklar Novobiyosin'e duyarlıdır.",
+      "B": "S. aureus beta hemoliz yapar.",
+      "C": "S. aureus Mannitol tuzlu agar'da pembe koloniler oluşturur",
+      "D": "Koagülaz negatif stafilokoklar katalaz pozitiftir.",
+      "E": "S. epidermidis koagülaz negatiftir."
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Staphylococcus aureus mannitolu fermente ederek ortamın pH'sını düşürür; bu nedenle fenol kırmızısı indikatörü sarıya döner ve sarı koloniler ile sarı hale oluşturur, pembe koloni oluşturmaz.",
+      "celdiriciler": {
+        "A": "S. epidermidis novobiyosine duyarlıyken, S. saprophyticus novobiyosine dirençlidir.",
+        "B": "S. aureus koyun kanlı agarda beta-hemolitik koloniler üretir.",
+        "D": "Tüm Staphylococcus türleri katalaz testi pozitiftir.",
+        "E": "S. epidermidis tipik koagülaz negatif stafilokok (KNS) prototipidir."
+      },
+      "konuAnlatimi": "Mannitol Tuzlu Agar (MSA), yüksek (%7.5) NaCl konsantrasyonuyla stafilokoklar için seçici bir besiyeridir. S. aureus mannitolu fermente eden tek stafilokok türü olarak sarı renk oluşturur; mannitolu fermente edemeyen koagülaz negatif stafilokoklar ise pembe/kırmızı görünür."
+    }
+  },
+  {
+    "id": "2024_87",
+    "yil": 2024,
+    "ders": "Mikrobiyoloji",
+    "soruMetni": "Normal flora ile ilgili yanlış hangisidir?",
+    "secenekler": {
+      "A": "Normal erişkin kolonunda Bacteroides %20-30 oranında bulunur.",
+      "B": "Normal erişkin kolonunda Bifidobacteria yaklaşık %15 oranında bulunur.",
+      "C": "Normal erişkin kolonunda fakültatif aeroplar yalnızca %1-4 oranında kolonizedir.",
+      "D": "Emzirmenin kesilmesi ile mama verildiğinde Bacteroides ve Clostridium azalırken Bifidobacteriaceae daha yaygın hale gelir.",
+      "E": "Vajinal doğumda yeni doğanda gastrointestinal yol florasında Lactobacillus, Bifidobacterium ve Bacteroides gibi bakteriler bulunur."
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Anne sütüyle beslenen bebeklerde bağırsak florasında Bifidobacterium türleri baskındır; anne sütünden mamaya geçildiğinde veya ek gıdaya başlandığında Bifidobacteria azalır, Bacteroides, Clostridium ve enterokok türleri artış gösterir.",
+      "celdiriciler": {
+        "A": "Erişkin kolonunda zorunlu anaeroplar baskındır ve Bacteroides türleri floranın yaklaşık %20-30'unu oluşturur.",
+        "B": "Bifidobacteria türleri erişkin kolon florasının yaklaşık %10-15'lik önemli bir bölümünü kapsar.",
+        "C": "Erişkin kolondaki bakterilerin %96-99'u zorunlu anaeroptur; E. coli gibi fakültatif aeroplar yalnızca %1-4 oranındadır.",
+        "E": "Vajinal yolla doğan bebekler annenin vajina ve bağırsak florasından Lactobacillus, Prevotella ve Bifidobacterium türlerini edinirler."
+      },
+      "konuAnlatimi": "Gastrointestinal sistem florasında anaerop bakteriler aerop bakterilere oranla yaklaşık 1000:1 oranında fazladır. Anne sütü alan bebeklerde zengin oligosakkaritler nedeniyle Bifidobacterium baskınken, formül mama ile beslenen veya sütten kesilen infantlarda Bacteroides, Clostridium ve Enterobacteriaceae ailesi artar."
+    }
+  },
+  {
+    "id": "2024_88",
+    "yil": 2024,
+    "ders": "Mikrobiyoloji",
+    "soruMetni": "Diz eklem aralığından alınan mayi kültüründe, Çikolata agar besiyerinde üreme pozitif, kolonilerin oksidaz ve katalaz testi pozitif ve boyamada Gram negatif diplokok görünümü varsa en olası etken hangisidir?",
+    "secenekler": {
+      "A": "Neisseria subflava",
+      "B": "Neisseria elongata",
+      "C": "Neisseria gonorrhoeae",
+      "D": "Neisseria flavescens",
+      "E": "Neisseria sicca"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Cinsel aktif genç erişkinlerde septik artritin en sık nedeni olan, zenginleştirilmiş besiyerinde (çikolata agar) üreyen, oksidaz/katalaz pozitif ve Gram negatif diplokok morfolojisi gösteren etken Neisseria gonorrhoeae'dir.",
+      "celdiriciler": {
+        "A": "Neisseria subflava üst solunum yolu normal florasında yer alan kommensal bir bakteridir, eklem sıvısında üremez.",
+        "B": "Neisseria elongata çomak (basil) morfolojisi gösterir, klasik kahve çekirdeği diplokok görünümünde değildir.",
+        "D": "Neisseria flavescens pigment üreten kommensal orofaringeal bir Neisseria türüdür.",
+        "E": "Neisseria sicca solunum yolu florasında bulunan patojenitesi düşük kommensal bir türdür."
+      },
+      "konuAnlatimi": "Genç erişkinlerde monoartrit veya göçücü poliartrit tablosuyla seyreden yayılmış gonokokal enfeksiyonda (DGI) diz eklemi en sık etkilenen eklemdir. Gram negatif kahve çekirdeği şeklinde diplokoklar, Thayer-Martin veya çikolata agarda üreme ve sadece glukozu fermente etme özellikleri N. gonorrhoeae tanısını koydurur."
+    }
+  },
+  {
+    "id": "2024_89",
+    "yil": 2024,
+    "ders": "Mikrobiyoloji",
+    "soruMetni": "Hangisi insanlarda en sık görülen Neisseria meningitidis kapsül polisakkarit serogruplarından biri değildir?",
+    "secenekler": {
+      "A": "JK",
+      "B": "Y",
+      "C": "A",
+      "D": "W-135",
+      "E": "C"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Neisseria meningitidis suşlarında invaziv klinik hastalıklara yol açan tanımlı bir 'JK' kapsül serogrubu bulunmamaktadır.",
+      "celdiriciler": {
+        "B": "Serogrup Y özellikle meningokokal pnömoni ve gelişmiş ülkelerdeki menenjit vakalarında sık izlenir.",
+        "C": "Serogrup A Sahra altı Afrika'da (menenjit kuşağı) büyük salgınlara yol açan klasik epidemik gruptur.",
+        "D": "Serogrup W-135 küresel salgınlarda ve hac ziyaretçilerinde önemli bir morbidite etkenidir.",
+        "E": "Serogrup C ve B ülkemizde ve dünyada endemik/epidemik menenjitlerin önde gelen nedenlerindendir."
+      },
+      "konuAnlatimi": "Neisseria meningitidis'in 13 farklı kapsüler polisakkarit serogrubu tanımlanmıştır; ancak insanlardaki invaziv hastalıkların ve epidemilerin %95'inden fazlasından 6 ana serogrup (A, B, C, W-135, X ve Y) sorumludur. Güncel polisakkarit konjuge aşılar A, C, W-135 ve Y antijenlerini içerir."
+    }
+  },
+  {
+    "id": "2024_90",
+    "yil": 2024,
+    "ders": "Tıbbi Genetik",
+    "soruMetni": "Alzheimer hastalığıyla ilgili olmayan gen hangisidir?",
+    "secenekler": {
+      "A": "Presenilin 1, 2",
+      "B": "FMR1",
+      "C": "APP",
+      "D": "BACE",
+      "E": "Tau"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "FMR1 geni Alzheimer hastalığı ile ilişkili olmayıp, X kromozomundaki CGG trinükleotid tekrar artışı sonucu ortaya çıkan Frajil X sendromunun etiyolojik genidir.",
+      "celdiriciler": {
+        "A": "Presenilin 1 (PSEN1, kromozom 14) ve Presenilin 2 (PSEN2, kromozom 1) erken başlangıçlı ailesel Alzheimer'a neden olan gama-sekretaz bileşenleridir.",
+        "C": "APP (Amiloid Prekürsör Protein, kromozom 21), amiloid beta plaklarının öncülü olan ve delesyon/mutasyonlarında Alzheimer geliştiren gendir.",
+        "D": "BACE1 (beta-sekretaz), amiloid prekürsör proteinin amiloidojenik kesimini yapan temel enzim genidir.",
+        "E": "MAPT (Tau geni), mikrotübül stabilizasyonunu sağlayan ve hiperfosforilasyonuyla nörofibriler yumakları oluşturan proteini kodlar."
+      },
+      "konuAnlatimi": "Erken başlangıçlı otozomal dominant Alzheimer hastalığından sorumlu ana genler: APP (kromozom 21), PSEN1 (kromozom 14) ve PSEN2 (kromozom 1)'dir. Geç başlangıçlı form için en kuvvetli genetik risk faktörü ise ApoE4 alelidir."
+    }
+  },
+  {
+    "id": "2024_91",
+    "yil": 2024,
+    "ders": "Tıbbi Genetik",
+    "soruMetni": "Genomda üçlü tekrar sayısındaki artışlara bağlı olarak ortaya çıkmayan hastalık hangisidir?",
+    "secenekler": {
+      "A": "Frajil X",
+      "B": "Alzheimer",
+      "C": "Myotonik distrofi",
+      "D": "Spinoserebellar ataksi",
+      "E": "Dentatorubral pallidoluysian atrofi"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Alzheimer hastalığı dinamik trinükleotid (üçlü) tekrar artışı hastalığı değildir; nokta mutasyonlar (APP, PSEN1, PSEN2), kopyalama sayısı varyasyonları ve poligenik risk faktörleri (ApoE4) ile kalıtılır.",
+      "celdiriciler": {
+        "A": "Frajil X sendromu FMR1 geninde CGG üçlü tekrar artışı ile karakterizedir.",
+        "C": "Miyotoni distrofi Tip 1 DMPK genindeki CTG trinükleotid tekrar artışı sonucu gelişir.",
+        "D": "Spinoserebellar ataksinin (SCA) birçok formu CAG tekrar artışına bağlı poliglutamin hastalıklarıdır.",
+        "E": "Dentatorubral pallidoluysian atrofi (DRPLA), ATN1 genindeki CAG üçlü tekrar ekspansiyonundan kaynaklanır."
+      },
+      "konuAnlatimi": "Trinükleotid tekrar artışı hastalıkları antisipasyon (nesiller ilerledikçe hastalığın daha erken yaşta ve daha şiddetli çıkması) gösterir. Başlıcaları: Huntington (CAG), Frajil X (CGG), Freidreich ataksisi (GAA) ve Miyotonik distrofi (CTG)'dir."
+    }
+  },
+  {
+    "id": "2024_92",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi geribesleme için doğrudur?",
+    "secenekler": {
+      "A": "Bir sistemin yanıtının doğrudan sistemin çıkışına uygulanması",
+      "B": "Geri besleme sistemlerinde her zaman çevireç kullanılır",
+      "C": "Amplifikatörün kazancı çıkış/giriş gerilimidir",
+      "D": "Sistemin çıkışına paralel bağlanan giriş yeni sistemi oluşturur",
+      "E": "İnsan vücudunda sadece negatif geri besleme sistemi bulunur"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Biyofiziksel ve elektronik kontrol sistemlerinde bir yükseltecin (amplifikatörün) voltaj kazancı (gain), sisteme uygulanan giriş gerilimine oranla elde edilen çıkış gerilimi oranı (Vçıkış / Giriş) olarak tanımlanır.",
+      "celdiriciler": {
+        "A": "Geri besleme sistemin yanıtının çıkışa değil, çıkıştan alınan bilginin sistemin girişine geri iletilmesidir.",
+        "B": "Tüm geri besleme döngülerinde çevireç (transdüser) kullanımı zorunlu bir kural değildir.",
+        "D": "Çıkışa paralel bağlanan giriş yeni bir sistem tanımı oluşturmaz, geri besleme halkası oluşturur.",
+        "E": "İnsan vücudunda doğum (oksitosin deşarjı), kan pıhtılaşması ve aksiyon potansiyeli gibi kritik pozitif geri besleme mekanizmaları da mevcuttur."
+      },
+      "konuAnlatimi": "Biyolojik sistemlerde homeostaz büyük oranda negatif geribesleme (feedback) mekanizmalarıyla sürdürülür. Sistemin kazancı (gain), düzeltici cevabın geride kalan hata miktarına veya çıkış sinyalinin giriş sinyaline oranı ile hesaplanır."
+    }
+  },
+  {
+    "id": "2024_93",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi Son Plak Potansiyelleri (SPP) için doğrudur?",
+    "secenekler": {
+      "A": "MSPP'lerini kuantalar şeklindeki nikotinik reseptör molekülleri oluşturur",
+      "B": "MSPP'i 10 civarında AcH paketçiği salınması ile ortaya çıkar",
+      "C": "EPSP'de hem kimyasal hem elektriksel olarak sodyum içeri, potasyum dışarı çıkar",
+      "D": "SPP'leri kayıtlamak için iyontoforez yöntemi ile hem kürar hem de Mg++ verilir",
+      "E": "EPSP depolarizasyon ve IPSP hiperpolarizasyon iken iletim ikisinde de zayıflar"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Lokal potansiyeller olan EPSP (eksitatör postsinaptik potansiyel - depolarizasyon) ve IPSP (inhibitör postsinaptik potansiyel - hiperpolarizasyon) dereceli potansiyellerdir; 'ya hep ya hiç' kuralına uymazlar ve zarda yayıldıkça amplitüdleri dekrementel olarak (mesafeyle zayıflayarak) azalır.",
+      "celdiriciler": {
+        "A": "Minyatür son plak potansiyellerini (MSPP) oluşturan kuantalar reseptörler değil, vezikül içindeki asetilkolin molekül paketleridir.",
+        "B": "MSPP tek bir vezikülün (tek kuantanın) spontan ekzositozu ile meydana gelir, 10 paketçik ile değil.",
+        "C": "EPSP sırasında hem kimyasal gradiyent hem de membran potansiyeli negatifliği nedeniyle Na+ içeri hücum eder; K+ için kimyasal gradiyent dışa olsa da elektriksel gradiyent içe doğrudur.",
+        "D": "Kürar ve Mg2+ son plak potansiyelini bloke etmek ve kas aksiyon potansiyelini engellemek için deneysel olarak kullanılır, tek başına kayıt yöntemi değildir."
+      },
+      "konuAnlatimi": "Sinir-kas kavşağında son plak potansiyeli (SPP) bir lokal dereceli potansiyeldir. Aksiyon potansiyelinden farklı olarak eşik değersizdir, sumasyona (zamansal/uzaysal toplanma) uğrar ve membran boyunca mesafeyle sönümlenerek iletilir."
+    }
+  },
+  {
+    "id": "2024_94",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi reseptör potansiyelleri için söylenemez?",
+    "secenekler": {
+      "A": "Nöronun uyarana karşı verdiği cevap reseptif alanı gösterir",
+      "B": "Lateral inhibisyonda en keskin yanıtları üçüncül nöronlar verir",
+      "C": "Transmembran reseptörler liganda bağlandığında sinyal iletimi kesilir",
+      "D": "Reseptör spesifitesi enerji tipine ve şekline göre değişir",
+      "E": "Biyolojik reseptörler hem enerji transdüseri hem de amplifikatör olarak çalışır"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Transmembran reseptörlere uygun ligand bağlandığında hücre içi ikincil ulak sistemleri, iyon akımları veya sinyal iletim yolları aktive edilir; sinyal iletimi kesilmez, tam tersine başlatılır veya modüle edilir.",
+      "celdiriciler": {
+        "A": "Reseptif alan, periferde o duyusal nöronun uyarılmasına ve deşarj frekansının değişmesine yol açan alanı ifade eder.",
+        "B": "Lateral inhibisyon seviye seviye güçlenir ve talamus/korteks gibi üçüncül duyusal nöron seviyesinde en keskin sınır kontrastı elde edilir.",
+        "D": "Her reseptör tipi spesifik bir uyarılma enerjisine (uygun uyaran/adekuat modalite) maksimum duyarlılık gösterir.",
+        "E": "Biyolojik duyusal reseptörler fiziksel enerjiyi elektriksel potansiyele çeviren (transdüser) ve sinyali büyütebilen (amplifikatör) yapılardır."
+      },
+      "konuAnlatimi": "Reseptör potansiyeli (jeneratör potansiyel), bir mekanik, kimyasal ya da termal uyaranın duyu zarında oluşturduğu lokal depolarizasyondur. Ligand bağlanmasıyla G-proteinleri ya da iyon kanalları aktive edilerek hücre içi kaskadlar başlatılır."
+    }
+  },
+  {
+    "id": "2024_95",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi EEG ile ilgili yanlıştır?",
+    "secenekler": {
+      "A": "EEG'de Fast Fourier Analizi yapılır",
+      "B": "EEG'de High/Low/Band pass filtreler kullanılır",
+      "C": "Sürekli Frekans Analizlerindeki eğimler kullanılır",
+      "D": "EEG'de en çok averajlama yapılır",
+      "E": "Transient Analiz ile spike dalgalar hakkında bilgi toplanır"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Averajlama (sinyal ortalaması alma) yöntemi spontan EEG dalgalarında değil, gürültü altındaki uyarılmış yanıtları (Evoked Potentials - VEP, BAEP, SEP) açığa çıkarmak için kullanılır; ham EEG analizinde en çok kullanılan yöntem frekans analizi (Fourier analizi) ve filtrelemedir.",
+      "celdiriciler": {
+        "A": "Zaman alanındaki EEG dalgalarını frekans spektrumuna (delta, teta, alfa, beta) çevirmek için Hızlı Fourier Dönüşümü (FFT) uygulanır.",
+        "B": "EEG sinyallerinde istenmeyen artefaktları temizlemek için alçak, yüksek ve bant geçiren analog/dijital filtreler kullanılır.",
+        "C": "Spektral frekans analizi eğrilerindeki güç yoğunluğu eğimleri klinik tanıda parametre olarak kullanılır.",
+        "E": "Epileptik deşarjlar ve diken-dalga (spike-wave) morfolojisi geçici dalga biçimi (transient) analizleri ile değerlendirilir."
+      },
+      "konuAnlatimi": "EEG (Elektroensefalografi), serebral korteksin piramidal hücrelerinin postsinaptik potansiyellerinin toplanmasıyla elde edilen elektriksel aktivitedir. Spektral analizde Fast Fourier Transform (FFT) kullanılırken, uyarılmış potansiyellerin arka plan EEG'den ayrıştırılması için sinyal averajlaması tercih edilir."
+    }
+  },
+  {
+    "id": "2024_96",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi EEG artifaktlarında doğrudur?",
+    "secenekler": {
+      "A": "Kornea-Retina arası dipol hareketi EEG'yi etkilemez",
+      "B": "İntra oküler lens hareketleri EEG'yi etkilemez",
+      "C": "30 Hz den büyük miyojenik aktivite EEG'yi etkilemez",
+      "D": "Parkinsondaki titreme EEG'yi etkilemez",
+      "E": "Elektrotların oluşturacağı empedans EEG'yi etkilemez"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Göz küresi kornea-retina dipolü oluşturmasına rağmen, yapay veya doğal intraoküler lensin kendi mikroskobik hareketleri EEG traselerinde elektriksel dipol oluşturmadığı için traseleri etkilemez.",
+      "celdiriciler": {
+        "A": "Göz küresinin kornea (pozitif) ve retina (negatif) arasındaki elektrostatik dipolü göz kırpma ve hareketlerinde frontal derivasyonlarda belirgin artefakt yaratır.",
+        "C": "30 Hz üzerindeki çiğneme kası veya boyun kası miyojenik (EMG) aktiviteleri beta ve gama bantlarında şiddetli artefaktlara yol açar.",
+        "D": "Parkinson hastalarındaki 4-6 Hz'lik istirahat tremoru kafa derisi elektrotlarında ritmik teta frekansında artefakt oluşturur.",
+        "E": "Elektrot-deri empedansının yüksek veya dengesiz olması ciddi baz çizgisi kaymalarına ve 50 Hz şebeke parazitine neden olur."
+      },
+      "konuAnlatimi": "EEG kayıtlarında artefaktlar biyolojik (göz hareketleri, EKG, kas seğirmeleri/EMG, nabız) ve biyolojik olmayan (elektrot temassızlığı, yüksek empedans, 50 Hz şebeke paraziti) olarak ikiye ayrılır. Frontal kanallarda en sık görülen artefakt kornea-retina potansiyel dipolünden kaynaklanan göz kırpma hareketleridir."
+    }
+  },
+  {
+    "id": "2024_97",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi renkli görme için söylenemez?",
+    "secenekler": {
+      "A": "Karanlıkta bipolar hücreler hiperpolarize olur / Aydınlıkta depolarize olur",
+      "B": "Rodlar yaklaşık 500 nm dalga boyunda optimum absorbsiyon yapar",
+      "C": "Mavi / Yeşil / Kırmızı konilerin absorbsiyonu dalga boylarına göre değişkenlik gösterir",
+      "D": "400-450 nm arası dalga boyu mavi ışığı zararlıdır",
+      "E": "Protanopik gözler daha fazla maviye duyarlı konileri barındırır"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Protanopi, mavi konilerin artışı değil; uzun dalga boyuna duyarlı olan L-konilerinin (kırmızı koniler) genetik olarak tamamen yokluğu veya işlevsizliği sonucu ortaya çıkan kırmızı renk körlüğüdür.",
+      "celdiriciler": {
+        "A": "On-merkezli bipolar hücreler karanlıkta tonik glutamat salınımıyla hiperpolarize, aydınlıkta fotoreseptör inhibisyonunun kalkmasıyla depolarize olurlar.",
+        "B": "Rodopsin fotopigmenti yaklaşık 498-500 nm dalga boyundaki yeşil-mavi spektrumda maksimum absorbsiyon gösterir.",
+        "C": "Koniler taşıdıkları opsin tipine göre farklı tepe dalga boylarında (S-konisi: 420 nm, M-konisi: 530 nm, L-konisi: 560 nm) uyarılırlar.",
+        "D": "Yüksek enerjili görünür ışık (HEV) aralığındaki 400-450 nm dalga boyundaki kısa dalga mavi ışık fotokimyasal retina hasarı (mavi ışık tehlikesi) oluşturabilir."
+      },
+      "konuAnlatimi": "İnsan retinasında trikromatik görmeyi sağlayan üç tip koni fotoreseptörü bulunur: S (kısa - mavi), M (orta - yeşil) ve L (uzun - kırmızı). Kırmızı konilerin yokluğuna protanopi, yeşil konilerin yokluğuna döteranopi, mavi konilerin yokluğuna ise tritanopi adı verilir."
+    }
+  },
+  {
+    "id": "2024_98",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi merceklerle ilgili doğrudur?",
+    "secenekler": {
+      "A": "Sferik mercekler ile silindirik mercekler aynı diyoptride kırılır",
+      "B": "Sferik mercekler negatif değil pozitif diyoptrilidir",
+      "C": "Sferik merceklerde sağa sola, yukarı aşağı hareket yönleri merceğin cinsini gösterir",
+      "D": "Sferik mercekler torik mercekler gibi eşit diyoptride kırılmaz",
+      "E": "Sferik mercekler gelen ışığı toplar ve büyütür"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Sferik mercekler tüm meridyenlerde ışığı eşit kırma gücüne sahipken, torik (silindirik bileşenli) mercekler eksenlerine göre farklı meridyenlerde farklı diyoptrik kırma güçlerine sahiptir.",
+      "celdiriciler": {
+        "A": "Silindirik mercekler sadece silindir eksenine dik olan eksende kırma yaparken, sferik mercekler 360 derecelik tüm eksenlerde eşit kırma yaparlar.",
+        "B": "Sferik mercekler sadece pozitif (konveks) değil, aynı zamanda miyopi düzeltilmesinde kullanılan negatif (konkav) diyoptrili de olabilirler.",
+        "C": "Merceğin önünden bakılarak yapılan öteleme testi hem merceğin cinsini (konkav/konveks) hem de silindirik aksı belirlemede kullanılır, sadece sferik merceklere özgü değildir.",
+        "E": "Gelen ışığı toplayıp büyüten sadece konveks (pozitif) sferik merceklerdir; konkav sferik mercekler ışığı dağıtır ve görüntüyü küçültür."
+      },
+      "konuAnlatimi": "Optikte sferik mercekler her meridyende homojen eğrilik yarıçapına sahip olup tek bir odak noktası oluştururlar. Silindirik veya torik mercekler ise astigmatizmanın düzeltilmesinde kullanılan ve iki farklı meridyende iki farklı kırma gücü ve odak çizgisi oluşturan merceklerdir."
+    }
+  },
+  {
+    "id": "2024_99",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi gözle ilgili yanlıştır?",
+    "secenekler": {
+      "A": "Gözün toplam kırma gücü +59 diyoptridir ve en çok korneadadır",
+      "B": "Dışarıdan gelen ışınların temel kırılma noktası korneaya ilk giriş anıdır",
+      "C": "Siliyer kasların dinlenme ve kasılması arasındaki kırıcılık gücü +20 diyoptridir",
+      "D": "Siliyer kasın relaksasyonu lensi yassı, kontraksiyonu ise lensi şişmanlatır",
+      "E": "Akomodasyon diyoptrisi presbiyopide zamanla azalır"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Genç bir gözde dinlenme ile maksimum kasılma arasındaki lens akomodasyon genliği (akomodasyon gücü artışı) yaklaşık +10 ila +14 diyoptri kadardır; akomodasyon farkı tek başına +20 diyoptriye ulaşamaz (lensin bazal dinlenme gücü yaklaşık +15 ila +20 diyoptridir).",
+      "celdiriciler": {
+        "A": "Gözün indirgenmiş şematik göz modelindeki toplam kırma gücü yaklaşık +59-60 diyoptridir ve bunun yaklaşık +40-43 diyoptrisini kornea sağlar.",
+        "B": "Hava ile kornea epiteli arasındaki kırma indisi farkının (1.000'e karşı 1.376) çok yüksek olması nedeniyle ışık en fazla kornea ön yüzünde kırılır.",
+        "D": "Siliyer kas relaksasyonunda zonüller gerilerek lensi düzleştirir, kontraksiyonunda ise zonüller gevşeyerek lens kalınlaşır ve eğriliği artar.",
+        "E": "Yaşlanmayla birlikte lens elastikiyetinin azalmasına bağlı olarak akomodasyon amplitüdü kademeli şekilde düşer (presbiyopi)."
+      },
+      "konuAnlatimi": "Gözün optik sisteminde kırıcılığın yaklaşık üçte ikisini (+43 D) hava-doku kırma indisi farkından ötürü kornea sağlar. Lens ise dinlenim halinde yaklaşık +15 ila +20 diyoptrilik kırıcılığa sahiptir ve siliyer kas kasılmasıyla dinamik akomodasyon sağlayarak kırıcılığını artırabilir."
+    }
+  },
+  {
+    "id": "2024_100",
+    "yil": 2024,
+    "ders": "Biyofizik",
+    "soruMetni": "Aşağıdakilerden hangisi sesle ilgili yanlıştır?",
+    "secenekler": {
+      "A": "Düşük frekanslı sesler infrases, yüksek frekanslı sesler ultrases olarak bilinir",
+      "B": "Ses kaynağının ya da sesi duyanın hareketli olması Doppler olayı olarak bilinir",
+      "C": "Ultrasesler, kristallere düşük frekansta piezo-elektrik uygulanması ile oluşur",
+      "D": "Suyun sesi absorbe etme katsayısı düşük olduğundan sesi iyi iletir",
+      "E": "Doppler olayı, hareketli kaynağın hızının ses hızından yavaş olduğu durumda gözlenir"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Ultrases (ultrason) dalgaları, piezoelektrik kristallere düşük değil, insan kulağının işitme sınırının üzerindeki yüksek frekanslı (tipik olarak >20 kHz ve tıpta 2-15 MHz) alternatif elektriksel voltaj uygulanmasıyla mekanik titreşim üretilmesi sonucu elde edilir.",
+      "celdiriciler": {
+        "A": "20 Hz altındaki mekanik dalgalar infrases (infrasound), 20.000 Hz (20 kHz) üstündeki dalgalar ultrases (ultrasound) olarak tanımlanır.",
+        "B": "Ses kaynağının veya gözlemcinin birbirine yaklaşması ya da uzaklaşması sonucu algılanan frekansta meydana gelen kayma Doppler olayıdır.",
+        "D": "Suyun akustik empedansı dokulara yakındır ve akustik zayıflama (absorbsiyon) katsayısı çok düşük olduğu için sesi oldukça iyi iletir.",
+        "E": "Kaynağın hızı ses hızından yavaşken klasik Doppler frekans kayması oluşur; ses hızını aştığında ise Doppler değil şok dalgaları (sonik patlama) meydana gelir."
+      },
+      "konuAnlatimi": "Tıbbi ultrasonografi transdüserlerinde kurşun-zirkonat-titanat (PZT) gibi piezoelektrik kristaller kullanılır. Kristale yüksek frekanslı alternatif akım uygulandığında kristal titreşerek ultrases dalgaları yayar (ters piezoelektrik etki); yansıyan ekolar kristale çarptığında ise elektriksel sinyale dönüştürülür (doğrudan piezoelektrik etki)."
+    }
+  },
+  {
+    "id": "2024_101",
+    "yil": 2024,
+    "ders": "Entegre",
+    "soruMetni": "N. trigeminus'un başlangıç liflerinin yer aldığı yapıyı işaretleyiniz.",
+    "secenekler": {
+      "A": "Medulla oblongata",
+      "B": "Fossa cranii posterior",
+      "C": "Culmen",
+      "D": "Pons",
+      "E": "Oliva"
+    },
+    "dogruCevap": "D",
+    "cozum": {
+      "dogruCevapNedeni": "Nervus trigeminus (CN V), beyin sapını pons'un anterolateral yüzünden, pedunculus cerebellaris medius ile pons gövdesinin birleştiği çizgiden iki kök (radix sensoria ve radix motoria) halinde terk eder veya başlangıç liflerini buradan alır.",
+      "celdiriciler": {
+        "A": "Medulla oblongata CN IX, X, XI ve XII'nin beyin sapı çıkış yeridir.",
+        "B": "Fossa cranii posterior anatomik bir kafatası çukurudur, sinir liflerinin köken aldığı beyin sapı nöral dokusu değildir.",
+        "C": "Culmen serebellum vermisinin bir alt lobülüdür.",
+        "E": "Oliva bulbus'un ön-yan yüzünde n. hypoglossus ve n. glossopharyngeus komşuluğundaki anatomik kabartıdır."
+      },
+      "konuAnlatimi": "Kranial sinirlerin beyin sapından çıkış yerleri: Mezensefalon (CN III, CN IV), Pons (CN V - pons anterolateral yüzü), Sulcus pontomedullaris (CN VI, VII, VIII) ve Medulla oblongata (CN IX, X, XI, XII). Trigeminal sinirin ana motor ve esas duyusal çekirdekleri pons tegmentumunda yerleşiktir."
+    }
+  },
+  {
+    "id": "2024_103",
+    "yil": 2024,
+    "ders": "Entegre",
+    "soruMetni": "Baş boyun bölgesine ait akut zonklayıcı tarzda gelen hastada ağrı merkezi sinir sistemine hangi duyusal lifler ile taşınır?",
+    "secenekler": {
+      "A": "Grup Ia duyusal",
+      "B": "Grup Ib duyusal",
+      "C": "Grup II duyusal",
+      "D": "Grup IIb duyusal",
+      "E": "Grup III (A delta) duyusal"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Akut, keskin, batıcı veya ilk hissedilen hızlı ağrı duyusu miyelinli A delta lifleri (Erlanger-Gasser sınıflamasında A delta, Lloyd sınıflamasında Grup III duyusal lifler) ile merkezi sinir sistemine iletilir.",
+      "celdiriciler": {
+        "A": "Grup Ia lifleri kas iğciğinin primer anulospiral sonlanmalarından propriosepsiyon taşır.",
+        "B": "Grup Ib lifleri Golgi tendon organından kas gerim duyusunu iletir.",
+        "C": "Grup II (A beta) lifleri kas iğciğinin sekonder sonlanmalarını ve deriden ince dokunma/basınç duyusunu taşır.",
+        "D": "Grup IIb lifleri kutanöz mekanoreseptör afferent grubudur, akut ağrı nosisepsiyonunu taşımaz."
+      },
+      "konuAnlatimi": "Periferik duyusal sinir lifi sınıflamasında Grup I (Ia, Ib) ve Grup II lifleri propriosepsiyon ve dokunmayı iletir. Ağrı duyusunu ise miyelinli Grup III (A delta lifleri - hızlı, batıcı, akut ağrı) ve miyelinsiz Grup IV (C lifleri - yavaş, zonklayıcı, kronik ağrı) taşır."
+    }
+  },
+  {
+    "id": "2024_104",
+    "yil": 2024,
+    "ders": "Entegre",
+    "soruMetni": "Bu hastada çene bölgesindeki nosiseptörlerin uyarılması ile bu reseptörlerde gerçekleşen potansiyel değişiklik aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Motor son plak potansiyeli",
+      "B": "Jeneratör potansiyel",
+      "C": "Eksitatör postsinaptik potansiyel",
+      "D": "İnhibitör postsinaptik potansiyel",
+      "E": "Aksiyon potansiyeli"
+    },
+    "dogruCevap": "B",
+    "cozum": {
+      "dogruCevapNedeni": "Primer duyusal nöronların serbest sinir uçlarında (nosiseptörlerde) zararlı mekanik, termal veya kimyasal uyarının transdüksiyonu sonucu doğrudan oluşan lokal dereceli depolarizasyona jeneratör (reseptör) potansiyeli denir.",
+      "celdiriciler": {
+        "A": "Motor son plak potansiyeli (SPP), sinir-kas kavşağında iskelet kası motor son plağında meydana gelen potansiyeldir.",
+        "C": "EPSP nöronlar arasındaki kimyasal sinapslarda postsinaptik dendrit veya somada oluşur, periferik reseptör zarında değil.",
+        "D": "İnhibitör postsinaptik potansiyel (IPSP) hiperpolarizan bir sinaptik potansiyeldir.",
+        "E": "Aksiyon potansiyeli jeneratör potansiyelin eşik değeri aşmasıyla miyelinli aksonun ilk ranvier boğumunda başlatılan yaygın 'ya hep ya hiç' yanıtıdır."
+      },
+      "konuAnlatimi": "Özelleşmiş reseptör hücrelerinde oluşan lokal yanıta 'reseptör potansiyeli', koku ve ağrı gibi primer afferent aksonun kendi ucunda oluşan yanıta ise 'jeneratör potansiyel' adı verilir. Jeneratör potansiyel eşik değeri geçtiğinde akson boyunca iletilen aksiyon potansiyelini tetikler."
+    }
+  },
+  {
+    "id": "2024_105",
+    "yil": 2024,
+    "ders": "Entegre",
+    "soruMetni": "Alzheimer hastalığında; sorumlu başlıca anatomik yapı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Hipokampus",
+      "B": "Mezensefalon",
+      "C": "Pons",
+      "D": "Medulla Oblongata",
+      "E": "Amigdala"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Alzheimer hastalığının en erken ve en belirgin nörodejenerasyona, nörofibriler yumak birikimine ve hacim kaybına (atrofi) uğrayan ve epizodik bellek kaybından sorumlu primer anatomik yapısı hipokampus ve entorinal kortekstir.",
+      "celdiriciler": {
+        "B": "Mezensefalon substantia nigra dejenerasyonunun görüldüğü Parkinson hastalığında temel patoloji alanıdır.",
+        "C": "Pons Alzheimer hastalığının birincil dejenerasyon odağı değildir.",
+        "D": "Medulla oblongata hayati kardiyorespiratuar merkezleri içerir ve Alzheimer erken patolojisinde primer hedef değildir.",
+        "E": "Amigdala limbik sistem parçası olup hastalığın ilerleyen evrelerinde etkilense de erken ve temel bilişsel yıkımın ana yapısı hipokampustur."
+      },
+      "konuAnlatimi": "Alzheimer hastalığında nörofibriler patoloji Braak evrelemesine göre ilk olarak transentorinal ve entorinal korteksten başlar, ardından hipokampusun CA1 bölgesine ve subikuluma yayılır. Bu nedenle hastalığın ilk kardinal klinik bulgusu hipokampal kökenli anterograd bellek kusurudur."
+    }
+  },
+  {
+    "id": "2024_106",
+    "yil": 2024,
+    "ders": "Entegre",
+    "soruMetni": "Alzheimer hastalığının başlangıcında beklenen ana semptom aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Yakın Bellek Kusuru",
+      "B": "Hezeyan",
+      "C": "Halüsinasyon",
+      "D": "Bradikinezi",
+      "E": "Uzak Bellek Kusuru"
+    },
+    "dogruCevap": "A",
+    "cozum": {
+      "dogruCevapNedeni": "Entorinal korteks ve hipokampus tutulumuna bağlı olarak yeni bilgilerin konsolidasyonu bozulur; bu sebeple Alzheimer hastalığının ilk ve en karakteristik klinik başlangıç belirtisi yakın (epizodik/kısa süreli) bellek kusurudur.",
+      "celdiriciler": {
+        "B": "Hezeyan ve sanrılar hastalığın orta ve ileri nöropsikiyatrik evrelerinde ortaya çıkabilir, başlangıç semptomu değildir.",
+        "C": "Görsel halüsinasyonlar Lewy cisimcikli demansın erken özelliğidir, Alzheimer başlangıcında beklenmez.",
+        "D": "Bradikinezi Parkinsonizm ve Parkinson hastalığı demansının ana motor bulgusudur.",
+        "E": "Uzak (retrograd) bellek kortikal depolama nedeniyle hastalığın erken dönemlerinde korunur, sadece terminal evrelerde kaybolur."
+      },
+      "konuAnlatimi": "Alzheimer demansında sinsi başlangıçlı yakın bellek kusuru (anterograd amnezi) tipiktir. Hastalar yakın zamanda gerçekleşen konuşmaları veya olayları unuturlar; buna karşılık çocukluk anıları ve eski bilgiler (uzak bellek) ileri evrelere kadar korunur."
+    }
+  },
+  {
+    "id": "2024_107",
+    "yil": 2024,
+    "ders": "Entegre",
+    "soruMetni": "Alzheimer hastalığında aşağıda belirtilen fizyolojik süreçlerden hangileri etkilenmiştir?\nI. Amiloid prekürsör proteinin sekretazlar tarafından kesimi\nII. Tau proteinlerinin fosforilasyonu\nIII. Kolinerjik nöron işlevi\nIV. Amiloid plakların uzaklaştırılması",
+    "secenekler": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "III ve IV",
+      "E": "I, II, III ve IV"
+    },
+    "dogruCevap": "E",
+    "cozum": {
+      "dogruCevapNedeni": "Alzheimer hastalığında beta ve gama-sekretaz kaskadında patolojik kesim oluşur (I), Tau proteini hiperfosforile olarak yumaklar yapar (II), Meynert bazal çekirdeği dejenerasyonuyla kolinerjik iletim çöker (III) ve mikrogliyal/lenfatik amiloid klirensi bozulur (IV); tüm süreçler patogeneze katılır.",
+      "celdiriciler": {
+        "A": "III ve IV. öncülleri dışladığı için eksik bir yanıttır.",
+        "B": "II ve IV. patolojik basamakları içermemektedir.",
+        "C": "I ve IV. mekanizmaları kapsamadığından yetersizdir.",
+        "D": "I ve II. basamaklar amiloid ve tau patolojisinin çekirdeğidir, dahil edilmemesi hatalıdır."
+      },
+      "konuAnlatimi": "Alzheimer patogenezinde amiloid prekürsör proteinin (APP) beta ve gama-sekretazlarca kesilmesiyle nörotoksik A-beta-42 peptidleri birikir ve plak klirensi yetersiz kalır. Eş zamanlı olarak mikrotübül proteini Tau hiperfosforile olarak nöron içi nörofibriler yumaklara (NFT) yol açar ve belirgin kolinerjik nöron kaybı gerçekleşir."
+    }
+  },
+  {
+    "id": "2024_108",
+    "yil": 2024,
+    "ders": "Entegre",
+    "soruMetni": "Kolinerjik sistem ile ilgili verilen bilgilerden doğru olanı işaretleyiniz.",
+    "secenekler": {
+      "A": "Kolinerjik nöronlar sadece serebellumda bulunur",
+      "B": "Kolinerjik reseptörlerin hepsi G protein eşleniktir",
+      "C": "Beyinde nikotinik ve muskarinik reseptörlerin ikisi de bulunur",
+      "D": "Kolinerjik iletimin bozulması bellek fonksiyonunu değiştirmez",
+      "E": "Presinaptik nöronda asetilkolin veziküllerde depolanmaz"
+    },
+    "dogruCevap": "C",
+    "cozum": {
+      "dogruCevapNedeni": "Santral sinir sisteminde asetilkolin etkilerini hem iyonotropik ligand kapılı katyon kanalları olan nikotinik asetilkolin reseptörleri (nAChR) hem de metabotropik G-protein kenetli muskarinik asetilkolin reseptörleri (M1-M5) üzerinden gösterir.",
+      "celdiriciler": {
+        "A": "Kolinerjik nöronlar Meynert'in bazal çekirdeği, septum, pedunculopontin tegmental çekirdek ve striatal ara nöronlarda yaygın bulunur.",
+        "B": "Nikotinik reseptörler G protein eşlenik değil, hızlı iyonotropik (Na+/K+/Ca2+) kanallarıdır.",
+        "D": "Santral kolinerjik iletimin baskılanması veya nöron kaybı ağır bellek bozukluğu ve kognitif disfonksiyon yaratır.",
+        "E": "Asetilkolin sitozolde kolin asetiltransferaz ile sentezlendikten sonra VAChT taşıyıcısı ile veziküllerde depolanır."
+      },
+      "konuAnlatimi": "Santral kolinerjik sistemde reseptörler iki tiptir: Nikotinik reseptörler (hızlı iyon kanalı, presinaptik nörotransmitter salınım modülasyonu) ve Muskarinik reseptörler (M1-M5 G-protein kenetli, hipokampal plastisite ve bellek regülasyonu). Alzheimer tedavisinde kullanılan donepezil, rivastigmin ve galantamin asetilkolinesteraz enzimini inhibe ederek sinaptik kolinerjik tonusu artırır."
+    }
+  }
+]
