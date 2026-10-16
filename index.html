@@ -45,7 +45,6 @@
       touch-action: manipulation;
     }
 
-    /* Dokunmatik Cihazlar İçin Pürüzsüz Yatay Kaydırma */
     .touch-scroll {
       -webkit-overflow-scrolling: touch;
       overscroll-behavior-x: contain;
@@ -125,18 +124,18 @@
 
     /* Dinamik Font Ölçekleri */
     :root[data-font="normal"] { 
-      --font-q-scale: 1rem; --font-opt-scale: 0.925rem; --font-expl-scale: 0.875rem; --font-ai-scale: 0.875rem; 
+      --font-q-scale: 1rem; --font-opt-scale: 0.925rem; --font-expl-scale: 0.9rem; --font-ai-scale: 0.875rem; 
     }
     :root[data-font="large"] { 
-      --font-q-scale: 1.15rem; --font-opt-scale: 1.05rem; --font-expl-scale: 0.975rem; --font-ai-scale: 1rem; 
+      --font-q-scale: 1.15rem; --font-opt-scale: 1.05rem; --font-expl-scale: 1.05rem; --font-ai-scale: 1rem; 
     }
     :root[data-font="xlarge"] { 
-      --font-q-scale: 1.35rem; --font-opt-scale: 1.2rem; --font-expl-scale: 1.075rem; --font-ai-scale: 1.15rem; 
+      --font-q-scale: 1.35rem; --font-opt-scale: 1.2rem; --font-expl-scale: 1.2rem; --font-ai-scale: 1.15rem; 
     }
 
     .q-text { font-size: var(--font-q-scale); line-height: 1.6; }
     .opt-text { font-size: var(--font-opt-scale); line-height: 1.5; }
-    .expl-text { font-size: var(--font-expl-scale); line-height: 1.55; }
+    .expl-text { font-size: var(--font-expl-scale); line-height: 1.6; }
     .ai-text { font-size: var(--font-ai-scale); line-height: 1.6; }
 
     .glass { background: var(--color-card); border: 1px solid var(--color-border); }
@@ -151,7 +150,6 @@
     @keyframes boss-shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
     .shake { animation: boss-shake 0.4s ease-in-out; }
 
-    /* Dairesel Düğüm Efektleri */
     .map-node-active {
       box-shadow: 0 0 25px 4px var(--color-accent), inset 0 2px 4px rgba(255, 255, 255, 0.3);
     }
@@ -162,21 +160,33 @@
       box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.5);
     }
 
+    /* Asistan Markdown Formatlama Stilleri */
     .ai-markdown strong { font-weight: 700; color: var(--color-text); }
     .ai-markdown em { font-style: italic; }
     .ai-markdown p { margin-bottom: 0.65rem; }
     .ai-markdown p:last-child { margin-bottom: 0; }
     .ai-markdown ul { list-style-type: disc; margin-left: 1.25rem; margin-bottom: 0.65rem; }
     .ai-markdown li { margin-bottom: 0.35rem; }
+    .ai-markdown h1, .ai-markdown h2, .ai-markdown h3 {
+      font-weight: 800;
+      color: var(--color-accent);
+      margin-top: 0.75rem;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .ai-markdown h1 { font-size: 1.15rem; }
+    .ai-markdown h2 { font-size: 1.05rem; }
+    .ai-markdown h3 { font-size: 0.95rem; }
 
-    /* Dokunmatik Cihazlar İçin Güvenli Alanlar (Safe Area) */
-    .pb-safe { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
-    .bottom-safe { bottom: max(1rem, env(safe-area-inset-bottom)); }
+    .pb-safe { padding-bottom: max(1.25rem, env(safe-area-inset-bottom)); }
+    .bottom-safe { bottom: max(1.25rem, env(safe-area-inset-bottom)); }
   </style>
 </head>
 <body class="bg-theme-bg text-theme-text min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white relative text-base transition-colors duration-300">
 
-  <!-- ÜST NAVİGASYON -->
+  <!-- ÜST NAVİGASYON (Mobil ve Masaüstü Uyumlu) -->
   <header id="mainHeader" class="border-b border-theme-border bg-theme-bg/95 backdrop-blur-md sticky top-0 z-30 transition-all duration-300">
     <div class="max-w-6xl mx-auto px-2.5 sm:px-4 py-2 sm:py-3 flex items-center justify-between gap-1.5 sm:gap-4">
       
@@ -190,37 +200,36 @@
         <div>
           <div class="flex items-center gap-1">
             <h1 class="font-extrabold text-xs sm:text-base tracking-tight leading-tight">D2K1 NÖROPORTAL</h1>
-            <span class="px-1 py-0.2 rounded text-[9px] sm:text-[10px] font-bold bg-theme-accent/15 text-theme-accent border border-theme-border hidden sm:inline">RPG+</span>
           </div>
           <p class="text-[10px] sm:text-xs text-theme-textMuted hidden sm:block">Akademik Tıp Sınav Simülatörü</p>
         </div>
       </div>
 
-      <!-- Navigasyon Butonları (Dokunmatik Yükseklik Optimize Edildi) -->
-      <div class="flex items-center bg-theme-subtle p-0.5 sm:p-1 rounded-xl border border-theme-border">
-        <button onclick="switchView('dashboard')" id="navBtnDashboard" class="px-2.5 sm:px-3 py-1.5 sm:py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-1.5 transition bg-theme-accent text-white shadow active:scale-95">
+      <!-- Navigasyon Butonları -->
+      <div class="flex items-center bg-theme-subtle p-0.5 sm:p-1 rounded-xl border border-theme-border shrink-0">
+        <button onclick="switchView('dashboard')" id="navBtnDashboard" class="px-2.5 sm:px-3 py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 transition bg-theme-accent text-white shadow active:scale-95">
           <i data-lucide="layout-dashboard" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i> <span class="hidden md:inline">Panel</span>
         </button>
-        <button onclick="switchView('adventure')" id="navBtnAdventure" class="px-2.5 sm:px-3 py-1.5 sm:py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-bold flex items-center gap-1 sm:gap-1.5 transition text-amber-500 hover:text-theme-text active:scale-95">
+        <button onclick="switchView('adventure')" id="navBtnAdventure" class="px-2.5 sm:px-3 py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-bold flex items-center gap-1 transition text-amber-500 hover:text-theme-text active:scale-95">
           <i data-lucide="map" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500"></i> <span>Macera</span>
         </button>
-        <button onclick="switchView('questions')" id="navBtnQuestions" class="px-2.5 sm:px-3 py-1.5 sm:py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-1.5 transition text-theme-textMuted hover:text-theme-text active:scale-95">
+        <button onclick="switchView('questions')" id="navBtnQuestions" class="px-2.5 sm:px-3 py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 transition text-theme-textMuted hover:text-theme-text active:scale-95">
           <i data-lucide="list-checks" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i> <span class="hidden md:inline">Havuz</span>
         </button>
-        <button onclick="openExamSetupModal()" id="navBtnExam" class="px-2.5 sm:px-3 py-1.5 sm:py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-1.5 transition text-sky-500 hover:text-theme-text active:scale-95">
+        <button onclick="openExamSetupModal()" id="navBtnExam" class="px-2.5 sm:px-3 py-1.5 min-h-[36px] sm:min-h-[40px] rounded-lg text-xs sm:text-sm font-semibold flex items-center gap-1 transition text-sky-500 hover:text-theme-text active:scale-95">
           <i data-lucide="timer" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i> <span class="hidden md:inline">Sınav</span>
         </button>
       </div>
 
-      <!-- Tema & Font Kontrolleri -->
-      <div class="flex items-center gap-1 sm:gap-2">
+      <!-- Masaüstü Kontrolleri -->
+      <div class="hidden md:flex items-center gap-2">
         <div class="flex items-center bg-theme-subtle rounded-xl border border-theme-border overflow-hidden text-xs">
-          <button onclick="cycleFontSize(-1)" title="Yazıyı Küçült" class="px-1.5 sm:px-2 py-1.5 min-h-[36px] sm:min-h-[38px] text-theme-textMuted hover:text-theme-text transition font-bold active:bg-theme-card">A-</button>
-          <span id="currentFontLabel" class="px-1 text-[10px] sm:text-[11px] font-semibold text-theme-accent">100%</span>
-          <button onclick="cycleFontSize(1)" title="Yazıyı Büyüt" class="px-1.5 sm:px-2 py-1.5 min-h-[36px] sm:min-h-[38px] text-theme-textMuted hover:text-theme-text transition font-bold active:bg-theme-card">A+</button>
+          <button onclick="cycleFontSize(-1)" title="Yazıyı Küçült" class="px-2 py-1.5 min-h-[38px] text-theme-textMuted hover:text-theme-text transition font-bold active:bg-theme-card">A-</button>
+          <span id="currentFontLabel" class="px-1 text-[11px] font-semibold text-theme-accent">100%</span>
+          <button onclick="cycleFontSize(1)" title="Yazıyı Büyüt" class="px-2 py-1.5 min-h-[38px] text-theme-textMuted hover:text-theme-text transition font-bold active:bg-theme-card">A+</button>
         </div>
 
-        <select id="themeWorldSelect" onchange="changeThemeWorld(this.value)" class="bg-theme-subtle border border-theme-border text-xs rounded-xl px-2 sm:px-2.5 py-1.5 min-h-[36px] sm:min-h-[38px] focus:outline-none cursor-pointer text-theme-text hidden sm:block">
+        <select id="themeWorldSelect" onchange="changeThemeWorld(this.value)" class="bg-theme-subtle border border-theme-border text-xs rounded-xl px-2.5 py-1.5 min-h-[38px] focus:outline-none cursor-pointer text-theme-text">
           <option value="midnight">🌌 Gece</option>
           <option value="sepia">☕ Sepya</option>
           <option value="clean">⚪ Klinik</option>
@@ -229,32 +238,94 @@
           <option value="amber">👑 Altın</option>
         </select>
 
-        <button onclick="toggleDarkMode()" id="themeToggleBtn" title="Açık/Koyu Tema" class="p-2 min-h-[36px] min-w-[36px] sm:min-h-[38px] sm:min-w-[38px] flex items-center justify-center rounded-xl bg-theme-subtle border border-theme-border text-amber-500 hover:opacity-80 transition active:scale-90">
+        <button onclick="toggleDarkMode()" id="themeToggleBtn" title="Açık/Koyu Tema" class="p-2 min-h-[38px] min-w-[38px] flex items-center justify-center rounded-xl bg-theme-subtle border border-theme-border text-amber-500 hover:opacity-80 transition active:scale-90">
           <i data-lucide="moon" id="themeIcon" class="w-4 h-4"></i>
         </button>
 
-        <label class="px-2.5 sm:px-3 py-1.5 min-h-[36px] sm:min-h-[38px] bg-theme-subtle hover:opacity-80 text-theme-text rounded-xl text-xs sm:text-sm font-semibold cursor-pointer border border-theme-border flex items-center gap-1.5 transition active:scale-95">
+        <label class="px-3 py-1.5 min-h-[38px] bg-theme-subtle hover:opacity-80 text-theme-text rounded-xl text-xs sm:text-sm font-semibold cursor-pointer border border-theme-border flex items-center gap-1.5 transition active:scale-95">
           <i data-lucide="upload" class="w-4 h-4 text-theme-accent"></i> <span class="hidden lg:inline">JSON</span>
           <input type="file" id="filePicker" accept=".json" multiple class="hidden">
         </label>
       </div>
+
+      <!-- Mobil Hızlı Ayarlar Tetikleyici Butonu -->
+      <div class="flex md:hidden items-center gap-1">
+        <button onclick="toggleMobileSettingsSheet()" class="p-2 min-h-[36px] min-w-[36px] flex items-center justify-center rounded-xl bg-theme-subtle border border-theme-border text-theme-accent hover:opacity-80 transition active:scale-90" title="Görünüm ve Tema Ayarları">
+          <i data-lucide="sliders-horizontal" class="w-4 h-4"></i>
+        </button>
+      </div>
     </div>
   </header>
+
+  <!-- MOBİL HIZLI AYARLAR ÇEKMECESİ (BottomSheet) -->
+  <div id="mobileSettingsSheet" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-end justify-center md:hidden">
+    <div class="bg-theme-card border-t border-theme-border rounded-t-3xl w-full p-5 flex flex-col gap-4 shadow-2xl animate-in slide-in-from-bottom pb-safe">
+      <div class="w-12 h-1.5 bg-theme-border rounded-full mx-auto"></div>
+      <div class="flex items-center justify-between border-b border-theme-border pb-3">
+        <h3 class="font-extrabold text-sm text-theme-text flex items-center gap-2">
+          <i data-lucide="palette" class="w-4 h-4 text-theme-accent"></i> Görünüm & Tema Ayarları
+        </h3>
+        <button onclick="toggleMobileSettingsSheet()" class="p-1 text-theme-textMuted hover:text-theme-text">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Font Boyutlandırma -->
+      <div class="flex items-center justify-between bg-theme-subtle p-3 rounded-2xl border border-theme-border">
+        <div class="flex flex-col">
+          <span class="text-xs font-bold text-theme-text">Yazı Boyutu</span>
+          <span class="text-[10px] text-theme-textMuted">Sorular ve açıklamalar dahil</span>
+        </div>
+        <div class="flex items-center bg-theme-card rounded-xl border border-theme-border overflow-hidden">
+          <button onclick="cycleFontSize(-1)" class="px-3.5 py-2 min-h-[40px] text-xs font-bold text-theme-textMuted active:bg-theme-subtle">A-</button>
+          <span id="currentFontLabelMobile" class="px-2.5 text-xs font-black text-theme-accent">100%</span>
+          <button onclick="cycleFontSize(1)" class="px-3.5 py-2 min-h-[40px] text-xs font-bold text-theme-textMuted active:bg-theme-subtle">A+</button>
+        </div>
+      </div>
+
+      <!-- Tema Dünyası -->
+      <div class="flex items-center justify-between bg-theme-subtle p-3 rounded-2xl border border-theme-border">
+        <span class="text-xs font-bold text-theme-text">Tema Rengi</span>
+        <select id="themeWorldSelectMobile" onchange="changeThemeWorld(this.value)" class="bg-theme-card border border-theme-border text-xs rounded-xl px-3 py-2 min-h-[40px] text-theme-text focus:outline-none">
+          <option value="midnight">🌌 Gece Nöronu</option>
+          <option value="sepia">☕ Sepya Parşömen</option>
+          <option value="clean">⚪ Klinik Beyaz</option>
+          <option value="crimson">🩸 Dolaşım & Arter</option>
+          <option value="emerald">🌿 Sinaps Ormanı</option>
+          <option value="amber">👑 Altın Korteks</option>
+        </select>
+      </div>
+
+      <!-- Açık / Koyu Mod -->
+      <div class="flex items-center justify-between bg-theme-subtle p-3 rounded-2xl border border-theme-border">
+        <span class="text-xs font-bold text-theme-text">Açık / Koyu Mod</span>
+        <button onclick="toggleDarkMode()" class="px-4 py-2 min-h-[40px] rounded-xl bg-theme-card border border-theme-border text-amber-500 font-bold text-xs flex items-center gap-1.5 active:scale-95">
+          <i data-lucide="moon" id="themeIconMobile" class="w-4 h-4"></i> Mod Değiştir
+        </button>
+      </div>
+
+      <!-- JSON Yükleme -->
+      <label class="w-full py-3 min-h-[44px] bg-theme-accent text-white font-bold text-xs rounded-2xl flex items-center justify-center gap-2 cursor-pointer shadow-lg active:scale-95">
+        <i data-lucide="upload" class="w-4 h-4"></i> Özel Soru Dosyası Yükle (JSON)
+        <input type="file" id="filePickerMobile" accept=".json" multiple class="hidden">
+      </label>
+    </div>
+  </div>
 
   <!-- ANA İÇERİK ALANI -->
   <main id="mainContentArea" class="max-w-6xl mx-auto px-2.5 sm:px-4 py-3 sm:py-6 w-full flex-1 transition-all duration-300 pb-safe">
 
-    <!-- MACERA MODU: 10 AŞAMALI DAİRESEL YOL HARİTASI[cite: 1] -->
+    <!-- MACERA MODU: 10 AŞAMALI DAİRESEL YOL HARİTASI -->
     <div id="viewAdventure" class="hidden flex flex-col gap-6">
       
-      <!-- 1. Dairesel Yol Haritası Ekranı[cite: 1] -->
+      <!-- 1. Dairesel Yol Haritası Ekranı -->
       <div id="adventureMapScreen" class="flex flex-col gap-6 sm:gap-8 items-center">
         <div class="text-center max-w-md mx-auto pt-1 sm:pt-2 px-2">
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-500 text-xs font-bold mb-1.5 sm:mb-2">
             <i data-lucide="compass" class="w-3.5 h-3.5"></i> Nöro-Sefer Güzergâhı
           </span>
           <h2 class="text-lg sm:text-2xl font-black text-theme-text tracking-tight">Korteks Seferi: 10 Aşama</h2>
-          <p class="text-xs text-theme-textMuted mt-0.5 sm:mt-1">Her yanlışta 1 yıldız düşer! Bölümleri sırayla fethedin[cite: 1].</p>
+          <p class="text-xs text-theme-textMuted mt-0.5 sm:mt-1">Her yanlışta 1 yıldız düşer! Bölümleri sırayla fethedin.</p>
         </div>
 
         <div class="relative max-w-sm mx-auto w-full py-2 sm:py-4 flex flex-col items-center" id="circleMapContainer"></div>
@@ -294,17 +365,17 @@
           </div>
         </div>
 
-        <!-- Macera Soru Konteyneri -->
         <div id="adventureQuestionContainer"></div>
       </div>
 
     </div>
 
     <!-- 1. GİRİŞ VE ANALİTİK PANELİ -->
-    <div id="viewDashboard" class="flex flex-col gap-4 sm:gap-8">
+    <div id="viewDashboard" class="flex flex-col gap-5 sm:gap-8">
       
-      <div class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-theme-card border border-theme-border p-4 sm:p-8 shadow-xl">
-        <div class="max-w-2xl relative z-10 flex flex-col gap-2.5 sm:gap-3">
+      <!-- Ana Karşılama Kartı (İstenen Sıralama: Tüm Havuz -> Komite Sınavı -> Macera -> Hata Telafi) -->
+      <div class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-theme-card border border-theme-border p-4 sm:p-7 shadow-xl">
+        <div class="max-w-3xl relative z-10 flex flex-col gap-2.5 sm:gap-3">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-theme-accent/15 border border-theme-border text-theme-accent text-xs font-bold w-max">
             <span class="w-2 h-2 rounded-full bg-theme-accent animate-pulse"></span> Gelişmiş Tıp Eğitim Portalı
           </div>
@@ -312,73 +383,124 @@
             Nöroanatomi & Entegre Komite Simülatörü
           </h2>
           <p class="text-xs sm:text-base text-theme-textMuted leading-relaxed">
-            Soruları RPG macera modunda çözün, hatalarınızdan özel deneme testi üretin veya yapay zeka ile şık şık analiz yapın.
+            Soruları RPG macera modunda çözün, hatalarınızdan özel deneme testi üretin veya resmî süreli sınav oturumu başlatın.
           </p>
 
-          <div class="flex flex-wrap items-center gap-2 sm:gap-3 pt-1">
-            <button onclick="startWrongQuestionsTest()" class="flex-1 sm:flex-none px-3.5 sm:px-5 py-2.5 min-h-[44px] rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 text-white text-xs sm:text-sm font-extrabold transition flex items-center justify-center gap-1.5 shadow-lg active:scale-95">
-              <i data-lucide="alert-circle" class="w-4 h-4"></i> Yanlışlarımdan Test
+          <!-- İstenen Sıralamaya Göre Düzenlenmiş 4'lü Aksiyon Grid'i -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+            <!-- 1. Tüm Havuz -->
+            <button onclick="startSolving('Tümü')" class="w-full px-3 py-2.5 min-h-[44px] rounded-xl bg-theme-accent hover:opacity-90 text-white text-xs sm:text-sm font-bold transition flex items-center justify-center gap-1.5 shadow-lg active:scale-95">
+              <i data-lucide="play" class="w-4 h-4 fill-white"></i> Tüm Havuz
             </button>
-            <button onclick="switchView('adventure')" class="flex-1 sm:flex-none px-3.5 sm:px-5 py-2.5 min-h-[44px] rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-slate-950 text-xs sm:text-sm font-extrabold transition flex items-center justify-center gap-1.5 shadow-lg active:scale-95">
+            <!-- 2. Komite Sınavı -->
+            <button onclick="openExamSetupModal()" class="w-full px-3 py-2.5 min-h-[44px] rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 text-white text-xs sm:text-sm font-extrabold transition flex items-center justify-center gap-1.5 shadow-lg active:scale-95 border border-sky-400/30">
+              <i data-lucide="timer" class="w-4 h-4"></i> Komite Sınavı
+            </button>
+            <!-- 3. Macera Haritası -->
+            <button onclick="switchView('adventure')" class="w-full px-3 py-2.5 min-h-[44px] rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 text-slate-950 text-xs sm:text-sm font-extrabold transition flex items-center justify-center gap-1.5 shadow-lg active:scale-95 border border-amber-300/40">
               <i data-lucide="map" class="w-4 h-4"></i> Macera Haritası
             </button>
-            <button onclick="startSolving('Tümü')" class="w-full sm:w-auto px-4 sm:px-5 py-2.5 min-h-[44px] rounded-xl bg-theme-accent hover:opacity-90 text-white text-xs sm:text-sm font-bold transition flex items-center justify-center gap-1.5 shadow-lg active:scale-95">
-              <i data-lucide="play" class="w-4 h-4 fill-white"></i> Tüm Havuz
+            <!-- 4. Hata Telafi Testi -->
+            <button onclick="startWrongQuestionsTest()" class="w-full px-3 py-2.5 min-h-[44px] rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 text-white text-xs sm:text-sm font-extrabold transition flex items-center justify-center gap-1.5 shadow-lg active:scale-95 border border-rose-400/30">
+              <i data-lucide="alert-circle" class="w-4 h-4"></i> Hata Telafi
             </button>
           </div>
         </div>
       </div>
 
-      <!-- HIZLI ERİŞİM KONTROL MERKEZİ -->
-      <section class="flex flex-col gap-2.5 sm:gap-3">
-        <div class="flex items-center justify-between">
-          <h3 class="text-xs sm:text-base font-extrabold text-theme-text flex items-center gap-1.5">
-            <i data-lucide="compass" class="w-4 h-4 text-theme-accent"></i> Hızlı Çalışma Modları
-          </h3>
-          <span class="text-[11px] text-theme-textMuted font-medium">Tek dokunuşla başla</span>
-        </div>
+      <!-- HIZLI ÇALIŞMA MODLARI: 2 ADET AYRI 3'LÜ MOBİL DOSTU GENİŞ GRİD -->
+      <section class="flex flex-col gap-4">
         
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3.5">
-          <div onclick="switchView('adventure')" class="glass p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-amber-500/60 transition cursor-pointer flex flex-col gap-2 group shadow-sm active:scale-95">
-            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-500/15 text-amber-500 flex items-center justify-center shrink-0">
-              <i data-lucide="swords" class="w-4 h-4 sm:w-5 sm:h-5"></i>
-            </div>
-            <div>
-              <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-amber-500 transition">Macera Seferi</h4>
-              <p class="text-[10px] sm:text-xs text-theme-textMuted mt-0.5 leading-snug">10 aşamalı yol haritası[cite: 1]</p>
-            </div>
+        <!-- BİRİNCİ 3'LÜ GRİD: TEMEL MODLAR (Tüm Havuz, Macera, Sınav) -->
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xs sm:text-base font-extrabold text-theme-text flex items-center gap-1.5">
+              <i data-lucide="compass" class="w-4 h-4 text-theme-accent"></i> Temel Çalışma Parkurları
+            </h3>
+            <span class="text-[11px] text-theme-textMuted font-medium">Hızlı ve odaklı başla</span>
           </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3.5">
+            <!-- 1. Tüm Havuz -->
+            <div onclick="startSolving('Tümü')" class="glass p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-theme-accent transition cursor-pointer flex items-center sm:flex-col sm:items-start gap-3 group shadow-sm active:scale-95">
+              <div class="w-10 h-10 rounded-xl bg-theme-accent/15 text-theme-accent flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="layers" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-theme-accent transition">Tüm Soru Havuzu</h4>
+                <p class="text-[11px] text-theme-textMuted mt-0.5 leading-snug">Kapsamlı ve serbest çalışma modu</p>
+              </div>
+            </div>
 
-          <div onclick="startWrongQuestionsTest()" class="glass p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-rose-500/60 transition cursor-pointer flex flex-col gap-2 group shadow-sm active:scale-95">
-            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-rose-500/15 text-rose-500 flex items-center justify-center shrink-0">
-              <i data-lucide="refresh-cw" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+            <!-- 2. Macera Seferi -->
+            <div onclick="switchView('adventure')" class="glass p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-amber-500/60 transition cursor-pointer flex items-center sm:flex-col sm:items-start gap-3 group shadow-sm active:scale-95">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="swords" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-amber-500 transition">Macera Seferi</h4>
+                <p class="text-[11px] text-theme-textMuted mt-0.5 leading-snug">10 aşamalı RPG yol haritası</p>
+              </div>
             </div>
-            <div>
-              <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-rose-500 transition">Hata Telafi</h4>
-              <p class="text-[10px] sm:text-xs text-theme-textMuted mt-0.5 leading-snug">Sadece yanlışlarını çöz</p>
-            </div>
-          </div>
 
-          <div onclick="pickRandomQuestion()" class="glass p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-sky-500/60 transition cursor-pointer flex flex-col gap-2 group shadow-sm active:scale-95">
-            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-sky-500/15 text-sky-500 flex items-center justify-center shrink-0">
-              <i data-lucide="dices" class="w-4 h-4 sm:w-5 sm:h-5"></i>
-            </div>
-            <div>
-              <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-sky-500 transition">Rastgele Soru</h4>
-              <p class="text-[10px] sm:text-xs text-theme-textMuted mt-0.5 leading-snug">Tüm havuzdan 1 soru</p>
-            </div>
-          </div>
-
-          <div onclick="toggleAdvisor()" class="glass p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-theme-accent transition cursor-pointer flex flex-col gap-2 group shadow-sm active:scale-95">
-            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-theme-accent/15 text-theme-accent flex items-center justify-center shrink-0">
-              <i data-lucide="bot" class="w-4 h-4 sm:w-5 sm:h-5"></i>
-            </div>
-            <div>
-              <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-theme-accent transition">NöroAsistan</h4>
-              <p class="text-[10px] sm:text-xs text-theme-textMuted mt-0.5 leading-snug">Gemini ile konuyu danış</p>
+            <!-- 3. Sınav Modu -->
+            <div onclick="openExamSetupModal()" class="glass p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-sky-500/60 transition cursor-pointer flex items-center sm:flex-col sm:items-start gap-3 group shadow-sm active:scale-95">
+              <div class="w-10 h-10 rounded-xl bg-sky-500/15 text-sky-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="timer" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-sky-500 transition">Sınav Simülatörü</h4>
+                <p class="text-[11px] text-theme-textMuted mt-0.5 leading-snug">Resmî komite formatında süreyle yarış</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- İKİNCİ 3'LÜ GRİD: DESTEK & ANALİZ MODLARI (Rastgele Soru, NöroAsistan, Hata Telafi) -->
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xs sm:text-base font-extrabold text-theme-text flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i> Akıllı Tekrar & Destek Modları
+            </h3>
+            <span class="text-[11px] text-theme-textMuted font-medium">Hedefe yönelik pratik</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3.5">
+            <!-- 1. Rastgele Soru -->
+            <div onclick="pickRandomQuestion()" class="glass p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-emerald-500/60 transition cursor-pointer flex items-center sm:flex-col sm:items-start gap-3 group shadow-sm active:scale-95">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="dices" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-emerald-500 transition">Rastgele Soru</h4>
+                <p class="text-[11px] text-theme-textMuted mt-0.5 leading-snug">Tüm havuzdan anlık tek soru çek</p>
+              </div>
+            </div>
+
+            <!-- 2. NöroAsistan -->
+            <div onclick="toggleAdvisor()" class="glass p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-indigo-500/60 transition cursor-pointer flex items-center sm:flex-col sm:items-start gap-3 group shadow-sm active:scale-95">
+              <div class="w-10 h-10 rounded-xl bg-indigo-500/15 text-indigo-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="bot" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-indigo-500 transition">NöroAsistan</h4>
+                <p class="text-[11px] text-theme-textMuted mt-0.5 leading-snug">Gemini yapay zeka ile soru danış</p>
+              </div>
+            </div>
+
+            <!-- 3. Hata Telafi -->
+            <div onclick="startWrongQuestionsTest()" class="glass p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-theme-border hover:border-rose-500/60 transition cursor-pointer flex items-center sm:flex-col sm:items-start gap-3 group shadow-sm active:scale-95">
+              <div class="w-10 h-10 rounded-xl bg-rose-500/15 text-rose-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-xs sm:text-sm font-bold text-theme-text group-hover:text-rose-500 transition">Hata Telafi</h4>
+                <p class="text-[11px] text-theme-textMuted mt-0.5 leading-snug">Sadece yanlış bildiğin soruları çöz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
 
       <!-- GÜNLÜK HEDEF & GÜNÜN NÖRO-İNCİSİ -->
@@ -570,10 +692,9 @@
 
   </main>
 
-  <!-- SAĞ / TAM EKRAN AÇILAN ASİSTAN (Mobil Çekmece Optimize) -->
+  <!-- SAĞ / TAM EKRAN AÇILAN ASİSTAN (Mobil Çekmece) -->
   <aside id="advisorDrawer" class="fixed z-40 bg-theme-bg border-theme-border shadow-2xl flex flex-col transition-transform duration-300 inset-0 w-full h-[100dvh] translate-y-full md:inset-auto md:top-0 md:right-0 md:h-full md:w-[480px] lg:md:w-[520px] md:border-l md:translate-y-0 md:translate-x-full">
     
-    <!-- Mobil Kapatma/Tutma Barı -->
     <div class="w-12 h-1.5 bg-theme-border rounded-full mx-auto my-2 md:hidden"></div>
 
     <div class="p-3 sm:p-4 border-b border-theme-border flex items-center justify-between bg-theme-card/90 backdrop-blur shrink-0">
@@ -627,7 +748,7 @@
       </div>
     </div>
 
-    <!-- Alt Soru Sorma Girişi (Mobil Klavye ve Safe Area Optimize) -->
+    <!-- Alt Soru Sorma Girişi -->
     <div class="p-2.5 sm:p-4 border-t border-theme-border bg-theme-card shrink-0 pb-safe">
       <div class="flex items-center gap-2">
         <input type="text" id="aiUserInput" placeholder="Bir soru sor (Enter)..." 
@@ -641,7 +762,7 @@
 
   </aside>
 
-  <!-- Sağ Altta Sabit Kalan Asistan Açma Butonu (Safe Area) -->
+  <!-- Sağ Altta Sabit Kalan Asistan Açma Butonu -->
   <button onclick="toggleAdvisor()" id="advisorTriggerBtn" class="fixed right-3.5 sm:right-5 z-30 group px-3.5 py-2.5 sm:px-4 sm:py-3 bg-theme-accent hover:opacity-90 text-white rounded-full shadow-2xl border border-white/20 flex items-center gap-2 sm:gap-2.5 transition-all duration-300 hover:scale-105 active:scale-90 animate-assistant bottom-safe min-h-[44px]">
     <div class="relative">
       <i data-lucide="sparkles" class="w-4 h-4 sm:w-5 sm:h-5 text-amber-300"></i>
@@ -739,19 +860,30 @@
     const fontLabels = { 'normal': '100%', 'large': '115%', 'xlarge': '135%' };
     let currentFontIndex = parseInt(localStorage.getItem('d2k1_font_idx') || '0');
 
+    // Mobil Hızlı Ayarlar Sayfasını Aç / Kapat
+    function toggleMobileSettingsSheet() {
+      const sheet = document.getElementById('mobileSettingsSheet');
+      if (sheet) sheet.classList.toggle('hidden');
+    }
+
     function applyTheme() {
       document.documentElement.setAttribute('data-theme', currentThemeWorld);
+      
       const themeSelect = document.getElementById('themeWorldSelect');
       if (themeSelect) themeSelect.value = currentThemeWorld;
+      const themeSelectMobile = document.getElementById('themeWorldSelectMobile');
+      if (themeSelectMobile) themeSelectMobile.value = currentThemeWorld;
 
+      const icon = document.getElementById('themeIcon');
+      const iconMobile = document.getElementById('themeIconMobile');
       if (isDarkMode) {
         document.documentElement.classList.add('dark');
-        const icon = document.getElementById('themeIcon');
         if (icon) icon.setAttribute('data-lucide', 'moon');
+        if (iconMobile) iconMobile.setAttribute('data-lucide', 'moon');
       } else {
         document.documentElement.classList.remove('dark');
-        const icon = document.getElementById('themeIcon');
         if (icon) icon.setAttribute('data-lucide', 'sun');
+        if (iconMobile) iconMobile.setAttribute('data-lucide', 'sun');
       }
       localStorage.setItem('d2k1_theme_world', currentThemeWorld);
       localStorage.setItem('d2k1_dark_mode', isDarkMode);
@@ -774,6 +906,8 @@
       document.documentElement.setAttribute('data-font', mode);
       const lbl = document.getElementById('currentFontLabel');
       if (lbl) lbl.innerText = fontLabels[mode];
+      const lblMobile = document.getElementById('currentFontLabelMobile');
+      if (lblMobile) lblMobile.innerText = fontLabels[mode];
       localStorage.setItem('d2k1_font_idx', currentFontIndex.toString());
     }
 
@@ -782,10 +916,14 @@
       applyFontSize();
     }
 
+    // Markdown Parser (###, ##, # Başlıklarını Düzelten Versiyon)
     function formatMarkdown(text) {
       if (!text) return "";
       let html = text
         .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/^### (.*$)/gim, '<h3><i data-lucide="sparkle" class="w-3.5 h-3.5"></i> $1</h3>')
+        .replace(/^## (.*$)/gim, '<h2><i data-lucide="sparkles" class="w-4 h-4"></i> $1</h2>')
+        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/\*(.*?)\*/g, '<em>$1</em>')
         .replace(/^\s*[\-\*]\s+(.*)$/gim, '<li>$1</li>');
@@ -793,7 +931,7 @@
       html = html.replace(/(<li>.*?<\/li>)/gms, '<ul>$1</ul>');
       html = html.split(/\n\n+/).map(p => {
         p = p.trim();
-        if (p.startsWith('<ul>') || p.startsWith('<li>')) return p;
+        if (p.startsWith('<ul>') || p.startsWith('<li>') || p.startsWith('<h1>') || p.startsWith('<h2>') || p.startsWith('<h3>')) return p;
         return `<p>${p.replace(/\n/g, '<br>')}</p>`;
       }).join('');
       return html;
@@ -946,7 +1084,7 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            prompt: `Sen Tıp Fakültesi Dönem 2 Nöroanatomi komitesinde uzman bir tıp doktorusun. Soruları klinik mekanizmasıyla, net ve Türkçe yanıtla. İpucu istendiğinde asla 2-3 cümleyi aşma. Önemli terimleri bold yap.\n\nTalep/Soru: ${promptToSend}`
+            prompt: `Sen Tıp Fakültesi Dönem 2 Nöroanatomi komitesinde uzman bir tıp doktorusun. Soruları klinik mekanizmasıyla, net ve Türkçe yanıtla. Başlık kullanırken sadece '##' veya '###' kullan ve önemli terimleri bold yap. İpucu istendiğinde asla 2-3 cümleyi aşma.\n\nTalep/Soru: ${promptToSend}`
           })
         });
 
@@ -1030,7 +1168,174 @@
     }
 
     // ==========================================
-    // ANATOMİ MACERASI (10 AŞAMALI DAİRESEL YOL HARİTASI)[cite: 1]
+    // SINAV MODU YÖNETİMİ
+    // ==========================================
+    let examQuestions = [];
+    let examCurrentIndex = 0;
+    let examTimerInterval = null;
+    let examTimeRemaining = 0;
+    let examUserAnswers = {};
+
+    function openExamSetupModal() {
+      if (globalQuestions.length === 0) return alert("Soru havuzu boş! Lütfen önce JSON dosyası yükleyin.");
+      document.getElementById('examSetupModal').classList.remove('hidden');
+    }
+
+    function closeExamSetupModal() {
+      document.getElementById('examSetupModal').classList.add('hidden');
+    }
+
+    function startExamSession() {
+      const count = parseInt(document.getElementById('examQuestionCount').value);
+      const timePerQ = parseInt(document.getElementById('examTimePerQuestion').value);
+      closeExamSetupModal();
+
+      const shuffled = [...globalQuestions].sort(() => 0.5 - Math.random());
+      examQuestions = shuffled.slice(0, Math.min(count, shuffled.length));
+      examCurrentIndex = 0;
+      examUserAnswers = {};
+      examTimeRemaining = examQuestions.length * timePerQ;
+
+      document.getElementById('examModeTitle').innerText = 'Komite Sınav Modu';
+      switchView('exam');
+      startExamTimer();
+      renderExamQuestion();
+    }
+
+    function startWrongQuestionsTest() {
+      const wrongList = globalQuestions.filter(q => userAnswers[q.id] && userAnswers[q.id] !== q.dogruCevap);
+      if (wrongList.length === 0) return alert("Harika! Henüz sistemde kayıtlı yanlış bir cevabınız bulunmuyor.");
+
+      examQuestions = [...wrongList].sort(() => 0.5 - Math.random());
+      examCurrentIndex = 0;
+      examUserAnswers = {};
+      examTimeRemaining = examQuestions.length * 60;
+
+      document.getElementById('examModeTitle').innerText = `Hata Telafi Testi (${examQuestions.length} Soru)`;
+      switchView('exam');
+      startExamTimer();
+      renderExamQuestion();
+    }
+
+    function startExamTimer() {
+      clearInterval(examTimerInterval);
+      updateTimerDisplay();
+      examTimerInterval = setInterval(() => {
+        examTimeRemaining--;
+        updateTimerDisplay();
+        if (examTimeRemaining <= 0) {
+          clearInterval(examTimerInterval);
+          finishExamSession();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(examTimeRemaining / 60);
+      const s = examTimeRemaining % 60;
+      const el = document.getElementById('examTimer');
+      if (el) el.innerText = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    }
+
+    function renderExamQuestion() {
+      const q = examQuestions[examCurrentIndex];
+      const container = document.getElementById('examQuestionContainer');
+      const progressEl = document.getElementById('examProgressIndicator');
+      if (progressEl) progressEl.innerText = `Soru: ${examCurrentIndex + 1} / ${examQuestions.length}`;
+
+      const selectedOption = examUserAnswers[q.id];
+      const qOrderNum = getQuestionOrderNumber(q);
+
+      let optionsHtml = Object.entries(q.secenekler).map(([key, text]) => {
+        const isSelected = selectedOption === key;
+        return `
+          <button onclick="selectExamOption('${q.id}', '${key}')" class="w-full text-left p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border text-xs sm:text-base font-medium transition flex items-start gap-2.5 sm:gap-3.5 min-h-[48px] sm:min-h-[52px] active:scale-[0.99] ${
+            isSelected ? 'bg-theme-accent border-theme-accent text-white font-bold shadow' : 'bg-theme-subtle hover:bg-theme-card border-theme-border text-theme-text'
+          }">
+            <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg sm:rounded-xl flex items-center justify-center text-xs sm:text-sm font-bold shrink-0 mt-0.5 ${isSelected ? 'bg-white text-indigo-700' : 'bg-theme-card text-theme-text border border-theme-border'}">${key}</span>
+            <span class="flex-1 leading-relaxed opt-text">${text}</span>
+          </button>
+        `;
+      }).join('');
+
+      container.innerHTML = `
+        <div class="glass p-4 sm:p-7 rounded-2xl sm:rounded-3xl border border-theme-border flex flex-col gap-4 sm:gap-6 shadow-xl">
+          <div class="flex items-center justify-between text-xs sm:text-sm text-theme-textMuted border-b border-theme-border pb-2.5 sm:pb-3">
+            <span class="px-2.5 py-1 rounded-lg bg-theme-accent/15 text-theme-accent font-bold border border-theme-border">${q.yil} • Soru #${qOrderNum} (${q.ders || 'Tıp'})</span>
+            <span>ID: ${q.id}</span>
+          </div>
+
+          <p class="q-text font-semibold text-theme-text whitespace-pre-line leading-relaxed text-sm sm:text-base">
+            ${q.soruMetni}
+          </p>
+
+          <div class="flex flex-col gap-2 sm:gap-2.5">
+            ${optionsHtml}
+          </div>
+
+          <div class="flex items-center justify-between pt-3 sm:pt-4 border-t border-theme-border">
+            <button onclick="navigateExam(-1)" ${examCurrentIndex === 0 ? 'disabled' : ''} class="px-3.5 sm:px-4 py-2 sm:py-2.5 min-h-[44px] bg-theme-subtle hover:opacity-80 disabled:opacity-40 text-xs sm:text-sm font-bold rounded-xl transition text-theme-text border border-theme-border active:scale-95">
+              ← Önceki
+            </button>
+            ${examCurrentIndex === examQuestions.length - 1 
+              ? `<button onclick="finishExamSession()" class="px-4 sm:px-5 py-2 sm:py-2.5 min-h-[44px] bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-extrabold rounded-xl transition shadow-lg active:scale-95">Tamamla</button>`
+              : `<button onclick="navigateExam(1)" class="px-4 sm:px-5 py-2 sm:py-2.5 min-h-[44px] bg-theme-accent hover:opacity-90 text-white text-xs sm:text-sm font-bold rounded-xl transition active:scale-95">Sonraki →</button>`
+            }
+          </div>
+        </div>
+      `;
+    }
+
+    function selectExamOption(qId, key) {
+      examUserAnswers[qId] = key;
+      renderExamQuestion();
+    }
+
+    function navigateExam(delta) {
+      examCurrentIndex = Math.max(0, Math.min(examQuestions.length - 1, examCurrentIndex + delta));
+      renderExamQuestion();
+    }
+
+    function finishExamEarly() {
+      if (confirm("Sınavı erken bitirmek istediğinize emin misiniz?")) finishExamSession();
+    }
+
+    function finishExamSession() {
+      clearInterval(examTimerInterval);
+      let correct = 0;
+      let wrong = 0;
+
+      examQuestions.forEach(q => {
+        const ans = examUserAnswers[q.id];
+        if (ans) {
+          userAnswers[q.id] = ans;
+          if (ans === q.dogruCevap) correct++;
+          else wrong++;
+        }
+      });
+
+      saveState();
+
+      const percent = Math.round((correct / examQuestions.length) * 100);
+      if (percent >= 70 && typeof confetti === 'function') {
+        confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 } });
+      }
+
+      document.getElementById('examScoreCorrect').innerText = correct;
+      document.getElementById('examScoreWrong').innerText = wrong;
+      document.getElementById('examScorePercent').innerText = `%${percent}`;
+      document.getElementById('examResultModal').classList.remove('hidden');
+    }
+
+    function closeExamResultModal() {
+      document.getElementById('examResultModal').classList.add('hidden');
+      displayedQuestions = examQuestions;
+      switchView('questions');
+      renderQuestionsList(displayedQuestions);
+    }
+
+    // ==========================================
+    // ANATOMİ MACERASI (10 AŞAMALI DAİRESEL YOL HARİTASI)
     // ==========================================
     const adventureLevels = [
       { level: 1, title: 'Nöral Uyanış', emoji: '🌱', count: 5, boss: false },
@@ -1193,13 +1498,13 @@
           if (q.cozum) {
             if (key === q.dogruCevap) {
               explanationHtml = `
-                <div class="mt-2 ml-1 sm:ml-9 p-3 sm:p-3.5 bg-emerald-500/15 rounded-xl border border-emerald-500/30 expl-text text-emerald-700 dark:text-emerald-200 leading-relaxed shadow-sm text-xs sm:text-sm">
+                <div class="mt-2 ml-1 sm:ml-9 p-2.5 sm:p-3.5 bg-emerald-500/15 rounded-xl border border-emerald-500/30 expl-text text-emerald-700 dark:text-emerald-200 leading-relaxed shadow-sm">
                   <span class="font-bold text-emerald-600 dark:text-emerald-300">Doğru Gerekçe:</span> ${q.cozum.dogruCevapNedeni || 'Açıklama belirtilmemiş.'}
                 </div>`;
             } else {
               let celdiriciMetni = (q.cozum.celdiriciler && q.cozum.celdiriciler[key]) ? q.cozum.celdiriciler[key] : 'Bu şık için özel çeldirici açıklaması bulunmuyor.';
               explanationHtml = `
-                <div class="mt-2 ml-1 sm:ml-9 p-3 sm:p-3.5 bg-theme-subtle rounded-xl border border-theme-border expl-text text-theme-text leading-relaxed text-xs sm:text-sm">
+                <div class="mt-2 ml-1 sm:ml-9 p-2.5 sm:p-3.5 bg-theme-subtle rounded-xl border border-theme-border expl-text text-theme-text leading-relaxed">
                   <span class="font-bold text-rose-500">Yanlış, Çünkü:</span> ${celdiriciMetni}
                 </div>`;
             }
@@ -1227,7 +1532,7 @@
               <div class="p-2 bg-theme-accent/20 rounded-xl shrink-0 mt-0.5">
                 <i data-lucide="book-open-check" class="w-4 h-4 sm:w-5 sm:h-5 text-theme-accent"></i>
               </div>
-              <div class="expl-text text-theme-text leading-relaxed text-xs sm:text-sm">
+              <div class="expl-text text-theme-text leading-relaxed">
                 <span class="font-bold text-theme-accent block mb-1">Mini Konu Anlatımı</span>
                 ${anlatimMetni}
               </div>
@@ -1333,24 +1638,6 @@
     }
 
     // ==========================================
-    // YANLIŞ SORULAR TESTİ
-    // ==========================================
-    function startWrongQuestionsTest() {
-      const wrongList = globalQuestions.filter(q => userAnswers[q.id] && userAnswers[q.id] !== q.dogruCevap);
-      if (wrongList.length === 0) return alert("Henüz kayıtlı yanlış bir cevabınız bulunmuyor.");
-
-      examQuestions = [...wrongList].sort(() => 0.5 - Math.random());
-      examCurrentIndex = 0;
-      examUserAnswers = {};
-      examTimeRemaining = examQuestions.length * 60;
-
-      document.getElementById('examModeTitle').innerText = `Hata Telafi Testi (${examQuestions.length} Soru)`;
-      switchView('exam');
-      startExamTimer();
-      renderExamQuestion();
-    }
-
-    // ==========================================
     // UYGULAMA DURUMU (STATE)
     // ==========================================
     let globalQuestions = [];
@@ -1368,12 +1655,6 @@
 
     let chartPerformanceInstance = null;
     let chartDistributionInstance = null;
-
-    let examQuestions = [];
-    let examCurrentIndex = 0;
-    let examTimerInterval = null;
-    let examTimeRemaining = 0;
-    let examUserAnswers = {};
 
     function saveState() {
       localStorage.setItem('d2k1_answers', JSON.stringify(userAnswers));
@@ -1442,9 +1723,11 @@
       }
     }
 
-    const filePicker = document.getElementById('filePicker');
-    if (filePicker) {
-      filePicker.addEventListener('change', async function(event) {
+    // Mobil ve Masaüstü Dosya Seçiciler
+    function setupFilePicker(pickerId) {
+      const picker = document.getElementById(pickerId);
+      if (!picker) return;
+      picker.addEventListener('change', async function(event) {
         const files = event.target.files;
         if (!files || files.length === 0) return;
 
@@ -1468,6 +1751,9 @@
         }
       });
     }
+
+    setupFilePicker('filePicker');
+    setupFilePicker('filePickerMobile');
 
     function readFileAsync(file) {
       return new Promise((resolve, reject) => {
@@ -1794,13 +2080,13 @@
             if (q.cozum) {
               if (key === q.dogruCevap) {
                 explanationHtml = `
-                  <div class="mt-2 ml-1 sm:ml-9 p-2.5 sm:p-3.5 bg-emerald-500/15 rounded-xl border border-emerald-500/30 expl-text text-emerald-700 dark:text-emerald-200 leading-relaxed shadow-sm text-xs sm:text-sm">
+                  <div class="mt-2 ml-1 sm:ml-9 p-2.5 sm:p-3.5 bg-emerald-500/15 rounded-xl border border-emerald-500/30 expl-text text-emerald-700 dark:text-emerald-200 leading-relaxed shadow-sm">
                     <span class="font-bold text-emerald-600 dark:text-emerald-300">Doğru Gerekçe:</span> ${q.cozum.dogruCevapNedeni || 'Açıklama belirtilmemiş.'}
                   </div>`;
               } else {
                 let celdiriciMetni = (q.cozum.celdiriciler && q.cozum.celdiriciler[key]) ? q.cozum.celdiriciler[key] : 'Bu şık için özel çeldirici açıklaması bulunmuyor.';
                 explanationHtml = `
-                  <div class="mt-2 ml-1 sm:ml-9 p-2.5 sm:p-3.5 bg-theme-subtle rounded-xl border border-theme-border expl-text text-theme-text leading-relaxed text-xs sm:text-sm">
+                  <div class="mt-2 ml-1 sm:ml-9 p-2.5 sm:p-3.5 bg-theme-subtle rounded-xl border border-theme-border expl-text text-theme-text leading-relaxed">
                     <span class="font-bold text-rose-500">Yanlış, Çünkü:</span> ${celdiriciMetni}
                   </div>`;
               }
@@ -1808,7 +2094,7 @@
           }
 
           return `
-            <div class="flex flex-col mb-2 sm:mb-3">
+            <div class="flex flex-col mb-2.5 sm:mb-3">
               <button onclick="selectOption('${q.id}', '${key}')" ${isAnswered ? 'disabled' : ''} class="${btnClass}">
                 <span class="${badgeClass}">${key}</span>
                 <span class="flex-1 leading-relaxed opt-text">${text}</span>
@@ -1828,7 +2114,7 @@
                 <div class="p-2 bg-theme-accent/20 rounded-xl shrink-0 mt-0.5">
                   <i data-lucide="book-open-check" class="w-4 h-4 sm:w-5 sm:h-5 text-theme-accent"></i>
                 </div>
-                <div class="expl-text text-theme-text leading-relaxed text-xs sm:text-sm">
+                <div class="expl-text text-theme-text leading-relaxed">
                   <span class="font-bold text-theme-accent block mb-0.5 sm:mb-1">Mini Konu Anlatımı</span>
                   ${anlatimMetni}
                 </div>
