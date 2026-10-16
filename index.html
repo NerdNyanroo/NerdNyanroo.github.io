@@ -228,17 +228,17 @@
   <!-- ANA İÇERİK ALANI -->
   <main id="mainContentArea" class="max-w-6xl mx-auto px-3 sm:px-4 py-4 sm:py-6 w-full flex-1 transition-all duration-300">
 
-    <!-- MACERA MODU: 10 AŞAMALI DAİRESEL YOL HARİTASI[cite: 1] -->
+    <!-- MACERA MODU: 10 AŞAMALI DAİRESEL YOL HARİTASI -->
     <div id="viewAdventure" class="hidden flex flex-col gap-6">
       
-      <!-- 1. Dairesel Yol Haritası Ekranı[cite: 1] -->
+      <!-- 1. Dairesel Yol Haritası Ekranı -->
       <div id="adventureMapScreen" class="flex flex-col gap-8 items-center">
         <div class="text-center max-w-md mx-auto pt-2">
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-500 text-xs font-bold mb-2">
             <i data-lucide="compass" class="w-3.5 h-3.5"></i> Nöro-Sefer Güzergâhı
           </span>
           <h2 class="text-xl sm:text-2xl font-black text-theme-text tracking-tight">Korteks Seferi: 10 Aşama</h2>
-          <p class="text-xs text-theme-textMuted mt-1">Her yanlışta 1 yıldız düşer! Bölümleri sırayla fethedin[cite: 1].</p>
+          <p class="text-xs text-theme-textMuted mt-1">Her yanlışta 1 yıldız düşer! Bölümleri sırayla fethedin.</p>
         </div>
 
         <div class="relative max-w-sm mx-auto w-full py-4 flex flex-col items-center" id="circleMapContainer"></div>
@@ -278,7 +278,7 @@
           </div>
         </div>
 
-        <!-- Macera Soru Konteyneri (Havuz Modu Tarzı Açıklamalı) -->
+        <!-- Macera Soru Konteyneri -->
         <div id="adventureQuestionContainer"></div>
       </div>
 
@@ -329,7 +329,7 @@
             </div>
             <div>
               <h4 class="text-sm font-bold text-theme-text group-hover:text-amber-500 transition">Macera Seferi</h4>
-              <p class="text-xs text-theme-textMuted mt-0.5 leading-snug">10 aşamalı dairesel harita[cite: 1]</p>
+              <p class="text-xs text-theme-textMuted mt-0.5 leading-snug">10 aşamalı dairesel harita</p>
             </div>
           </div>
 
@@ -565,14 +565,11 @@
         <div>
           <h4 class="text-sm sm:text-base font-extrabold text-theme-text leading-tight">NöroAsistan</h4>
           <span class="text-xs text-emerald-500 font-medium flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Gemini 3.5 Flash-Lite
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Cloudflare Proxy Korumalı
           </span>
         </div>
       </div>
       <div class="flex items-center gap-1">
-        <button onclick="promptApiKey()" title="API Anahtarı Ayarla" class="p-2 text-theme-textMuted hover:text-amber-500 rounded-xl hover:bg-theme-subtle transition">
-          <i data-lucide="key" class="w-4 h-4"></i>
-        </button>
         <button onclick="toggleAdvisor()" class="p-2 text-theme-textMuted hover:text-theme-text rounded-xl hover:bg-theme-subtle transition">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
@@ -710,6 +707,11 @@
 
   <script>
     // ==========================================
+    // CLOUDFLARE WORKER ENTEGRASYONU (API KEY GİZLİ)
+    // ==========================================
+    const WORKER_URL = "https://ai-proxy.nerdnyanroo.workers.dev/";
+
+    // ==========================================
     // TEMA & FONT BOYUTU YÖNETİMİ
     // ==========================================
     let currentThemeWorld = localStorage.getItem('d2k1_theme_world') || 'midnight';
@@ -757,6 +759,253 @@
       applyFontSize();
     }
 
+    function formatMarkdown(text) {
+      if (!text) return "";
+      let html = text
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        .replace(/^\s*[\-\*]\s+(.*)$/gim, '<li>$1</li>');
+
+      html = html.replace(/(<li>.*?<\/li>)/gms, '<ul>$1</ul>');
+      html = html.split(/\n\n+/).map(p => {
+        p = p.trim();
+        if (p.startsWith('<ul>') || p.startsWith('<li>')) return p;
+        return `<p>${p.replace(/\n/g, '<br>')}</p>`;
+      }).join('');
+      return html;
+    }
+
+    let isAdvisorOpen = false;
+    let currentlyFocusedQuestion = null;
+
+    function toggleAdvisor() {
+      const drawer = document.getElementById('advisorDrawer');
+      const mainArea = document.getElementById('mainContentArea');
+      const mainHeader = document.getElementById('mainHeader');
+      const mainFooter = document.getElementById('mainFooter');
+      const triggerBtn = document.getElementById('advisorTriggerBtn');
+
+      isAdvisorOpen = !isAdvisorOpen;
+
+      if (isAdvisorOpen) {
+        drawer.classList.remove('translate-y-full', 'md:translate-x-full');
+        if (window.innerWidth >= 768) {
+          mainArea.classList.add('md:mr-[480px]', 'lg:mr-[520px]');
+          mainHeader.classList.add('md:mr-[480px]', 'lg:mr-[520px]');
+          mainFooter.classList.add('md:mr-[480px]', 'lg:mr-[520px]');
+        }
+        triggerBtn.classList.add('hidden');
+        document.getElementById('aiUserInput').focus();
+      } else {
+        drawer.classList.add('translate-y-full', 'md:translate-x-full');
+        mainArea.classList.remove('md:mr-[480px]', 'lg:mr-[520px]');
+        mainHeader.classList.remove('md:mr-[480px]', 'lg:mr-[520px]');
+        mainFooter.classList.remove('md:mr-[480px]', 'lg:mr-[520px]');
+        triggerBtn.classList.remove('hidden');
+      }
+    }
+
+    function pinQuestionToDrawer(q) {
+      currentlyFocusedQuestion = q;
+      const box = document.getElementById('pinnedQuestionBox');
+      const textEl = document.getElementById('pinnedQuestionText');
+      const optsEl = document.getElementById('pinnedQuestionOptions');
+      const badgeEl = document.getElementById('pinnedQuestionBadge');
+
+      const qOrderNum = getQuestionOrderNumber(q);
+      badgeEl.innerHTML = `<i data-lucide="file-question" class="w-4 h-4 text-theme-accent"></i> ${q.yil} Çıkmışı (Soru #${qOrderNum})`;
+      textEl.innerText = `${q.soruMetni}`;
+      
+      let optionsHtml = '';
+      if (q.secenekler) {
+        optionsHtml = Object.entries(q.secenekler).map(([k, v]) => `
+          <div class="flex items-start gap-1.5 leading-snug">
+            <span class="font-bold text-theme-accent shrink-0">${k})</span>
+            <span>${v}</span>
+          </div>
+        `).join('');
+      }
+      optsEl.innerHTML = optionsHtml;
+      box.classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function dismissPinnedQuestion() {
+      document.getElementById('pinnedQuestionBox').classList.add('hidden');
+    }
+
+    function getQuestionOrderNumber(q) {
+      if (q.id && q.id.includes('_')) {
+        const parts = q.id.split('_');
+        if (!isNaN(parts[1])) return parts[1];
+      }
+      const sameYearQuestions = globalQuestions.filter(item => String(item.yil) === String(q.yil));
+      const idx = sameYearQuestions.findIndex(item => item.id === q.id);
+      return idx >= 0 ? (idx + 1) : 1;
+    }
+
+    function askDeepExplanation() {
+      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
+      const q = currentlyFocusedQuestion;
+      const promptText = `Şu sorunun konusunu, klinik mekanizmasını ve komite tuzaklarını detaylandır:\n"${q.soruMetni}"\nDoğru Cevap: ${q.dogruCevap}`;
+      askGeminiAdvisor(promptText, `📚 Konuyu Detaylandır (${q.yil} #${getQuestionOrderNumber(q)})`);
+    }
+
+    function askClinicalPearls() {
+      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
+      const q = currentlyFocusedQuestion;
+      const promptText = `Şu soruyla ilgili kritik TUS/komite hap bilgilerini madde madde ver:\n"${q.soruMetni}"`;
+      askGeminiAdvisor(promptText, `💡 TUS/Komite İncilerini Ver`);
+    }
+
+    function askSimilarQuestion() {
+      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
+      const q = currentlyFocusedQuestion;
+      const promptText = `Şu konu hakkında tıp komite düzeyinde 5 şıklı özgün bir soru ve çözümü üret:\n"${q.soruMetni}"`;
+      askGeminiAdvisor(promptText, `❓ Benzer Bir Soru Üret`);
+    }
+
+    function askHintForQuestion(qId) {
+      const q = globalQuestions.find(item => item.id === qId);
+      if (!q) return;
+
+      if (!isAdvisorOpen) toggleAdvisor();
+      pinQuestionToDrawer(q);
+
+      let optionsList = Object.entries(q.secenekler).map(([k, v]) => `${k}) ${v}`).join('\n');
+      
+      const promptText = `Öğrenci ${q.yil} yılı #${getQuestionOrderNumber(q)} sorusunu çözmek üzere:\n"${q.soruMetni}"\nSeçenekler:\n${optionsList}\n\nKESİN KURALLAR:\n1. Konuyu kesinlikle baştan anlatma veya ders verme.\n2. Doğru şıkkın harfini (A, B, C...) veya cevabın kendisini doğrudan ASLA söyleme.\n3. Öğrencinin soruyu çözmesini sağlayacak kilit anatomik ilişkiyi veya mekanizmayı EN FAZLA 2 VEYA 3 CÜMLEYLE fısılda. 3 cümleyi aşma.`;
+      
+      askGeminiAdvisor(promptText, `💡 ${q.yil} #${getQuestionOrderNumber(q)} Sorusu İçin Kısa İpucu İste`);
+    }
+
+    function askAboutQuestion(qId) {
+      const q = globalQuestions.find(item => item.id === qId);
+      if (!q) return;
+
+      if (!isAdvisorOpen) toggleAdvisor();
+      pinQuestionToDrawer(q);
+
+      let optionsList = Object.entries(q.secenekler).map(([k, v]) => `${k}) ${v}`).join('\n');
+      const promptText = `Aşağıdaki soruyu açıkla:\nSoru: ${q.soruMetni}\nSeçenekler:\n${optionsList}\nDoğru Cevap: ${q.dogruCevap}\nDoğru cevabın neden doğru olduğunu ve diğer şıkların neden elendiğini açıkla.`;
+      
+      askGeminiAdvisor(promptText, `🤖 Sorusunu Detaylı İncele (${q.yil} #${getQuestionOrderNumber(q)})`);
+    }
+
+    async function askGeminiAdvisor(customPrompt = null, bubbleText = null) {
+      const inputEl = document.getElementById('aiUserInput');
+      const responseBox = document.getElementById('aiResponseBox');
+      const sendBtn = document.getElementById('aiSendBtn');
+
+      const userTyped = inputEl.value.trim();
+      const promptToSend = customPrompt || userTyped;
+      if (!promptToSend) return;
+
+      inputEl.value = '';
+
+      const userBubble = document.createElement('div');
+      userBubble.className = "p-3.5 rounded-2xl bg-theme-accent text-white font-medium self-end ml-4 shadow-sm ai-text";
+      userBubble.innerText = bubbleText || userTyped || promptToSend;
+      responseBox.appendChild(userBubble);
+
+      const loadingBubble = document.createElement('div');
+      loadingBubble.className = "flex items-center gap-2 p-3.5 rounded-2xl bg-theme-subtle border border-theme-border text-theme-accent ai-text";
+      loadingBubble.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> NöroAsistan yanıt hazırlıyor...`;
+      responseBox.appendChild(loadingBubble);
+      lucide.createIcons();
+      responseBox.scrollTop = responseBox.scrollHeight;
+
+      sendBtn.disabled = true;
+
+      try {
+        const res = await fetch(WORKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            prompt: `Sen Tıp Fakültesi Dönem 2 Nöroanatomi komitesinde uzman bir tıp doktorusun. Soruları klinik mekanizmasıyla, net ve Türkçe yanıtla. İpucu istendiğinde asla 2-3 cümleyi aşma. Önemli terimleri bold yap.\n\nTalep/Soru: ${promptToSend}`
+          })
+        });
+
+        const data = await res.json();
+        loadingBubble.remove();
+
+        const aiBubbleContainer = document.createElement('div');
+        aiBubbleContainer.className = "flex flex-col gap-2";
+
+        const aiBubble = document.createElement('div');
+        aiBubble.className = "p-4 rounded-2xl bg-theme-subtle border border-theme-border text-theme-text leading-relaxed shadow-sm ai-markdown ai-text";
+
+        if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
+          const rawText = data.candidates[0].content.parts[0].text;
+          aiBubble.innerHTML = formatMarkdown(rawText);
+
+          const actionRow = document.createElement('div');
+          actionRow.className = "flex items-center gap-2 pt-1";
+          actionRow.innerHTML = `
+            <button onclick="askDeepExplanation()" class="px-3 py-1.5 rounded-xl bg-theme-card hover:opacity-80 border border-theme-border text-theme-accent text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+              <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Konuyu Daha da Detaylandır
+            </button>
+          `;
+          aiBubbleContainer.appendChild(aiBubble);
+          aiBubbleContainer.appendChild(actionRow);
+        } else if (data.error) {
+          aiBubble.innerHTML = `<span class="text-rose-500 font-bold">Hata:</span> ${data.error.message || data.error}`;
+          aiBubbleContainer.appendChild(aiBubble);
+        }
+        responseBox.appendChild(aiBubbleContainer);
+      } catch (err) {
+        loadingBubble.remove();
+        const errBubble = document.createElement('div');
+        errBubble.className = "p-4 rounded-2xl bg-rose-500/15 border border-rose-500/30 text-rose-500 ai-text";
+        errBubble.innerText = "Bağlantı Hatası: Asistan servisine ulaşılamadı.";
+        responseBox.appendChild(errBubble);
+      } finally {
+        sendBtn.disabled = false;
+        responseBox.scrollTop = responseBox.scrollHeight;
+        lucide.createIcons();
+      }
+    }
+
+    // ==========================================
+    // SES MOTORU
+    // ==========================================
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function playSound(type) {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      if (type === 'correct') {
+        osc.frequency.setValueAtTime(587.33, audioCtx.currentTime);
+        osc.frequency.setValueAtTime(880, audioCtx.currentTime + 0.1);
+        gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.35);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.35);
+      } else if (type === 'wrong') {
+        osc.frequency.setValueAtTime(220, audioCtx.currentTime);
+        osc.frequency.setValueAtTime(164.81, audioCtx.currentTime + 0.1);
+        gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.4);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.4);
+      } else if (type === 'levelup') {
+        [523.25, 659.25, 783.99, 1046.50].forEach((freq, i) => {
+          const o = audioCtx.createOscillator();
+          const g = audioCtx.createGain();
+          o.connect(g); g.connect(audioCtx.destination);
+          o.frequency.setValueAtTime(freq, audioCtx.currentTime + i * 0.08);
+          g.gain.setValueAtTime(0.1, audioCtx.currentTime + i * 0.08);
+          g.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + i * 0.08 + 0.2);
+          o.start(audioCtx.currentTime + i * 0.08);
+          o.stop(audioCtx.currentTime + i * 0.08 + 0.2);
+        });
+      }
+    }
+
     // ==========================================
     // ANATOMİ MACERASI (10 AŞAMALI DAİRESEL YOL HARİTASI)[cite: 1]
     // ==========================================
@@ -781,7 +1030,6 @@
     let adventureQuestionIndex = 0;
     let currentStageMistakes = 0;
     let adventurePool = [];
-    let adventureAnsweredCurrent = false;
 
     function renderAdventureMap() {
       document.getElementById('adventureMapScreen').classList.remove('hidden');
@@ -850,7 +1098,6 @@
       adventureLives = 3;
       currentStageMistakes = 0;
       adventureQuestionIndex = 0;
-      adventureAnsweredCurrent = false;
 
       const lvlInfo = adventureLevels.find(l => l.level === levelNum);
       const questionCount = lvlInfo.count;
@@ -891,7 +1138,6 @@
       document.getElementById('adventureProgressText').innerText = `${adventureQuestionIndex + 1} / ${totalInStage}`;
     }
 
-    // MACERA MODUNDA HAVUZ GİBİ ÇÖZÜM VE ÇELDİRİCİ AÇIKLAMA GÖSTERİMİ
     function renderAdventureQuestion() {
       const container = document.getElementById('adventureQuestionContainer');
       const q = adventurePool[adventureQuestionIndex];
@@ -1007,7 +1253,7 @@
       if (q._adventureUserAnswer) return;
 
       q._adventureUserAnswer = selectedKey;
-      userAnswers[q.id] = selectedKey; // Genel analizlere de yansıt
+      userAnswers[q.id] = selectedKey;
       saveState();
 
       const isCorrect = selectedKey === q.dogruCevap;
@@ -1030,7 +1276,6 @@
     }
 
     function advanceAdventureQuestion() {
-      // Eğer can bittiyse baştan başlat
       if (adventureLives <= 0) {
         alert("💀 3 canınız da tükendi! Bölümü baştan oynamalısınız.");
         startAdventureStage(activeAdventureLevel);
@@ -1039,7 +1284,6 @@
 
       adventureQuestionIndex++;
 
-      // Aşama Tamamlandı mı?
       if (adventureQuestionIndex >= adventurePool.length) {
         const finalStars = Math.max(1, 3 - currentStageMistakes);
         levelStarsData[activeAdventureLevel] = Math.max(levelStarsData[activeAdventureLevel] || 0, finalStars);
@@ -1063,295 +1307,6 @@
 
       updateAdventureUI();
       renderAdventureQuestion();
-    }
-
-    // ==========================================
-    // YANLIŞ SORULAR TESTİ
-    // ==========================================
-    function startWrongQuestionsTest() {
-      const wrongList = globalQuestions.filter(q => userAnswers[q.id] && userAnswers[q.id] !== q.dogruCevap);
-      if (wrongList.length === 0) return alert("Henüz kayıtlı yanlış bir cevabınız bulunmuyor.");
-
-      examQuestions = [...wrongList].sort(() => 0.5 - Math.random());
-      examCurrentIndex = 0;
-      examUserAnswers = {};
-      examTimeRemaining = examQuestions.length * 60;
-
-      document.getElementById('examModeTitle').innerText = `Hata Telafi Testi (${examQuestions.length} Soru)`;
-      switchView('exam');
-      startExamTimer();
-      renderExamQuestion();
-    }
-
-    // ==========================================
-    // GEMINI 3.5 FLASH-LITE ENTEGRASYONU
-    // ==========================================
-    const DEFAULT_API_KEY = "AQ.Ab8RN6IciLGFyTLpIDoT5NNtaqJK3c-xkmVVufhZHLs0tWEZ2w";
-    let geminiApiKey = localStorage.getItem('gemini_api_key') || DEFAULT_API_KEY;
-
-    function promptApiKey() {
-      const key = prompt("Google AI Studio (Gemini) API Anahtarınızı girin:", geminiApiKey);
-      if (key !== null) {
-        geminiApiKey = key.trim() || DEFAULT_API_KEY;
-        localStorage.setItem('gemini_api_key', geminiApiKey);
-        alert("API anahtarı kaydedildi.");
-      }
-    }
-
-    function formatMarkdown(text) {
-      if (!text) return "";
-      let html = text
-        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-        .replace(/^\s*[\-\*]\s+(.*)$/gim, '<li>$1</li>');
-
-      html = html.replace(/(<li>.*?<\/li>)/gms, '<ul>$1</ul>');
-      html = html.split(/\n\n+/).map(p => {
-        p = p.trim();
-        if (p.startsWith('<ul>') || p.startsWith('<li>')) return p;
-        return `<p>${p.replace(/\n/g, '<br>')}</p>`;
-      }).join('');
-      return html;
-    }
-
-    let isAdvisorOpen = false;
-    let currentlyFocusedQuestion = null;
-
-    function toggleAdvisor() {
-      const drawer = document.getElementById('advisorDrawer');
-      const mainArea = document.getElementById('mainContentArea');
-      const mainHeader = document.getElementById('mainHeader');
-      const mainFooter = document.getElementById('mainFooter');
-      const triggerBtn = document.getElementById('advisorTriggerBtn');
-
-      isAdvisorOpen = !isAdvisorOpen;
-
-      if (isAdvisorOpen) {
-        drawer.classList.remove('translate-y-full', 'md:translate-x-full');
-        if (window.innerWidth >= 768) {
-          mainArea.classList.add('md:mr-[480px]', 'lg:mr-[520px]');
-          mainHeader.classList.add('md:mr-[480px]', 'lg:mr-[520px]');
-          mainFooter.classList.add('md:mr-[480px]', 'lg:mr-[520px]');
-        }
-        triggerBtn.classList.add('hidden');
-        document.getElementById('aiUserInput').focus();
-      } else {
-        drawer.classList.add('translate-y-full', 'md:translate-x-full');
-        mainArea.classList.remove('md:mr-[480px]', 'lg:mr-[520px]');
-        mainHeader.classList.remove('md:mr-[480px]', 'lg:mr-[520px]');
-        mainFooter.classList.remove('md:mr-[480px]', 'lg:mr-[520px]');
-        triggerBtn.classList.remove('hidden');
-      }
-    }
-
-    function pinQuestionToDrawer(q) {
-      currentlyFocusedQuestion = q;
-      const box = document.getElementById('pinnedQuestionBox');
-      const textEl = document.getElementById('pinnedQuestionText');
-      const optsEl = document.getElementById('pinnedQuestionOptions');
-      const badgeEl = document.getElementById('pinnedQuestionBadge');
-
-      const qOrderNum = getQuestionOrderNumber(q);
-      badgeEl.innerHTML = `<i data-lucide="file-question" class="w-4 h-4 text-theme-accent"></i> ${q.yil} Çıkmışı (Soru #${qOrderNum})`;
-      textEl.innerText = `${q.soruMetni}`;
-      
-      let optionsHtml = '';
-      if (q.secenekler) {
-        optionsHtml = Object.entries(q.secenekler).map(([k, v]) => `
-          <div class="flex items-start gap-1.5 leading-snug">
-            <span class="font-bold text-theme-accent shrink-0">${k})</span>
-            <span>${v}</span>
-          </div>
-        `).join('');
-      }
-      optsEl.innerHTML = optionsHtml;
-      box.classList.remove('hidden');
-      lucide.createIcons();
-    }
-
-    function dismissPinnedQuestion() {
-      document.getElementById('pinnedQuestionBox').classList.add('hidden');
-    }
-
-    function getQuestionOrderNumber(q) {
-      if (q.id && q.id.includes('_')) {
-        const parts = q.id.split('_');
-        if (!isNaN(parts[1])) return parts[1];
-      }
-      const sameYearQuestions = globalQuestions.filter(item => String(item.yil) === String(q.yil));
-      const idx = sameYearQuestions.findIndex(item => item.id === q.id);
-      return idx >= 0 ? (idx + 1) : 1;
-    }
-
-    function askDeepExplanation() {
-      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
-      const q = currentlyFocusedQuestion;
-      const promptText = `Şu sorunun konusunu, klinik mekanizmasını ve komite tuzaklarını detaylandır:\n"${q.soruMetni}"\nDoğru Cevap: ${q.dogruCevap}`;
-      askGeminiAdvisor(promptText, `📚 Konuyu Detaylandır (${q.yil} #${getQuestionOrderNumber(q)})`);
-    }
-
-    function askClinicalPearls() {
-      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
-      const q = currentlyFocusedQuestion;
-      const promptText = `Şu soruyla ilgili kritik TUS/komite hap bilgilerini madde madde ver:\n"${q.soruMetni}"`;
-      askGeminiAdvisor(promptText, `💡 TUS/Komite İncilerini Ver`);
-    }
-
-    function askSimilarQuestion() {
-      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
-      const q = currentlyFocusedQuestion;
-      const promptText = `Şu konu hakkında tıp komite düzeyinde 5 şıklı özgün bir soru ve çözümü üret:\n"${q.soruMetni}"`;
-      askGeminiAdvisor(promptText, `❓ Benzer Bir Soru Üret`);
-    }
-
-    // DÜZELTİLMİŞ KISA İPUCU MODU (2-3 CÜMLELİK NOKTA ATIŞI FISILTI)
-    function askHintForQuestion(qId) {
-      const q = globalQuestions.find(item => item.id === qId);
-      if (!q) return;
-
-      if (!isAdvisorOpen) toggleAdvisor();
-      pinQuestionToDrawer(q);
-
-      let optionsList = Object.entries(q.secenekler).map(([k, v]) => `${k}) ${v}`).join('\n');
-      
-      const promptText = `Öğrenci ${q.yil} yılı #${getQuestionOrderNumber(q)} sorusunu çözmek üzere:\n"${q.soruMetni}"\nSeçenekler:\n${optionsList}\n\nKESİN KURALLAR:\n1. Konuyu kesinlikle baştan anlatma veya ders verme.\n2. Doğru şıkkın harfini (A, B, C...) veya cevabın kendisini doğrudan ASLA söyleme.\n3. Öğrencinin soruyu çözmesini sağlayacak kilit anatomik ilişkiyi veya mekanizmayı EN FAZLA 2 VEYA 3 CÜMLEYLE fısılda. 3 cümleyi aşma.`;
-      
-      askGeminiAdvisor(promptText, `💡 ${q.yil} #${getQuestionOrderNumber(q)} Sorusu İçin Kısa İpucu İste`);
-    }
-
-    function askAboutQuestion(qId) {
-      const q = globalQuestions.find(item => item.id === qId);
-      if (!q) return;
-
-      if (!isAdvisorOpen) toggleAdvisor();
-      pinQuestionToDrawer(q);
-
-      let optionsList = Object.entries(q.secenekler).map(([k, v]) => `${k}) ${v}`).join('\n');
-      const promptText = `Aşağıdaki soruyu açıkla:\nSoru: ${q.soruMetni}\nSeçenekler:\n${optionsList}\nDoğru Cevap: ${q.dogruCevap}\nDoğru cevabın neden doğru olduğunu ve diğer şıkların neden elendiğini açıkla.`;
-      
-      askGeminiAdvisor(promptText, `🤖 Sorusunu Detaylı İncele (${q.yil} #${getQuestionOrderNumber(q)})`);
-    }
-
-    async function askGeminiAdvisor(customPrompt = null, bubbleText = null) {
-      const inputEl = document.getElementById('aiUserInput');
-      const responseBox = document.getElementById('aiResponseBox');
-      const sendBtn = document.getElementById('aiSendBtn');
-
-      const userTyped = inputEl.value.trim();
-      const promptToSend = customPrompt || userTyped;
-      if (!promptToSend) return;
-
-      inputEl.value = '';
-
-      const userBubble = document.createElement('div');
-      userBubble.className = "p-3.5 rounded-2xl bg-theme-accent text-white font-medium self-end ml-4 shadow-sm ai-text";
-      userBubble.innerText = bubbleText || userTyped || promptToSend;
-      responseBox.appendChild(userBubble);
-
-      const loadingBubble = document.createElement('div');
-      loadingBubble.className = "flex items-center gap-2 p-3.5 rounded-2xl bg-theme-subtle border border-theme-border text-theme-accent ai-text";
-      loadingBubble.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> NöroAsistan analiz hazırlıyor...`;
-      responseBox.appendChild(loadingBubble);
-      lucide.createIcons();
-      responseBox.scrollTop = responseBox.scrollHeight;
-
-      sendBtn.disabled = true;
-
-      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${geminiApiKey}`;
-
-      const payload = {
-        contents: [{
-          parts: [{
-            text: `Sen Tıp Fakültesi Dönem 2 Nöroanatomi komitesinde uzman bir tıp doktorusun. İpucu istendiğinde asla uzun konu anlatma, en fazla 2-3 cümlelik kısa ve nokta atışı bir fısıltı ver. Önemli terimleri **bold** yap.\n\nTalep/Soru: ${promptToSend}`
-          }]
-        }]
-      };
-
-      try {
-        const res = await fetch(endpoint, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-
-        const data = await res.json();
-        loadingBubble.remove();
-
-        const aiBubbleContainer = document.createElement('div');
-        aiBubbleContainer.className = "flex flex-col gap-2";
-
-        const aiBubble = document.createElement('div');
-        aiBubble.className = "p-4 rounded-2xl bg-theme-subtle border border-theme-border text-theme-text leading-relaxed shadow-sm ai-markdown ai-text";
-
-        if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
-          const rawText = data.candidates[0].content.parts[0].text;
-          aiBubble.innerHTML = formatMarkdown(rawText);
-
-          const actionRow = document.createElement('div');
-          actionRow.className = "flex items-center gap-2 pt-1";
-          actionRow.innerHTML = `
-            <button onclick="askDeepExplanation()" class="px-3 py-1.5 rounded-xl bg-theme-card hover:opacity-80 border border-theme-border text-theme-accent text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
-              <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Konuyu Daha da Detaylandır
-            </button>
-          `;
-          aiBubbleContainer.appendChild(aiBubble);
-          aiBubbleContainer.appendChild(actionRow);
-        } else if (data.error) {
-          aiBubble.innerHTML = `<span class="text-rose-500 font-bold">API Hatası:</span> ${data.error.message}`;
-          aiBubbleContainer.appendChild(aiBubble);
-        }
-        responseBox.appendChild(aiBubbleContainer);
-      } catch (err) {
-        loadingBubble.remove();
-        const errBubble = document.createElement('div');
-        errBubble.className = "p-4 rounded-2xl bg-rose-500/15 border border-rose-500/30 text-rose-500 ai-text";
-        errBubble.innerText = "Bağlantı Hatası: Gemini API servisine ulaşılamadı.";
-        responseBox.appendChild(errBubble);
-      } finally {
-        sendBtn.disabled = false;
-        responseBox.scrollTop = responseBox.scrollHeight;
-        lucide.createIcons();
-      }
-    }
-
-    // ==========================================
-    // SES MOTORU
-    // ==========================================
-    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    function playSound(type) {
-      if (audioCtx.state === 'suspended') audioCtx.resume();
-      const osc = audioCtx.createOscillator();
-      const gain = audioCtx.createGain();
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
-
-      if (type === 'correct') {
-        osc.frequency.setValueAtTime(587.33, audioCtx.currentTime);
-        osc.frequency.setValueAtTime(880, audioCtx.currentTime + 0.1);
-        gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.35);
-        osc.start();
-        osc.stop(audioCtx.currentTime + 0.35);
-      } else if (type === 'wrong') {
-        osc.frequency.setValueAtTime(220, audioCtx.currentTime);
-        osc.frequency.setValueAtTime(164.81, audioCtx.currentTime + 0.1);
-        gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.4);
-        osc.start();
-        osc.stop(audioCtx.currentTime + 0.4);
-      } else if (type === 'levelup') {
-        [523.25, 659.25, 783.99, 1046.50].forEach((freq, i) => {
-          const o = audioCtx.createOscillator();
-          const g = audioCtx.createGain();
-          o.connect(g); g.connect(audioCtx.destination);
-          o.frequency.setValueAtTime(freq, audioCtx.currentTime + i * 0.08);
-          g.gain.setValueAtTime(0.1, audioCtx.currentTime + i * 0.08);
-          g.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + i * 0.08 + 0.2);
-          o.start(audioCtx.currentTime + i * 0.08);
-          o.stop(audioCtx.currentTime + i * 0.08 + 0.2);
-        });
-      }
     }
 
     // ==========================================
@@ -1601,147 +1556,6 @@
       lucide.createIcons();
     }
 
-    function openExamSetupModal() {
-      if (globalQuestions.length === 0) return alert("Soru havuzu boş!");
-      document.getElementById('examSetupModal').classList.remove('hidden');
-    }
-
-    function closeExamSetupModal() {
-      document.getElementById('examSetupModal').classList.add('hidden');
-    }
-
-    function startExamSession() {
-      const count = parseInt(document.getElementById('examQuestionCount').value);
-      const timePerQ = parseInt(document.getElementById('examTimePerQuestion').value);
-      closeExamSetupModal();
-
-      const shuffled = [...globalQuestions].sort(() => 0.5 - Math.random());
-      examQuestions = shuffled.slice(0, Math.min(count, shuffled.length));
-      examCurrentIndex = 0;
-      examUserAnswers = {};
-      examTimeRemaining = examQuestions.length * timePerQ;
-
-      document.getElementById('examModeTitle').innerText = 'Komite Sınav Modu';
-      switchView('exam');
-      startExamTimer();
-      renderExamQuestion();
-    }
-
-    function startExamTimer() {
-      clearInterval(examTimerInterval);
-      updateTimerDisplay();
-      examTimerInterval = setInterval(() => {
-        examTimeRemaining--;
-        updateTimerDisplay();
-        if (examTimeRemaining <= 0) {
-          clearInterval(examTimerInterval);
-          finishExamSession();
-        }
-      }, 1000);
-    }
-
-    function updateTimerDisplay() {
-      const m = Math.floor(examTimeRemaining / 60);
-      const s = examTimeRemaining % 60;
-      document.getElementById('examTimer').innerText = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-    }
-
-    function renderExamQuestion() {
-      const q = examQuestions[examCurrentIndex];
-      const container = document.getElementById('examQuestionContainer');
-      document.getElementById('examProgressIndicator').innerText = `Soru: ${examCurrentIndex + 1} / ${examQuestions.length}`;
-
-      const selectedOption = examUserAnswers[q.id];
-      const qOrderNum = getQuestionOrderNumber(q);
-
-      let optionsHtml = Object.entries(q.secenekler).map(([key, text]) => {
-        const isSelected = selectedOption === key;
-        return `
-          <button onclick="selectExamOption('${q.id}', '${key}')" class="w-full text-left p-4 rounded-2xl border text-sm sm:text-base font-medium transition flex items-start gap-3.5 min-h-[52px] ${
-            isSelected ? 'bg-theme-accent border-theme-accent text-white font-bold' : 'bg-theme-subtle hover:bg-theme-card border-theme-border text-theme-text'
-          }">
-            <span class="w-7 h-7 rounded-xl flex items-center justify-center text-sm font-bold shrink-0 mt-0.5 ${isSelected ? 'bg-white text-indigo-700' : 'bg-theme-card text-theme-text border border-theme-border'}">${key}</span>
-            <span class="flex-1 leading-relaxed opt-text">${text}</span>
-          </button>
-        `;
-      }).join('');
-
-      container.innerHTML = `
-        <div class="glass p-5 sm:p-7 rounded-3xl border border-theme-border flex flex-col gap-5 sm:gap-6">
-          <div class="flex items-center justify-between text-xs sm:text-sm text-theme-textMuted border-b border-theme-border pb-3">
-            <span class="px-3 py-1 rounded-lg bg-theme-accent/15 text-theme-accent font-bold border border-theme-border">${q.yil} • Soru #${qOrderNum} (${q.ders || 'Tıp'})</span>
-            <span>ID: ${q.id}</span>
-          </div>
-
-          <p class="q-text font-semibold text-theme-text whitespace-pre-line">
-            ${q.soruMetni}
-          </p>
-
-          <div class="flex flex-col gap-2.5">
-            ${optionsHtml}
-          </div>
-
-          <div class="flex items-center justify-between pt-4 border-t border-theme-border">
-            <button onclick="navigateExam(-1)" ${examCurrentIndex === 0 ? 'disabled' : ''} class="px-4 py-2.5 bg-theme-subtle hover:opacity-80 disabled:opacity-40 text-xs sm:text-sm font-bold rounded-xl transition text-theme-text border border-theme-border">
-              ← Önceki
-            </button>
-            ${examCurrentIndex === examQuestions.length - 1 
-              ? `<button onclick="finishExamSession()" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-extrabold rounded-xl transition shadow-lg">Tamamla</button>`
-              : `<button onclick="navigateExam(1)" class="px-5 py-2.5 bg-theme-accent hover:opacity-90 text-white text-xs sm:text-sm font-bold rounded-xl transition">Sonraki →</button>`
-            }
-          </div>
-        </div>
-      `;
-    }
-
-    function selectExamOption(qId, key) {
-      examUserAnswers[qId] = key;
-      renderExamQuestion();
-    }
-
-    function navigateExam(delta) {
-      examCurrentIndex = Math.max(0, Math.min(examQuestions.length - 1, examCurrentIndex + delta));
-      renderExamQuestion();
-    }
-
-    function finishExamEarly() {
-      if (confirm("Sınavı erken bitirmek istediğinize emin misiniz?")) finishExamSession();
-    }
-
-    function finishExamSession() {
-      clearInterval(examTimerInterval);
-      let correct = 0;
-      let wrong = 0;
-
-      examQuestions.forEach(q => {
-        const ans = examUserAnswers[q.id];
-        if (ans) {
-          userAnswers[q.id] = ans;
-          if (ans === q.dogruCevap) correct++;
-          else wrong++;
-        }
-      });
-
-      saveState();
-
-      const percent = Math.round((correct / examQuestions.length) * 100);
-      if (percent >= 70 && typeof confetti === 'function') {
-        confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 } });
-      }
-
-      document.getElementById('examScoreCorrect').innerText = correct;
-      document.getElementById('examScoreWrong').innerText = wrong;
-      document.getElementById('examScorePercent').innerText = `%${percent}`;
-      document.getElementById('examResultModal').classList.remove('hidden');
-    }
-
-    function closeExamResultModal() {
-      document.getElementById('examResultModal').classList.add('hidden');
-      displayedQuestions = examQuestions;
-      switchView('questions');
-      renderQuestionsList(displayedQuestions);
-    }
-
     function renderYearTabs() {
       const years = [...new Set(globalQuestions.map(q => String(q.yil)))].sort().reverse();
       const container = document.getElementById('yearTabsContainer');
@@ -1833,43 +1647,6 @@
     function exitRandomMode() {
       isRandomMode = false;
       applyFilters();
-    }
-
-    function updateStats() {
-      let answeredCount = 0;
-      let correctCount = 0;
-      globalQuestions.forEach(q => {
-        if (userAnswers[q.id]) {
-          answeredCount++;
-          if (userAnswers[q.id] === q.dogruCevap) correctCount++;
-        }
-      });
-    }
-
-    function selectOption(qId, key) {
-      if (userAnswers[qId]) return;
-      userAnswers[qId] = key;
-      saveState();
-      
-      if (isRandomMode) {
-        const q = globalQuestions.find(x => x.id === qId);
-        renderQuestionsList([q]);
-      } else {
-        renderQuestionsList(displayedQuestions);
-      }
-    }
-
-    function toggleStar(qId) {
-      if (starredQuestions.includes(qId)) starredQuestions = starredQuestions.filter(id => id !== qId);
-      else starredQuestions.push(qId);
-      saveState();
-      
-      if (isRandomMode) {
-        const q = globalQuestions.find(x => x.id === qId);
-        renderQuestionsList([q]);
-      } else {
-        renderQuestionsList(displayedQuestions);
-      }
     }
 
     function renderQuestionsList(list) {
