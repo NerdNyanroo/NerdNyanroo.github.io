@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-  <title>D2K1 Nöroanatomi & Tıp Sınav Simülatörü</title>
+  <title>Nöroportal & Tıp Sınav Simülatörü</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -186,11 +186,11 @@
 </head>
 <body class="bg-theme-bg text-theme-text min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white relative text-base transition-colors duration-300">
 
-  <!-- ÜST NAVİGASYON (Mobil ve Masaüstü Uyumlu) -->
+  <!-- ÜST NAVİGASYON (Mobil Kenar Sınırı Düzeltilmiş) -->
   <header id="mainHeader" class="border-b border-theme-border bg-theme-bg/95 backdrop-blur-md sticky top-0 z-30 transition-all duration-300">
-    <div class="max-w-6xl mx-auto px-2.5 sm:px-4 py-2 sm:py-3 flex items-center justify-between gap-1.5 sm:gap-4">
+    <div class="max-w-6xl mx-auto px-3 sm:px-4 py-2 sm:py-3 flex items-center justify-between gap-1.5 sm:gap-4">
       
-      <!-- Logo -->
+      <!-- Logo (Nöroportal) -->
       <div class="flex items-center gap-2 cursor-pointer shrink-0 select-none" onclick="switchView('dashboard')">
         <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-sky-500 to-emerald-400 p-0.5 shadow-lg">
           <div class="w-full h-full bg-theme-card rounded-[10px] flex items-center justify-center">
@@ -199,7 +199,7 @@
         </div>
         <div>
           <div class="flex items-center gap-1">
-            <h1 class="font-extrabold text-xs sm:text-base tracking-tight leading-tight">D2K1 NÖROPORTAL</h1>
+            <h1 class="font-extrabold text-xs sm:text-base tracking-tight leading-tight">NÖROPORTAL</h1>
           </div>
           <p class="text-[10px] sm:text-xs text-theme-textMuted hidden sm:block">Akademik Tıp Sınav Simülatörü</p>
         </div>
@@ -248,9 +248,9 @@
         </label>
       </div>
 
-      <!-- Mobil Hızlı Ayarlar Tetikleyici Butonu -->
-      <div class="flex md:hidden items-center gap-1">
-        <button onclick="toggleMobileSettingsSheet()" class="p-2 min-h-[36px] min-w-[36px] flex items-center justify-center rounded-xl bg-theme-subtle border border-theme-border text-theme-accent hover:opacity-80 transition active:scale-90" title="Görünüm ve Tema Ayarları">
+      <!-- Mobil Hızlı Ayarlar Butonu (Kenara Yapışma Engellendi) -->
+      <div class="flex md:hidden items-center mr-0.5">
+        <button onclick="toggleMobileSettingsSheet()" class="p-2 min-h-[38px] min-w-[38px] flex items-center justify-center rounded-xl bg-theme-subtle border border-theme-border text-theme-accent hover:opacity-80 transition active:scale-90" title="Görünüm ve Tema Ayarları">
           <i data-lucide="sliders-horizontal" class="w-4 h-4"></i>
         </button>
       </div>
@@ -318,14 +318,14 @@
     <!-- MACERA MODU: 10 AŞAMALI DAİRESEL YOL HARİTASI -->
     <div id="viewAdventure" class="hidden flex flex-col gap-6">
       
-      <!-- 1. Dairesel Yol Haritası Ekranı -->
+      <!-- 1. Dairesel Yol Haritası Ekranı[cite: 10] -->
       <div id="adventureMapScreen" class="flex flex-col gap-6 sm:gap-8 items-center">
         <div class="text-center max-w-md mx-auto pt-1 sm:pt-2 px-2">
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-500 text-xs font-bold mb-1.5 sm:mb-2">
             <i data-lucide="compass" class="w-3.5 h-3.5"></i> Nöro-Sefer Güzergâhı
           </span>
           <h2 class="text-lg sm:text-2xl font-black text-theme-text tracking-tight">Korteks Seferi: 10 Aşama</h2>
-          <p class="text-xs text-theme-textMuted mt-0.5 sm:mt-1">Her yanlışta 1 yıldız düşer! Bölümleri sırayla fethedin.</p>
+          <p class="text-xs text-theme-textMuted mt-0.5 sm:mt-1">Her yanlışta 1 yıldız düşer! Bölümleri sırayla fethedin[cite: 10].</p>
         </div>
 
         <div class="relative max-w-sm mx-auto w-full py-2 sm:py-4 flex flex-col items-center" id="circleMapContainer"></div>
@@ -373,14 +373,14 @@
     <!-- 1. GİRİŞ VE ANALİTİK PANELİ -->
     <div id="viewDashboard" class="flex flex-col gap-5 sm:gap-8">
       
-      <!-- Ana Karşılama Kartı (İstenen Sıralama: Tüm Havuz -> Komite Sınavı -> Macera -> Hata Telafi) -->
+      <!-- Ana Karşılama Kartı (İsim Nöroportal & Sıralama: Tüm Havuz -> Komite Sınavı -> Macera -> Hata Telafi) -->
       <div class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-theme-card border border-theme-border p-4 sm:p-7 shadow-xl">
         <div class="max-w-3xl relative z-10 flex flex-col gap-2.5 sm:gap-3">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-theme-accent/15 border border-theme-border text-theme-accent text-xs font-bold w-max">
             <span class="w-2 h-2 rounded-full bg-theme-accent animate-pulse"></span> Gelişmiş Tıp Eğitim Portalı
           </div>
           <h2 class="text-lg sm:text-2xl md:text-3xl font-extrabold text-theme-text tracking-tight leading-snug sm:leading-tight">
-            Nöroanatomi & Entegre Komite Simülatörü
+            NÖROPORTAL Simülatörü
           </h2>
           <p class="text-xs sm:text-base text-theme-textMuted leading-relaxed">
             Soruları RPG macera modunda çözün, hatalarınızdan özel deneme testi üretin veya resmî süreli sınav oturumu başlatın.
@@ -744,7 +744,7 @@
     <!-- AI Yanıt Alanı -->
     <div id="aiResponseBox" class="flex-1 p-3.5 sm:p-5 overflow-y-auto custom-scrollbar ai-text text-theme-text leading-relaxed space-y-3">
       <div class="p-3.5 sm:p-4 rounded-2xl bg-theme-accent/15 border border-theme-border leading-relaxed text-xs sm:text-base">
-        👋 <strong>Merhaba!</strong> Ben NöroAsistan. Soruları çözerken takıldığında "İpucu İste" butonuna basabilir veya soru üzerinden konuyu detaylandırmamı isteyebilirsin!
+        👋 <strong>Merhaba!</strong> Ben NöroAsistan. Soruları çözerken takıldığında "İpucu İste" butonuna basabilir veya soru kartındaki hedef ikonuna tıklayarak doğrudan o soruyu danışabilirsin!
       </div>
     </div>
 
@@ -967,6 +967,20 @@
       }
     }
 
+    // Soruyu NöroAsistana Sabitleme / Üzerine Soru Sorma Fonksiyonu
+    function togglePinQuestionToAdvisor(qId) {
+      const q = globalQuestions.find(item => item.id === qId);
+      if (!q) return;
+
+      if (currentlyFocusedQuestion && currentlyFocusedQuestion.id === qId) {
+        dismissPinnedQuestion();
+      } else {
+        pinQuestionToDrawer(q);
+        if (!isAdvisorOpen) toggleAdvisor();
+      }
+      renderQuestionsList(displayedQuestions);
+    }
+
     function pinQuestionToDrawer(q) {
       currentlyFocusedQuestion = q;
       const box = document.getElementById('pinnedQuestionBox');
@@ -993,7 +1007,9 @@
     }
 
     function dismissPinnedQuestion() {
+      currentlyFocusedQuestion = null;
       document.getElementById('pinnedQuestionBox').classList.add('hidden');
+      renderQuestionsList(displayedQuestions);
     }
 
     function getQuestionOrderNumber(q) {
@@ -1007,21 +1023,21 @@
     }
 
     function askDeepExplanation() {
-      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
+      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin veya sabitleyin.");
       const q = currentlyFocusedQuestion;
       const promptText = `Şu sorunun konusunu, klinik mekanizmasını ve komite tuzaklarını detaylandır:\n"${q.soruMetni}"\nDoğru Cevap: ${q.dogruCevap}`;
       askGeminiAdvisor(promptText, `📚 Konuyu Detaylandır (${q.yil} #${getQuestionOrderNumber(q)})`);
     }
 
     function askClinicalPearls() {
-      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
+      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin veya sabitleyin.");
       const q = currentlyFocusedQuestion;
       const promptText = `Şu soruyla ilgili kritik TUS/komite hap bilgilerini madde madde ver:\n"${q.soruMetni}"`;
       askGeminiAdvisor(promptText, `💡 TUS İncilerini Ver`);
     }
 
     function askSimilarQuestion() {
-      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin.");
+      if (!currentlyFocusedQuestion) return alert("Lütfen önce bir soru seçin veya sabitleyin.");
       const q = currentlyFocusedQuestion;
       const promptText = `Şu konu hakkında tıp komite düzeyinde 5 şıklı özgün bir soru ve çözümü üret:\n"${q.soruMetni}"`;
       askGeminiAdvisor(promptText, `❓ Benzer Soru Üret`);
@@ -1060,8 +1076,14 @@
       const sendBtn = document.getElementById('aiSendBtn');
 
       const userTyped = inputEl.value.trim();
-      const promptToSend = customPrompt || userTyped;
+      let promptToSend = customPrompt || userTyped;
       if (!promptToSend) return;
+
+      // Eğer kullanıcı kutudan soru yazdıysa ve aktif sabitlenmiş soru varsa bağlamı otomatik ekle
+      if (!customPrompt && currentlyFocusedQuestion) {
+        const q = currentlyFocusedQuestion;
+        promptToSend = `[Sabitlenmiş Soru Bağlamı: "${q.soruMetni}" (Doğru Cevap: ${q.dogruCevap})]\nÖğrencinin Bu Soru Hakkındaki Sorusu: ${userTyped}`;
+      }
 
       inputEl.value = '';
 
@@ -2055,6 +2077,7 @@
         const userAnswer = userAnswers[q.id];
         const isAnswered = !!userAnswer;
         const isStarred = starredQuestions.includes(q.id);
+        const isPinned = currentlyFocusedQuestion && currentlyFocusedQuestion.id === q.id;
         const qOrderNum = getQuestionOrderNumber(q);
 
         let optionsHtml = Object.entries(q.secenekler).map(([key, text]) => {
@@ -2152,7 +2175,7 @@
         }
 
         return `
-          <div id="question-card-${q.id}" class="glass p-3.5 sm:p-6 rounded-2xl sm:rounded-3xl shadow-xl relative transition-all duration-300">
+          <div id="question-card-${q.id}" class="glass p-3.5 sm:p-6 rounded-2xl sm:rounded-3xl shadow-xl relative transition-all duration-300 ${isPinned ? 'ring-2 ring-theme-accent' : ''}">
             <div class="flex items-center justify-between gap-2 mb-3">
               <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                 <span class="px-2.5 py-1 rounded-lg text-[10px] sm:text-xs font-black bg-amber-500/15 text-amber-500 border border-amber-500/25 flex items-center gap-1 shadow-sm">
@@ -2162,9 +2185,14 @@
                   ${q.ders || 'Tıp'}
                 </span>
               </div>
-              <button onclick="toggleStar('${q.id}')" class="p-2 min-h-[40px] min-w-[40px] flex items-center justify-center text-theme-textMuted hover:text-amber-500 transition rounded-xl hover:bg-theme-subtle active:scale-90">
-                <i data-lucide="star" class="w-4 h-4 sm:w-5 sm:h-5 ${isStarred ? 'text-amber-500 fill-amber-500' : ''}"></i>
-              </button>
+              <div class="flex items-center gap-1">
+                <button onclick="togglePinQuestionToAdvisor('${q.id}')" title="${isPinned ? 'Asistan Bağlantısını Kaldır' : 'Bu Soru Üzerinden NöroAsistana Sor'}" class="p-2 min-h-[40px] min-w-[40px] flex items-center justify-center rounded-xl transition hover:bg-theme-subtle active:scale-90 ${isPinned ? 'text-theme-accent bg-theme-accent/20' : 'text-theme-textMuted hover:text-theme-accent'}">
+                  <i data-lucide="crosshair" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                </button>
+                <button onclick="toggleStar('${q.id}')" title="Favorilere Ekle" class="p-2 min-h-[40px] min-w-[40px] flex items-center justify-center text-theme-textMuted hover:text-amber-500 transition rounded-xl hover:bg-theme-subtle active:scale-90">
+                  <i data-lucide="star" class="w-4 h-4 sm:w-5 sm:h-5 ${isStarred ? 'text-amber-500 fill-amber-500' : ''}"></i>
+                </button>
+              </div>
             </div>
 
             <p class="q-text font-medium text-theme-text leading-relaxed mb-4 sm:mb-6 whitespace-pre-line text-sm sm:text-base">
